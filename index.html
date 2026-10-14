@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="es" data-theme="jhovin">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Super Mayorista Jhovin · Todo para tu negocio</title>
+<link rel="icon" href="assets/logo-original.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Nunito:wght@400;600;800;900&display=swap" rel="stylesheet">
+<style>
+:root{--pri:#d7141a;--pri2:#a90f14;--acc:#f5c400;--ink:#1b1b1b;--mut:#6b6b6b;--bg:#f4f4f4;--card:#fff;--line:#e4e4e4;--top:#1b1b1b;--topt:#fff;--ok:#0b8a3e;--r:12px}
+[data-theme=mayorista]{--pri:#1b1b1b;--pri2:#000;--acc:#f5c400;--bg:#fff8dc;--top:#f5c400;--topt:#1b1b1b;--r:4px}
+[data-theme=noche]{--pri:#ff3b3b;--pri2:#d7141a;--acc:#f5c400;--ink:#f2f2f2;--mut:#a8a8a8;--bg:#121212;--card:#1e1e1e;--line:#333;--top:#000;--topt:#f5c400;--r:16px}
+*{box-sizing:border-box}html,body{margin:0}body{font-family:Nunito,system-ui,sans-serif;background:var(--bg);color:var(--ink);overflow-x:hidden}
+a{color:inherit;text-decoration:none}button,input,select,textarea{font:inherit}button{cursor:pointer}
+.wrap{max-width:1240px;margin:0 auto;padding:0 16px}
+.topbar{background:var(--top);color:var(--topt);font-size:13px;text-align:center;padding:6px 16px;font-weight:700}
+header{background:var(--pri);color:#fff;position:sticky;top:0;z-index:30;box-shadow:0 2px 8px #0003}
+[data-theme=mayorista] header{background:#fff;color:var(--ink);border-bottom:4px solid var(--ink)}
+.hrow{display:flex;align-items:center;gap:14px;padding:10px 0}
+.logo{display:flex;align-items:center;gap:8px;flex:none}.logo img{height:46px;width:46px;object-fit:cover;object-position:50% 18%;border-radius:50%;background:#fff;border:2px solid #fff}
+.logo b{font-family:'Dancing Script',cursive;font-size:30px;line-height:1}.logo small{display:block;font-size:10px;font-weight:900;letter-spacing:.5px;color:var(--acc)}
+[data-theme=mayorista] .logo small{color:var(--pri2)}
+.search{flex:1;position:relative}.search input{width:100%;border:0;border-radius:999px;padding:11px 44px 11px 18px;font-size:15px;color:#1b1b1b;outline:3px solid transparent}
+[data-theme=mayorista] .search input{border:2px solid var(--ink)}.search input:focus{outline-color:var(--acc)}
+.search .go{position:absolute;right:6px;top:4px;border:0;background:var(--acc);border-radius:999px;width:34px;height:34px}
+.sug{position:absolute;left:0;right:0;top:46px;background:var(--card);color:var(--ink);border-radius:var(--r);box-shadow:0 8px 24px #0004;overflow:hidden;display:none}
+.sug a{display:flex;gap:10px;align-items:center;padding:8px 12px;border-bottom:1px solid var(--line)}.sug a:hover{background:var(--bg)}.sug svg{width:34px;height:34px}
+.hbtn{background:none;border:0;color:inherit;display:flex;flex-direction:column;align-items:center;font-size:11px;font-weight:700;position:relative;min-width:52px}
+.hbtn .i{font-size:22px}.badge{position:absolute;top:-4px;right:4px;background:var(--acc);color:#1b1b1b;border-radius:999px;font-size:11px;padding:1px 6px;font-weight:900}
+.deliv{background:#0002;font-size:13px}[data-theme=mayorista] .deliv{background:#f5c40033}
+.deliv .wrap{display:flex;gap:10px;align-items:center;padding-top:6px;padding-bottom:6px;flex-wrap:wrap}
+.chip{border:1px solid currentColor;background:none;color:inherit;border-radius:999px;padding:3px 12px;font-weight:800;font-size:12px}
+.who{margin-left:auto;font-weight:800}.tag{display:inline-block;padding:2px 8px;border-radius:999px;font-size:11px;font-weight:900;background:var(--acc);color:#1b1b1b}
+nav.cats{background:var(--card);border-bottom:1px solid var(--line);position:relative}
+nav.cats .wrap{display:flex;gap:4px;overflow-x:auto;scrollbar-width:none}
+nav.cats a{white-space:nowrap;padding:10px 12px;font-size:14px;font-weight:700;border-bottom:3px solid transparent}nav.cats a:hover,nav.cats a.on{border-color:var(--pri);color:var(--pri)}
+.mega{position:absolute;left:0;right:0;top:100%;background:var(--card);box-shadow:0 12px 24px #0003;display:none;z-index:25}
+.mega .wrap{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:6px;padding:16px}.mega a{padding:8px;border-radius:8px}.mega a:hover{background:var(--bg)}
+main{min-height:60vh;padding-bottom:40px}
+.hero{position:relative;overflow:hidden;border-radius:var(--r);margin:16px 0;aspect-ratio:1240/360;min-height:200px}
+.slide{position:absolute;inset:0;display:flex;align-items:center;padding:4% 6%;color:#fff;opacity:0;transition:opacity .6s}.slide.on{opacity:1}
+.slide h2{font-size:clamp(24px,4vw,52px);margin:0 0 8px;line-height:1.05;font-weight:900}.slide p{font-size:clamp(14px,1.6vw,20px);margin:0 0 14px;max-width:560px}
+.slide .big{position:absolute;right:5%;font-size:clamp(70px,13vw,180px);opacity:.95;filter:drop-shadow(0 8px 16px #0005)}
+.dots{position:absolute;bottom:10px;left:0;right:0;display:flex;gap:6px;justify-content:center}.dots b{width:10px;height:10px;border-radius:50%;background:#fff8;cursor:pointer}.dots b.on{background:#fff}
+.btn{display:inline-block;border:0;background:var(--pri);color:#fff;font-weight:900;padding:11px 20px;border-radius:999px}.btn:hover{background:var(--pri2)}
+.btn.y{background:var(--acc);color:#1b1b1b}.btn.o{background:none;border:2px solid var(--pri);color:var(--pri)}.btn.sm{padding:6px 12px;font-size:13px}.btn[disabled]{opacity:.45;cursor:not-allowed}
+h3.sec{font-size:22px;font-weight:900;margin:26px 0 12px;display:flex;align-items:center;gap:10px}h3.sec a{margin-left:auto;font-size:14px;color:var(--pri)}
+.circles{display:grid;grid-template-columns:repeat(auto-fill,minmax(96px,1fr));gap:12px}
+.circles a{text-align:center;font-size:13px;font-weight:800}.circles span{display:grid;place-items:center;width:76px;height:76px;margin:0 auto 6px;border-radius:50%;background:var(--card);font-size:34px;box-shadow:0 2px 6px #0001;border:2px solid var(--line);transition:.2s}
+.circles a:hover span{border-color:var(--pri);transform:translateY(-3px)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:14px}
+.rail{display:grid;grid-auto-flow:column;grid-auto-columns:190px;gap:14px;overflow-x:auto;padding-bottom:8px;scroll-snap-type:x mandatory}.rail>*{scroll-snap-align:start}
+.card{background:var(--card);border-radius:var(--r);padding:12px;display:flex;flex-direction:column;gap:6px;position:relative;border:1px solid var(--line);transition:box-shadow .2s}
+.card:hover{box-shadow:0 6px 18px #0002}.card .ph{aspect-ratio:1;display:grid;place-items:center;background:var(--bg);border-radius:calc(var(--r) - 4px)}.card .ph svg{width:78%;height:78%}
+.card .br{font-size:11px;color:var(--mut);font-weight:800;text-transform:uppercase}.card .nm{font-size:14px;font-weight:700;min-height:38px;line-height:1.3}
+.pr{font-size:20px;font-weight:900;color:var(--pri)}.pr s{font-size:13px;color:var(--mut);font-weight:600;margin-left:6px}
+.vol{font-size:11.5px;background:#f5c40026;border:1px dashed var(--acc);border-radius:8px;padding:4px 6px;color:var(--ink)}
+.flag{position:absolute;top:10px;left:10px;background:var(--pri);color:#fff;font-size:11px;font-weight:900;padding:3px 8px;border-radius:999px;z-index:1}.flag.n{background:var(--ok)}
+.add{display:flex;gap:6px;margin-top:auto}.add .btn{flex:1;padding:9px}.qty{display:flex;align-items:center;border:2px solid var(--pri);border-radius:999px;overflow:hidden;flex:1;justify-content:space-between}
+.qty button{border:0;background:none;color:var(--pri);font-weight:900;width:34px;height:34px;font-size:18px}.qty span{font-weight:900}
+.agot{font-size:13px;color:var(--mut);font-weight:800;text-align:center;padding:9px}
+.banners{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px;margin-top:20px}
+.bn{border-radius:var(--r);padding:22px;color:#fff;min-height:150px;display:flex;flex-direction:column;justify-content:center;gap:6px;position:relative;overflow:hidden}
+.bn h4{margin:0;font-size:22px;font-weight:900}.bn p{margin:0}.bn .em{position:absolute;right:12px;bottom:-6px;font-size:84px;opacity:.9}
+.brands{display:flex;gap:10px;overflow-x:auto;padding-bottom:6px}.brands a{flex:none;background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:12px 18px;font-weight:900;font-size:15px}
+.layout{display:grid;grid-template-columns:240px 1fr;gap:18px;margin-top:16px}
+.filters{background:var(--card);border-radius:var(--r);padding:14px;border:1px solid var(--line);align-self:start;position:sticky;top:150px}
+.filters h4{margin:12px 0 6px}.filters label{display:block;font-size:14px;padding:3px 0}
+.bar{display:flex;align-items:center;gap:10px;margin:16px 0 10px;flex-wrap:wrap}.bar h1{font-size:24px;margin:0;font-weight:900}.bar select{margin-left:auto;padding:6px 10px;border-radius:8px;border:1px solid var(--line);background:var(--card);color:var(--ink)}
+.pdp{display:grid;grid-template-columns:1fr 1fr;gap:28px;background:var(--card);border-radius:var(--r);padding:22px;margin-top:16px;border:1px solid var(--line)}
+.pdp .ph{background:var(--bg);border-radius:var(--r);display:grid;place-items:center;aspect-ratio:1}.pdp .ph svg{width:70%}
+.pdp h1{margin:4px 0 8px;font-size:26px}table.t{width:100%;border-collapse:collapse;font-size:14px}table.t td,table.t th{padding:8px;border-bottom:1px solid var(--line);text-align:left}
+table.t tr.on{background:#f5c40033;font-weight:900}
+.drawer{position:fixed;inset:0;background:#0007;z-index:50;display:none}.drawer.on{display:block}
+.drawer .pn{position:absolute;right:0;top:0;bottom:0;width:min(420px,100%);background:var(--card);display:flex;flex-direction:column}
+.pn .hd{padding:16px;border-bottom:1px solid var(--line);display:flex;align-items:center;font-weight:900;font-size:18px}.pn .hd button{margin-left:auto;border:0;background:none;font-size:24px;color:var(--ink)}
+.pn .bd{flex:1;overflow:auto;padding:12px 16px}.pn .ft{padding:16px;border-top:1px solid var(--line)}
+.li{display:grid;grid-template-columns:56px 1fr auto;gap:10px;align-items:center;padding:10px 0;border-bottom:1px solid var(--line)}.li svg{width:56px;height:56px}
+.li .qty{flex:none;width:110px}.li small{color:var(--mut)}
+.row{display:flex;justify-content:space-between;padding:4px 0}.row.tot{font-size:20px;font-weight:900}
+.prog{height:8px;background:var(--line);border-radius:999px;overflow:hidden;margin:6px 0}.prog i{display:block;height:100%;background:var(--ok)}
+.note{font-size:13px;padding:8px 10px;border-radius:8px;background:#0b8a3e1a;color:var(--ok);font-weight:700;margin:6px 0}.note.w{background:#d7141a1a;color:var(--pri)}
+.modal{position:fixed;inset:0;background:#0008;z-index:60;display:none;place-items:center;padding:16px}.modal.on{display:grid}
+.modal .box{background:var(--card);border-radius:var(--r);padding:22px;width:min(520px,100%);max-height:90vh;overflow:auto;position:relative}
+.modal .x{position:absolute;right:12px;top:8px;border:0;background:none;font-size:26px;color:var(--ink)}
+.opt{display:flex;gap:10px;margin:12px 0}.opt button{flex:1;padding:16px;border:2px solid var(--line);background:var(--card);color:var(--ink);border-radius:var(--r);font-weight:800}.opt button.on{border-color:var(--pri);color:var(--pri)}
+.f{display:grid;gap:10px}.f label{font-size:13px;font-weight:800;display:grid;gap:4px}.f input,.f select,.f textarea{padding:10px;border:1px solid var(--line);border-radius:8px;background:var(--card);color:var(--ink)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.co{display:grid;grid-template-columns:1fr 360px;gap:18px;margin-top:16px}.box2{background:var(--card);border-radius:var(--r);padding:18px;border:1px solid var(--line);margin-bottom:14px}
+.box2 h3{margin:0 0 12px}.pay{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:8px}
+.pay label{border:2px solid var(--line);border-radius:10px;padding:10px;display:flex;gap:6px;align-items:center;font-weight:800;font-size:14px;cursor:pointer}.pay label:has(input:checked){border-color:var(--pri)}
+.slots{display:flex;gap:8px;flex-wrap:wrap}.slots label{border:2px solid var(--line);border-radius:10px;padding:8px 12px;font-size:13px;font-weight:800;cursor:pointer}.slots label:has(input:checked){border-color:var(--pri);color:var(--pri)}.slots input,.pay input{accent-color:var(--pri)}
+.ticket{max-width:420px;margin:20px auto;background:#fff;color:#111;font-family:'Courier New',monospace;padding:20px;border-radius:6px;box-shadow:0 4px 18px #0002;font-size:13px}
+.ticket hr{border:0;border-top:1px dashed #999}.ticket .c{text-align:center}
+.steps{display:flex;gap:4px;margin:14px 0}.steps div{flex:1;text-align:center;font-size:11px;font-weight:800;color:var(--mut)}.steps div::before{content:'';display:block;height:6px;border-radius:9px;background:var(--line);margin-bottom:4px}.steps div.on{color:var(--ok)}.steps div.on::before{background:var(--ok)}
+.adm{display:grid;grid-template-columns:220px 1fr;gap:18px;margin-top:16px}.adm nav{background:var(--card);border-radius:var(--r);padding:8px;border:1px solid var(--line);align-self:start}
+.adm nav a{display:block;padding:10px 12px;border-radius:8px;font-weight:800;font-size:14px}.adm nav a.on{background:var(--pri);color:#fff}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px}.kpi{background:var(--card);border-radius:var(--r);padding:16px;border:1px solid var(--line)}.kpi b{display:block;font-size:26px;font-weight:900}.kpi small{color:var(--mut);font-weight:700}
+.bars{display:flex;align-items:flex-end;gap:6px;height:140px;padding-top:10px}.bars div{flex:1;background:var(--pri);border-radius:6px 6px 0 0;position:relative}.bars span{position:absolute;bottom:-20px;left:0;right:0;text-align:center;font-size:11px;color:var(--mut)}
+.st{padding:2px 8px;border-radius:999px;font-size:11px;font-weight:900;background:var(--line)}.st.ok{background:#0b8a3e22;color:var(--ok)}.st.w{background:#f5c40044;color:#7a5b00}.st.r{background:#d7141a22;color:var(--pri)}
+.log{font-family:monospace;font-size:12px;background:#111;color:#7CFC8A;padding:12px;border-radius:8px;max-height:220px;overflow:auto;white-space:pre-wrap}
+.ints{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px}.int{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:18px}.int .e{font-size:34px}.int h4{margin:6px 0}.int p{margin:0;font-size:14px;color:var(--mut)}
+footer{background:var(--top);color:var(--topt);padding:28px 0;font-size:14px}footer .wrap{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:18px}footer h4{margin:0 0 8px;color:var(--acc)}footer a{display:block;opacity:.85;padding:2px 0}
+.themes{position:fixed;left:12px;bottom:12px;z-index:40;background:var(--card);border:1px solid var(--line);border-radius:999px;padding:6px;display:flex;gap:6px;box-shadow:0 4px 14px #0003;align-items:center}
+.themes span{font-size:11px;font-weight:900;padding:0 6px;color:var(--mut)}.themes button{width:28px;height:28px;border-radius:50%;border:2px solid var(--line)}.themes button.on{outline:3px solid var(--pri)}
+.wa{position:fixed;right:16px;bottom:16px;z-index:40;width:56px;height:56px;border-radius:50%;background:#25d366;color:#fff;font-size:28px;display:grid;place-items:center;box-shadow:0 4px 14px #0004;border:0}
+.toast{position:fixed;left:50%;bottom:80px;transform:translateX(-50%);background:#1b1b1b;color:#fff;padding:10px 18px;border-radius:999px;font-weight:800;z-index:70;opacity:0;transition:.3s;pointer-events:none}.toast.on{opacity:1}
+.muted{color:var(--mut)}.center{text-align:center}
+@media (max-width:860px){.layout,.co,.adm,.pdp{grid-template-columns:1fr}.filters{position:static}.logo div{display:none}.hbtn .l{display:none}.hbtn{min-width:36px}
+.hrow{flex-wrap:wrap}.search{order:5;flex-basis:100%}.grid{grid-template-columns:repeat(2,1fr);gap:10px}.two{grid-template-columns:1fr}.slide .big{opacity:.25}.themes span{display:none}}
+</style>
+</head>
+<body>
+<div class="topbar" id="topbar"></div>
+<header>
+  <div class="wrap hrow">
+    <a class="logo" href="#/"><img src="assets/logo-original.webp" alt="Jhovin"><div><b>Jhovin</b><small>SUPER MAYORISTA · TODO PARA TU NEGOCIO</small></div></a>
+    <div class="search"><input id="q" placeholder="¿Qué buscas hoy? Arroz, aceite, Inca Kola…" autocomplete="off" aria-label="Buscar productos"><button class="go" onclick="buscar()" aria-label="Buscar">🔍</button><div class="sug" id="sug"></div></div>
+    <a class="hbtn" href="#/pedidos"><span class="i">📦</span><span class="l">Mis pedidos</span></a>
+    <button class="hbtn" onclick="cuenta()"><span class="i">👤</span><span class="l" id="ulabel">Ingresar</span></button>
+    <button class="hbtn" onclick="openCart()" aria-label="Carrito"><span class="i">🛒</span><span class="l">Carrito</span><span class="badge" id="cnt">0</span></button>
+  </div>
+  <div class="deliv"><div class="wrap"><span>📍 <b id="dtxt"></b></span><button class="chip" onclick="entrega()">Cambiar</button><span class="who" id="who"></span></div></div>
+</header>
+<nav class="cats" onmouseleave="mega(0)"><div class="wrap" id="catnav"></div><div class="mega" id="mega"><div class="wrap" id="megain"></div></div></nav>
+<main class="wrap" id="app"></main>
+<footer><div class="wrap">
+  <div><h4>Super Mayorista Jhovin</h4>Todo para tu negocio.<br>Nueva Cajamarca, San Martín<br>Lun–Dom 7:00 a.m. – 9:00 p.m.</div>
+  <div><h4>Compra</h4><a href="#/ofertas">Ofertas</a><a href="#/bodega">Quiero ser bodega</a><a href="#/pedidos">Seguir mi pedido</a></div>
+  <div><h4>Envíos</h4><a href="#/envios">Zonas y tarifas</a><a>Recojo en tienda gratis</a><a>Envío gratis desde S/300 en Nueva Cajamarca</a></div>
+  <div><h4>Demo</h4><a href="#/admin">Panel del negocio</a><a href="#/posibilidades">Posibilidades e integraciones</a><a>Libro de reclamaciones</a></div>
+</div></footer>
+<div class="themes" title="Estilos de diseño"><span>Diseño</span><button data-t="jhovin" style="background:#d7141a" aria-label="Clásico rojo"></button><button data-t="mayorista" style="background:#f5c400" aria-label="Mayorista amarillo"></button><button data-t="noche" style="background:#121212" aria-label="Oscuro"></button></div>
+<button class="wa" onclick="toast('Abriría WhatsApp del negocio')" aria-label="WhatsApp">💬</button>
+<div class="drawer" id="drawer" onclick="if(event.target===this)closeCart()"><div class="pn"><div class="hd">🛒 Tu carrito<button onclick="closeCart()" aria-label="Cerrar">×</button></div><div class="bd" id="cartbd"></div><div class="ft" id="cartft"></div></div></div>
+<div class="modal" id="modal" onclick="if(event.target===this)closeM()"><div class="box"><button class="x" onclick="closeM()" aria-label="Cerrar">×</button><div id="mbody"></div></div></div>
+<div class="toast" id="toast"></div>
+<script src="data.js"></script>
+<script>
+const $=s=>document.querySelector(s), app=$('#app');
+const money=n=>'S/ '+n.toFixed(2);
+const CAT=Object.fromEntries(CATS.map(c=>[c[0],{id:c[0],n:c[1],e:c[2],shape:c[3]}]));
+const BYID=Object.fromEntries(PRODUCTS.map(p=>[p.id,p]));
+const KEY='jhovin-demo-v1';
+let S=Object.assign({user:null,cart:{},ent:{modo:'delivery',zona:'nc'},theme:'jhovin',orders:[],sols:[
+  {id:'S-001',neg:'Bodega Doña Rosa',ruc:'10456789123',dni:'45678912',tel:'987654321',dir:'Jr. Huallaga 230, Nueva Cajamarca',zona:'nc',est:'pendiente',f:'2026-10-13'},
+  {id:'S-002',neg:'Minimarket El Paisa',ruc:'20601234567',dni:'41234567',tel:'954321876',dir:'Av. Cajamarca 512, Ucrania',zona:'ucr',est:'pendiente',f:'2026-10-14'},
+  {id:'S-003',neg:'Bodega San Martín',ruc:'10412398765',dni:'41239876',tel:'965412378',dir:'Calle Lima 120, Yuracyacu',zona:'yur',est:'aprobada',f:'2026-10-02'}],
+  zonas:ZONAS},JSON.parse(localStorage.getItem(KEY)||'{}'));
+const save=()=>{try{localStorage.setItem(KEY,JSON.stringify(S))}catch{}};
+const tipo=()=>S.user?.tipo==='bodega'?'bodega':'publico';
+const zona=()=>S.zonas.find(z=>z.id===S.ent.zona)||S.zonas[0];
+function toast(t){const e=$('#toast');e.textContent=t;e.classList.add('on');clearTimeout(e.t);e.t=setTimeout(()=>e.classList.remove('on'),2200)}
+
+// ---- precios: escalas por volumen según tipo de cliente
+function unit(p,q=1,t=tipo()){const tiers=TIERS[t];let f=1;for(const[m,x]of tiers)if(q>=m)f=x;
+  const base=t==='publico'&&p.oferta?p.oferta:p.price;return Math.round(base*(t==='publico'&&p.oferta?1:f)*100)/100}
+function volTxt(p){const t=tipo(),tiers=TIERS[t].filter(x=>x[0]>1);if(t==='publico'&&p.oferta)return'';
+  const [m]=tiers[tiers.length-1];return`📦 Desde ${m} und: <b>${money(unit(p,m))}</b> c/u`}
+
+// ---- imágenes de producto ilustradas (SVG), sin fotos de terceros
+function img(p){const sh=CAT[p.c].shape,c=p.color,w=p.m.length>10?11:13,lbl=`<text x="50" y="58" text-anchor="middle" font-family="Nunito" font-weight="900" font-size="${w}" fill="#fff">${p.m}</text>`;
+  const shapes={bag:`<path d="M24 22h52l6 66H18z" fill="${c}"/><rect x="24" y="14" width="52" height="10" rx="3" fill="${c}" opacity=".7"/><rect x="28" y="66" width="44" height="12" rx="3" fill="#fff" opacity=".9"/>`,
+  bottle:`<rect x="42" y="6" width="16" height="10" rx="2" fill="#333"/><path d="M40 16h20v8c10 4 12 10 12 18v46a6 6 0 0 1-6 6H34a6 6 0 0 1-6-6V42c0-8 2-14 12-18z" fill="${c}"/><rect x="28" y="46" width="44" height="22" fill="#fff" opacity=".25"/>`,
+  can:`<rect x="26" y="14" width="48" height="76" rx="8" fill="${c}"/><ellipse cx="50" cy="16" rx="24" ry="5" fill="#ccc"/><rect x="26" y="44" width="48" height="24" fill="#fff" opacity=".25"/>`,
+  box:`<rect x="20" y="16" width="60" height="74" rx="4" fill="${c}"/><rect x="20" y="16" width="60" height="12" fill="#000" opacity=".15"/><rect x="26" y="68" width="48" height="14" rx="3" fill="#fff" opacity=".9"/>`,
+  jar:`<rect x="30" y="10" width="40" height="12" rx="3" fill="#333"/><rect x="24" y="22" width="52" height="68" rx="12" fill="${c}"/><rect x="24" y="44" width="52" height="24" fill="#fff" opacity=".25"/>`,
+  pack:`<rect x="12" y="26" width="76" height="56" rx="10" fill="${c}"/><path d="M12 36h76M12 72h76" stroke="#fff" stroke-opacity=".4" stroke-dasharray="4 3"/><rect x="18" y="64" width="64" height="12" rx="3" fill="#fff" opacity=".9"/>`};
+  return`<svg viewBox="0 0 100 100" role="img" aria-label="${p.n}">${shapes[sh]}${lbl}<text x="50" y="${sh==='bottle'||sh==='can'||sh==='jar'?80:75}" text-anchor="middle" font-size="16">${CAT[p.c].e}</text></svg>`}
+
+function card(p){const q=S.cart[p.id]||0,t=tipo(),u=unit(p,Math.max(q,1));
+  return`<div class="card">${p.oferta&&t==='publico'?`<span class="flag">-${Math.round(100-p.oferta/p.price*100)}%</span>`:p.nuevo?'<span class="flag n">Nuevo</span>':''}
+  <a href="#/p/${p.id}" class="ph">${img(p)}</a><span class="br">${p.m}</span><a class="nm" href="#/p/${p.id}">${p.n}</a>
+  <div class="pr">${money(u)}${p.oferta&&t==='publico'?`<s>${money(p.price)}</s>`:''}${t==='bodega'?` <span class="tag">Bodega</span>`:''}</div>
+  ${volTxt(p)?`<div class="vol">${volTxt(p)}</div>`:''}
+  ${p.stock===0?'<div class="agot">Agotado · Avísame</div>':`<div class="add">${q?qtyCtl(p.id,q):`<button class="btn" onclick="add('${p.id}',1)">Agregar</button>`}</div>`}</div>`}
+const qtyCtl=(id,q)=>`<div class="qty"><button onclick="add('${id}',-1)" aria-label="Quitar uno">−</button><span>${q}</span><button onclick="add('${id}',1)" aria-label="Agregar uno">+</button></div>`;
+function add(id,d){const p=BYID[id],q=Math.max(0,Math.min(p.stock,(S.cart[id]||0)+d));if(q)S.cart[id]=q;else delete S.cart[id];
+  if(d>0&&q===(S.cart[id]||0)&&q===p.stock&&d>0&&(S.cart[id]||0)>=p.stock)toast('Stock máximo disponible');
+  save();hdr();if($('#drawer').classList.contains('on'))drawCart();route(true)}
+
+// ---- totales y reglas
+function totals(){const t=tipo(),items=Object.entries(S.cart).map(([id,q])=>{const p=BYID[id],u=unit(p,q);return{p,q,u,s:u*q,ahorro:(p.price-u)*q}});
+  const sub=items.reduce((a,i)=>a+i.s,0),z=zona();let env=0,freeMsg='';
+  if(S.ent.modo==='delivery'){env=z.costo;if(z.gratis&&sub>=z.gratis)env=0;}
+  const min=t==='bodega'?500:0;
+  return{items,sub,env,tot:sub+env,min,ok:sub>0&&sub>=min,ahorro:items.reduce((a,i)=>a+Math.max(0,i.ahorro),0),z}}
+
+function hdr(){$('#cnt').textContent=Object.values(S.cart).reduce((a,b)=>a+b,0);
+  const z=zona();$('#dtxt').textContent=S.ent.modo==='recojo'?'Recojo en tienda · Nueva Cajamarca':`Delivery a ${z.n}`;
+  $('#ulabel').textContent=S.user?S.user.nombre.split(' ')[0]:'Ingresar';
+  $('#who').innerHTML=S.user?(S.user.tipo==='bodega'?'<span class="tag">🏪 Precios de BODEGA activos · mínimo S/500</span>':S.user.tipo==='admin'?'<a href="#/admin" class="tag">⚙️ Panel del negocio</a>':'Cliente final'):'Comprando como invitado';
+  $('#topbar').innerHTML=tipo()==='bodega'?'🏪 Bodegas: precios mayoristas por volumen · pedido mínimo S/500 · reparto programado':'🚚 Envío GRATIS desde S/300 en Nueva Cajamarca · Recojo en tienda sin costo · <u style="cursor:pointer" onclick="location.hash=\'#/bodega\'">¿Tienes bodega? Regístrate y compra a precio mayorista</u>';
+  document.querySelectorAll('.themes button').forEach(b=>b.classList.toggle('on',b.dataset.t===S.theme));document.documentElement.dataset.theme=S.theme}
+document.querySelectorAll('.themes button').forEach(b=>b.onclick=()=>{S.theme=b.dataset.t;save();hdr()});
+
+// ---- navegación de categorías + megamenú
+$('#catnav').innerHTML=`<a href="#/" onmouseenter="mega(1)">☰ Categorías</a><a href="#/ofertas" style="color:var(--pri)">🔥 Ofertas</a>`+CATS.slice(0,9).map(c=>`<a href="#/c/${c[0]}" data-c="${c[0]}">${c[1]}</a>`).join('');
+$('#megain').innerHTML=CATS.map(c=>`<a href="#/c/${c[0]}" onclick="mega(0)">${c[2]} ${c[1]} <small class="muted">(${PRODUCTS.filter(p=>p.c===c[0]).length})</small></a>`).join('');
+function mega(on){$('#mega').style.display=on?'block':'none'}
+
+// ---- buscador con sugerencias
+const norm=s=>s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'');
+function find(q){const w=norm(q).split(/\s+/).filter(Boolean);return PRODUCTS.filter(p=>w.every(x=>norm(p.n+' '+p.m+' '+CAT[p.c].n).includes(x)))}
+$('#q').oninput=e=>{const q=e.target.value.trim(),s=$('#sug');if(q.length<2){s.style.display='none';return}
+  const r=find(q).slice(0,6);s.innerHTML=r.length?r.map(p=>`<a href="#/p/${p.id}" onclick="$('#sug').style.display='none'">${img(p)}<span>${p.n}<br><b style="color:var(--pri)">${money(unit(p))}</b></span></a>`).join('')+`<a href="#/buscar/${encodeURIComponent(q)}" onclick="$('#sug').style.display='none'"><b>Ver todos los resultados (${find(q).length}) →</b></a>`:'<a>Sin resultados</a>';s.style.display='block'};
+$('#q').onkeydown=e=>{if(e.key==='Enter')buscar()};document.addEventListener('click',e=>{if(!e.target.closest('.search'))$('#sug').style.display='none'});
+function buscar(){const q=$('#q').value.trim();if(q){location.hash='#/buscar/'+encodeURIComponent(q);$('#sug').style.display='none'}}
+
+// ---- carrito
+function openCart(){drawCart();$('#drawer').classList.add('on')}function closeCart(){$('#drawer').classList.remove('on')}
+function drawCart(){const T=totals();
+  $('#cartbd').innerHTML=T.items.length?T.items.map(i=>`<div class="li">${img(i.p)}<div><b style="font-size:14px">${i.p.n}</b><br><small>${money(i.u)} c/u${i.u<i.p.price?` · <span style="color:var(--ok)">ahorras ${money((i.p.price-i.u)*i.q)}</span>`:''}</small><br>${qtyCtl(i.p.id,i.q)}</div><b>${money(i.s)}</b></div>`).join(''):'<p class="center muted" style="padding:40px 0">Tu carrito está vacío 🛒</p>';
+  $('#cartft').innerHTML=T.items.length?`${freeBar(T)}<div class="row"><span>Subtotal</span><b>${money(T.sub)}</b></div><div class="row"><span>Envío</span><b>${S.ent.modo==='recojo'?'Recojo gratis':T.env?money(T.env):'GRATIS'}</b></div>${T.ahorro>0?`<div class="row" style="color:var(--ok)"><span>Ahorro por volumen/ofertas</span><b>−${money(T.ahorro)}</b></div>`:''}<div class="row tot"><span>Total</span><span>${money(T.tot)}</span></div>
+  <button class="btn" style="width:100%;margin-top:8px" ${T.ok?'':'disabled'} onclick="closeCart();location.hash='#/checkout'">Ir a pagar</button>`:''}
+function freeBar(T){if(T.min&&T.sub<T.min)return`<div class="note w">🏪 Pedido mínimo de bodega: te faltan ${money(T.min-T.sub)}</div><div class="prog"><i style="width:${T.sub/T.min*100}%"></i></div>`;
+  if(S.ent.modo==='delivery'&&T.z.gratis){return T.sub>=T.z.gratis?'<div class="note">🎉 ¡Tienes envío GRATIS!</div>':`<div class="note">🚚 Agrega ${money(T.z.gratis-T.sub)} más para envío GRATIS</div><div class="prog"><i style="width:${T.sub/T.z.gratis*100}%"></i></div>`}
+  return S.ent.modo==='delivery'?`<div class="note">🚚 Envío a ${T.z.n}: ${money(T.z.costo)}</div>`:''}
+
+// ---- modales
+function M(h){$('#mbody').innerHTML=h;$('#modal').classList.add('on')}function closeM(){$('#modal').classList.remove('on')}
+function entrega(){M(`<h2 style="margin-top:0">¿Cómo quieres recibir tu pedido?</h2><div class="opt"><button class="${S.ent.modo==='delivery'?'on':''}" onclick="S.ent.modo='delivery';entrega()">🚚<br>Delivery</button><button class="${S.ent.modo==='recojo'?'on':''}" onclick="S.ent.modo='recojo';entrega()">🏬<br>Recojo en tienda</button></div>
+  ${S.ent.modo==='delivery'?`<div class="f"><label>¿A dónde lo llevamos?<select id="zsel">${S.zonas.map(z=>`<option value="${z.id}" ${z.id===S.ent.zona?'selected':''}>${z.n} — ${money(z.costo)}${z.gratis?` (gratis desde S/${z.gratis})`:''}</option>`).join('')}</select></label><small class="muted">Repartimos hasta Rioja. ¿Tu zona no aparece? Escríbenos por WhatsApp.</small></div>`:'<p>📍 Super Mayorista Jhovin, Nueva Cajamarca. Listo en 2 horas. Sin costo.</p>'}
+  <button class="btn" style="width:100%;margin-top:14px" onclick="if($('#zsel'))S.ent.zona=$('#zsel').value;save();hdr();closeM();route(true)">Confirmar</button>`)}
+function cuenta(){if(S.user)return M(`<h2 style="margin-top:0">Hola, ${S.user.nombre}</h2><p>Tipo de cuenta: <b>${S.user.tipo==='bodega'?'🏪 Bodega aprobada':S.user.tipo==='admin'?'⚙️ Administrador':'Cliente final'}</b></p><div class="f"><a class="btn o" href="#/pedidos" onclick="closeM()">Mis pedidos</a>${S.user.tipo==='admin'?'<a class="btn" href="#/admin" onclick="closeM()">Panel del negocio</a>':''}<button class="btn y" onclick="S.user=null;save();hdr();closeM();route(true)">Cerrar sesión</button></div>`);
+  M(`<h2 style="margin-top:0">Ingresa a tu cuenta</h2><div class="f"><label>Correo o celular<input placeholder="tu@correo.com"></label><label>Contraseña<input type="password" placeholder="••••••••"></label>
+  <button class="btn" onclick="login('publico')">Ingresar</button><button class="btn o" onclick="toast('Código enviado por WhatsApp (demo)')">Ingresar con código por WhatsApp</button></div>
+  <p class="center muted" style="margin:14px 0 6px">— Accesos rápidos de la demo —</p><div class="f"><button class="btn y" onclick="login('publico')">👤 Cliente final</button><button class="btn y" onclick="login('bodega')">🏪 Bodega aprobada</button><button class="btn y" onclick="login('admin')">⚙️ Dueño / administrador</button></div>
+  <p class="center">¿Tienes una bodega? <a href="#/bodega" onclick="closeM()" style="color:var(--pri);font-weight:900">Solicita tu cuenta mayorista</a></p>`)}
+function login(t){S.user={tipo:t,nombre:t==='bodega'?'Bodega San Martín':t==='admin'?'Jhovin Admin':'María Torres'};save();hdr();closeM();toast(t==='bodega'?'Precios de bodega activados':'Bienvenido');route(true)}
+
+// ---- vistas
+const slides=[['#d7141a,#7a0a0e','Precios de mayorista<br>para tu bodega','Mientras más compras, menos pagas. Escalas por volumen en todo el catálogo.','🏪','#/bodega','Quiero ser bodega'],
+  ['#0b8a3e,#064d22','Envío GRATIS<br>desde S/300','En todo el radio urbano de Nueva Cajamarca. Recojo en tienda sin costo.','🚚','#/ofertas','Ver ofertas'],
+  ['#f5c400,#e35d0e','Cerveza San Juan<br>para la temporada','Six packs y cajas al mejor precio de la zona.','🍺','#/c/cervezas','Comprar'],
+  ['#1e5aa8,#0b2c5a','Arroz y azúcar<br>por saco','Abastece tu negocio con sacos de 50 kg.','🍚','#/c/abarrotes','Ver abarrotes']];
+let sl=0,slT;
+function home(){const of=PRODUCTS.filter(p=>p.oferta&&p.stock),top=PRODUCTS.filter(p=>p.stock).sort((a,b)=>b.stock-a.stock);
+  app.innerHTML=`<div class="hero">${slides.map((s,i)=>`<div class="slide ${i===sl?'on':''}" style="background:linear-gradient(110deg,${s[0]})"><div><h2>${s[1]}</h2><p>${s[2]}</p><a class="btn y" href="${s[4]}">${s[5]}</a></div><div class="big">${s[3]}</div></div>`).join('')}<div class="dots">${slides.map((_,i)=>`<b class="${i===sl?'on':''}" onclick="goSl(${i})"></b>`).join('')}</div></div>
+  <div class="circles">${CATS.map(c=>`<a href="#/c/${c[0]}"><span>${c[2]}</span>${c[1]}</a>`).join('')}</div>
+  <h3 class="sec">🔥 Ofertas de la semana <a href="#/ofertas">Ver todo →</a></h3><div class="rail">${of.slice(0,12).map(card).join('')}</div>
+  <div class="banners"><a class="bn" href="#/bodega" style="background:linear-gradient(120deg,#1b1b1b,#444)"><h4>¿Tienes bodega o minimarket?</h4><p>Regístrate, te aprobamos y compras a precio mayorista. Pedido mínimo S/500.</p><span class="em">🏪</span></a>
+  <a class="bn" href="#/envios" style="background:linear-gradient(120deg,#0b8a3e,#13b257)"><h4>Llegamos hasta Rioja</h4><p>Ucrania, Jerusalén, Yuracyacu, Naranjos y más. Mira las tarifas.</p><span class="em">🛵</span></a>
+  <a class="bn" href="#/c/limpieza" style="background:linear-gradient(120deg,#1e5aa8,#4f8be0)"><h4>Limpieza del hogar</h4><p>Detergentes, lejía y papel por caja.</p><span class="em">🧴</span></a></div>
+  <h3 class="sec">⭐ Lo más vendido</h3><div class="rail">${top.slice(0,14).map(card).join('')}</div>
+  <h3 class="sec">🏷️ Nuestras marcas</h3><div class="brands">${[...new Set(PRODUCTS.map(p=>p.m))].slice(0,24).map(m=>`<a href="#/buscar/${encodeURIComponent(m)}">${m}</a>`).join('')}</div>
+  <h3 class="sec">🧺 Para tu despensa</h3><div class="grid">${PRODUCTS.filter(p=>['abarrotes','aceites','conservas','lacteos'].includes(p.c)).slice(0,10).map(card).join('')}</div>`;
+  clearInterval(slT);slT=setInterval(()=>goSl((sl+1)%slides.length),5000)}
+function goSl(i){sl=i;document.querySelectorAll('.slide').forEach((s,j)=>s.classList.toggle('on',j===i));document.querySelectorAll('.dots b').forEach((s,j)=>s.classList.toggle('on',j===i))}
+
+let F={marcas:[],max:0,ord:'rel',oferta:false};
+function listado(titulo,list){const marcas=[...new Set(list.map(p=>p.m))].sort();let r=list.filter(p=>(!F.marcas.length||F.marcas.includes(p.m))&&(!F.max||unit(p)<=F.max)&&(!F.oferta||p.oferta));
+  if(F.ord==='asc')r.sort((a,b)=>unit(a)-unit(b));if(F.ord==='desc')r.sort((a,b)=>unit(b)-unit(a));if(F.ord==='az')r.sort((a,b)=>a.n.localeCompare(b.n));
+  app.innerHTML=`<div class="bar"><h1>${titulo}</h1><span class="muted">${r.length} productos</span><select onchange="F.ord=this.value;route(true)" aria-label="Ordenar"><option value="rel">Relevancia</option><option value="asc" ${F.ord==='asc'?'selected':''}>Menor precio</option><option value="desc" ${F.ord==='desc'?'selected':''}>Mayor precio</option><option value="az" ${F.ord==='az'?'selected':''}>A–Z</option></select></div>
+  <div class="layout"><aside class="filters"><h4 style="margin-top:0">Marca</h4>${marcas.map(m=>`<label><input type="checkbox" ${F.marcas.includes(m)?'checked':''} onchange="tg('${m.replace(/'/g,"\\'")}')"> ${m}</label>`).join('')}
+  <h4>Precio máximo</h4><input type="range" min="0" max="200" step="5" value="${F.max||200}" oninput="F.max=+this.value>=200?0:+this.value;this.nextElementSibling.textContent=F.max?'Hasta S/'+F.max:'Todos'" onchange="route(true)" style="width:100%"><small>${F.max?'Hasta S/'+F.max:'Todos'}</small>
+  <h4>Promociones</h4><label><input type="checkbox" ${F.oferta?'checked':''} onchange="F.oferta=this.checked;route(true)"> Solo ofertas</label></aside>
+  <div class="grid">${r.map(card).join('')||'<p>No hay productos con esos filtros.</p>'}</div></div>`}
+function tg(m){F.marcas=F.marcas.includes(m)?F.marcas.filter(x=>x!==m):[...F.marcas,m];route(true)}
+
+function pdp(id){const p=BYID[id];if(!p)return home();const t=tipo(),q=S.cart[p.id]||0,rel=PRODUCTS.filter(x=>x.c===p.c&&x.id!==p.id).slice(0,8);
+  app.innerHTML=`<p class="muted" style="margin-top:14px"><a href="#/">Inicio</a> › <a href="#/c/${p.c}">${CAT[p.c].n}</a> › ${p.n}</p><div class="pdp"><div class="ph">${img(p)}</div><div>
+  <span class="br muted" style="font-weight:900">${p.m.toUpperCase()}</span><h1>${p.n}</h1><small class="muted">Código: ${p.sku} · ${p.stock?`<span style="color:var(--ok);font-weight:800">${p.stock>20?'En stock':'Quedan '+p.stock}</span>`:'<b style="color:var(--pri)">Agotado</b>'}</small>
+  <div class="pr" style="font-size:32px;margin:12px 0">${money(unit(p,Math.max(q,1)))}${p.oferta&&t==='publico'?`<s>${money(p.price)}</s>`:''}</div>
+  <h4>${t==='bodega'?'🏪 Tus precios de bodega por volumen':'💰 Precio por volumen'}</h4>
+  ${t==='publico'&&p.oferta?'<p class="muted">Producto en oferta: precio único.</p>':`<table class="t"><tr><th>Cantidad</th><th>Precio c/u</th><th>Ahorro</th></tr>${TIERS[t].map(([m],i,a)=>`<tr class="${q>=m&&(!a[i+1]||q<a[i+1][0])?'on':''}"><td>${m}${a[i+1]?'–'+(a[i+1][0]-1):'+'} und</td><td>${money(unit(p,m))}</td><td>${Math.round((1-unit(p,m)/p.price)*100)}%</td></tr>`).join('')}</table>`}
+  ${t==='publico'?'<p class="note">¿Compras para tu negocio? <a href="#/bodega"><u>Regístrate como bodega</u></a> y accede a precios mayoristas.</p>':''}
+  <p class="muted">Caja de ${p.caja} unidades · <a style="color:var(--pri);font-weight:800;cursor:pointer" onclick="S.cart['${p.id}']=Math.min(${p.stock},(S.cart['${p.id}']||0)+${p.caja});save();hdr();route(true);toast('Caja agregada')">+ Agregar caja completa</a></p>
+  <div class="add" style="max-width:320px">${p.stock?(q?qtyCtl(p.id,q):`<button class="btn" onclick="add('${p.id}',1)">Agregar al carrito</button>`):'<button class="btn o" onclick="toast(\'Te avisaremos por WhatsApp\')">Avísame cuando llegue</button>'}</div>
+  </div></div><h3 class="sec">También te puede interesar</h3><div class="rail">${rel.map(card).join('')}</div>`}
+
+function checkout(){const T=totals();if(!T.items.length){location.hash='#/';return}
+  const d=new Date(),dias=[0,1,2].map(i=>{const x=new Date(d);x.setDate(d.getDate()+i);return x.toLocaleDateString('es-PE',{weekday:'short',day:'numeric'})});
+  app.innerHTML=`<div class="bar"><h1>Finalizar compra</h1></div><div class="co"><div>
+  ${S.user?`<div class="box2"><b>👤 ${S.user.nombre}</b> · ${S.user.tipo==='bodega'?'<span class="tag">Bodega</span>':'Cliente final'}</div>`:`<div class="box2"><h3>1. Tus datos</h3><p class="muted" style="margin-top:0">Compra como invitado o <a style="color:var(--pri);font-weight:800;cursor:pointer" onclick="cuenta()">inicia sesión</a>.</p><div class="f two"><label>Nombre completo<input id="cn" required></label><label>Celular (WhatsApp)<input id="ct" inputmode="tel" required></label><label>DNI (opcional)<input inputmode="numeric"></label><label>Correo (opcional)<input type="email"></label></div></div>`}
+  <div class="box2"><h3>2. Entrega</h3><div class="opt"><button class="${S.ent.modo==='delivery'?'on':''}" onclick="S.ent.modo='delivery';save();hdr();checkout()">🚚 Delivery</button><button class="${S.ent.modo==='recojo'?'on':''}" onclick="S.ent.modo='recojo';save();hdr();checkout()">🏬 Recojo en tienda</button></div>
+  ${S.ent.modo==='delivery'?`<div class="f"><label>Zona<select onchange="S.ent.zona=this.value;save();hdr();checkout()">${S.zonas.map(z=>`<option value="${z.id}" ${z.id===S.ent.zona?'selected':''}>${z.n} — ${money(z.costo)}</option>`).join('')}</select></label><label>Dirección y referencia<input id="cd" placeholder="Jr. ... / frente a ..."></label><button class="btn o sm" onclick="toast('Ubicación GPS capturada (demo)')">📍 Usar mi ubicación actual</button></div>`:''}
+  <h4>Horario</h4><div class="slots">${dias.flatMap((dd,i)=>['8–11 a.m.','11–2 p.m.','3–6 p.m.','6–9 p.m.'].map((h,j)=>`<label><input type="radio" name="slot" ${i+j===0?'checked':''}> ${dd} ${h}</label>`)).join('')}</div></div>
+  <div class="box2"><h3>3. Pago</h3><div class="pay">${[['mp','💳 Tarjeta (Mercado Pago)'],['yape','🟣 Yape'],['plin','🔵 Plin'],['ce','💵 Contra entrega'],['tr','🏦 Transferencia'],...(tipo()==='bodega'?[['cr','📒 Crédito bodega (7 días)']]:[])].map(([v,l],i)=>`<label><input type="radio" name="pay" value="${v}" ${i===0?'checked':''}> ${l}</label>`).join('')}</div>
+  <p class="muted" style="font-size:13px">Yape/Plin: mostramos el QR del negocio y el pedido se confirma al validar el pago. Tarjeta: pago seguro con Mercado Pago.</p>
+  <label style="font-size:14px"><input type="checkbox" checked> Quiero recibir el estado de mi pedido por WhatsApp</label></div></div>
+  <aside><div class="box2"><h3>Resumen</h3>${T.items.map(i=>`<div class="row" style="font-size:14px"><span>${i.q} × ${i.p.n}</span><b>${money(i.s)}</b></div>`).join('')}<hr style="border:0;border-top:1px solid var(--line)">
+  ${freeBar(T)}<div class="row"><span>Subtotal</span><b>${money(T.sub)}</b></div><div class="row"><span>Envío</span><b>${S.ent.modo==='recojo'?'Gratis':T.env?money(T.env):'GRATIS'}</b></div>${T.ahorro>0?`<div class="row" style="color:var(--ok)"><span>Ahorro</span><b>−${money(T.ahorro)}</b></div>`:''}<div class="row tot"><span>Total</span><span>${money(T.tot)}</span></div>
+  <div class="f" style="margin-top:8px"><input placeholder="¿Cupón de descuento?"></div>
+  <button class="btn" style="width:100%;margin-top:10px" ${T.ok?'':'disabled'} onclick="pagar()">Pagar ${money(T.tot)}</button><p class="muted center" style="font-size:12px">🔒 Pago seguro · Se emite ticket de compra</p></div></aside></div>`}
+function pagar(){const T=totals();if(!S.user&&(!$('#cn').value.trim()||!$('#ct').value.trim()))return toast('Completa nombre y celular');
+  const pay=document.querySelector('input[name=pay]:checked').value;
+  const go=()=>{const o={id:'JH-'+String(10421+S.orders.length),f:new Date().toLocaleString('es-PE'),cli:S.user?.nombre||$('#cn').value,tipo:tipo(),items:T.items.map(i=>({n:i.p.n,q:i.q,u:i.u})),sub:T.sub,env:T.env,tot:T.tot,modo:S.ent.modo,zona:T.z.n,pay,est:pay==='ce'||pay==='cr'?1:2};
+    S.orders.unshift(o);T.items.forEach(i=>i.p.stock-=i.q);S.cart={};save();hdr();closeM();location.hash='#/ticket/'+o.id};
+  if(pay==='yape'||pay==='plin')M(`<h2 style="margin-top:0">${pay==='yape'?'🟣 Paga con Yape':'🔵 Paga con Plin'}</h2><div style="width:200px;height:200px;margin:10px auto;background:repeating-conic-gradient(#111 0 25%,#fff 0 50%) 0 0/20px 20px;border:8px solid #fff;outline:2px solid #111"></div><p class="center">Escanea el QR o yapea al <b>9XX XXX XXX</b> por <b>${money(T.tot)}</b></p><button class="btn" style="width:100%" onclick="this.disabled=true;this.textContent='Validando pago…';setTimeout(()=>go(),1200)">Ya pagué</button>`);
+  else if(pay==='mp')M(`<h2 style="margin-top:0">💳 Mercado Pago</h2><p class="muted">Formulario de tarjeta embebido (en la versión real: Payment Brick de Mercado Pago).</p><div class="f"><label>Número de tarjeta<input value="5031 7557 3453 0604" readonly></label><div class="two"><label>Vence<input value="11/30" readonly></label><label>CVV<input value="123" readonly></label></div></div><button class="btn" style="width:100%;margin-top:12px" onclick="this.disabled=true;this.textContent='Procesando…';setTimeout(()=>go(),1400)">Pagar ${money(T.tot)}</button><p class="muted center" style="font-size:12px">Datos de tarjeta de PRUEBA</p>`);
+  else go()}
+const EST=['Recibido','Por confirmar pago','Pagado','Preparando','En camino','Entregado'];
+function ticket(id){const o=S.orders.find(x=>x.id===id);if(!o)return home();
+  app.innerHTML=`<div class="center" style="margin-top:20px"><div style="font-size:54px">✅</div><h1 style="margin:4px 0">¡Gracias por tu compra!</h1><p class="muted">Te avisaremos por WhatsApp cada cambio de estado.</p></div>${steps(o)}
+  <div class="ticket"><div class="c"><b>SUPER MAYORISTA JHOVIN</b><br>Todo para tu negocio<br>Nueva Cajamarca - San Martín</div><hr><div>TICKET DE COMPRA N° ${o.id}<br>Fecha: ${o.f}<br>Cliente: ${o.cli}${o.tipo==='bodega'?' (BODEGA)':''}<br>Entrega: ${o.modo==='recojo'?'Recojo en tienda':'Delivery - '+o.zona}<br>Pago: ${o.pay.toUpperCase()}</div><hr>
+  ${o.items.map(i=>`<div>${i.n}<div class="row"><span>${i.q} x ${i.u.toFixed(2)}</span><span>${(i.q*i.u).toFixed(2)}</span></div></div>`).join('')}<hr><div class="row"><span>SUBTOTAL</span><span>${o.sub.toFixed(2)}</span></div><div class="row"><span>ENVÍO</span><span>${o.env.toFixed(2)}</span></div><div class="row"><b>TOTAL S/</b><b>${o.tot.toFixed(2)}</b></div><hr><div class="c" style="font-size:11px">Documento interno, no es comprobante tributario.<br>Solicite su boleta o factura en tienda.</div></div>
+  <div class="center"><button class="btn o" onclick="print()">🖨️ Imprimir / PDF</button> <a class="btn" href="#/">Seguir comprando</a></div>`}
+const steps=o=>`<div class="steps">${EST.map((e,i)=>`<div class="${i<=o.est?'on':''}">${e}</div>`).join('')}</div>`;
+function pedidos(){app.innerHTML=`<div class="bar"><h1>📦 Mis pedidos</h1></div><div class="box2"><div class="f two"><label>Seguir un pedido<input id="tk" placeholder="N° de pedido, ej. JH-10421"></label><label>&nbsp;<button class="btn" onclick="location.hash='#/ticket/'+$('#tk').value.trim().toUpperCase()">Buscar</button></label></div></div>
+  ${S.orders.length?S.orders.map(o=>`<div class="box2"><div class="row"><b>${o.id}</b><span class="muted">${o.f}</span></div>${steps(o)}<div class="row"><span>${o.items.length} productos · ${o.modo==='recojo'?'Recojo':'Delivery '+o.zona}</span><b>${money(o.tot)}</b></div><a class="btn sm o" href="#/ticket/${o.id}">Ver ticket</a> ${S.user?.tipo==='bodega'?`<button class="btn sm" onclick="recompra('${o.id}')">🔁 Volver a pedir</button>`:''}</div>`).join(''):'<p class="muted center">Aún no tienes pedidos.</p>'}`}
+function recompra(id){const o=S.orders.find(x=>x.id===id);o.items.forEach(i=>{const p=PRODUCTS.find(x=>x.n===i.n);if(p)S.cart[p.id]=(S.cart[p.id]||0)+i.q});save();hdr();openCart();toast('Pedido repetido en el carrito')}
+
+function bodega(){app.innerHTML=`<div class="co"><div class="box2"><h1 style="margin-top:0">🏪 Solicita tu cuenta de Bodega</h1><p>Compra a <b>precio mayorista</b> con escalas por volumen, crédito para clientes frecuentes y reparto programado. Pedido mínimo <b>S/500</b>.</p>
+  <form class="f" onsubmit="event.preventDefault();solicitar(this)"><div class="two"><label>Nombre del negocio<input name="neg" required></label><label>RUC<input name="ruc" required pattern="(10|20)\\d{9}" title="11 dígitos, inicia con 10 o 20" inputmode="numeric"></label>
+  <label>DNI del titular<input name="dni" required pattern="\\d{8}" inputmode="numeric"></label><label>Celular (WhatsApp)<input name="tel" required pattern="9\\d{8}" inputmode="tel"></label></div>
+  <label>Dirección del negocio<input name="dir" required></label><label>Zona<select name="zona">${S.zonas.map(z=>`<option value="${z.id}">${z.n}</option>`).join('')}</select></label>
+  <label>Tipo de negocio<select><option>Bodega</option><option>Minimarket</option><option>Restaurante</option><option>Distribuidor</option></select></label>
+  <label>Foto del local o de la licencia (opcional)<input type="file" accept="image/*"></label><label style="display:flex;gap:6px;font-weight:600"><input type="checkbox" required> Acepto los términos y la política de privacidad</label><button class="btn">Enviar solicitud</button></form></div>
+  <aside><div class="box2"><h3>¿Cómo funciona?</h3><ol style="padding-left:18px;line-height:1.8"><li>Llenas el formulario</li><li>Revisamos tus datos (24–48 h)</li><li>Te avisamos por WhatsApp</li><li>Ingresas y ves tus precios de bodega</li></ol></div><div class="box2"><h3>Beneficios</h3>✅ Hasta 19% menos que precio público<br>✅ Recompra en 1 clic<br>✅ Crédito a 7 días (previa evaluación)<br>✅ Reparto hasta Rioja</div></aside></div>`}
+function solicitar(f){const d=Object.fromEntries(new FormData(f));S.sols.unshift({id:'S-'+String(S.sols.length+1).padStart(3,'0'),...d,est:'pendiente',f:new Date().toISOString().slice(0,10)});save();
+  app.innerHTML='<div class="box2 center" style="margin-top:30px"><div style="font-size:54px">📨</div><h1>¡Solicitud enviada!</h1><p>Revisaremos tus datos y te avisaremos por WhatsApp en 24–48 horas.</p><p class="muted">Demo: entra como administrador para aprobarla en el panel.</p><a class="btn" href="#/admin/bodegas">Ver en el panel</a></div>'}
+
+function envios(){app.innerHTML=`<div class="bar"><h1>🚚 Zonas y tarifas de envío</h1></div><div class="box2"><table class="t"><tr><th>Zona</th><th>Distancia aprox.</th><th>Costo</th></tr>${S.zonas.map(z=>`<tr><td>${z.n}</td><td>${z.km?z.km+' km':'Urbano'}</td><td><b>${money(z.costo)}</b>${z.gratis?` · <span style="color:var(--ok)">GRATIS desde S/${z.gratis}</span>`:''}</td></tr>`).join('')}</table><p class="muted">Recojo en tienda: gratis. Bodegas: pedido mínimo S/500. No llegamos más allá de Rioja.</p></div>`}
+
+// ---- panel del negocio (demo)
+function admin(tab='resumen'){if(S.user?.tipo!=='admin'){login('admin');return}
+  const tabs=[['resumen','📊 Resumen'],['pedidos','📦 Pedidos'],['bodegas','🏪 Bodegas'],['productos','🏷️ Productos y precios'],['zonas','🚚 Zonas de envío'],['sync','🔄 SiempreSoft'],['marketing','📣 Banners y ofertas']];
+  const pend=S.sols.filter(s=>s.est==='pendiente').length;
+  let h='';
+  if(tab==='resumen'){const v=[820,1240,960,1530,2100,2680,1900];h=`<div class="kpis"><div class="kpi"><small>Ventas web hoy</small><b>${money(1900+S.orders.reduce((a,o)=>a+o.tot,0))}</b><small style="color:var(--ok)">▲ 18% vs ayer</small></div><div class="kpi"><small>Pedidos hoy</small><b>${23+S.orders.length}</b></div><div class="kpi"><small>Ticket promedio</small><b>S/ 96.40</b></div><div class="kpi"><small>Bodegas activas</small><b>${41+S.sols.filter(s=>s.est==='aprobada').length}</b><small>${pend} por aprobar</small></div></div>
+    <div class="box2" style="margin-top:14px"><h3>Ventas web últimos 7 días</h3><div class="bars">${v.map((x,i)=>`<div style="height:${x/28}%"><span>${['Jue','Vie','Sáb','Dom','Lun','Mar','Mié'][i]}</span></div>`).join('')}</div><br></div>
+    <div class="kpis"><div class="kpi"><small>Ventas bodegas vs público</small><b>62% / 38%</b></div><div class="kpi"><small>Productos agotados</small><b>${PRODUCTS.filter(p=>!p.stock).length}</b></div><div class="kpi"><small>Carritos abandonados</small><b>7</b><small>Recordar por WhatsApp</small></div></div>`}
+  if(tab==='pedidos')h=`<div class="box2"><table class="t"><tr><th>Pedido</th><th>Cliente</th><th>Entrega</th><th>Total</th><th>Estado</th></tr>${[...S.orders,{id:'JH-10418',cli:'Bodega Doña Rosa',tipo:'bodega',modo:'delivery',zona:'Nueva Cajamarca',tot:812.4,est:3},{id:'JH-10417',cli:'Carlos Ruiz',tipo:'publico',modo:'recojo',zona:'',tot:96.5,est:5}].map((o,k)=>`<tr><td><b>${o.id}</b></td><td>${o.cli}${o.tipo==='bodega'?' <span class="tag">Bodega</span>':''}</td><td>${o.modo==='recojo'?'Recojo':o.zona}</td><td>${money(o.tot)}</td><td><select onchange="${k<S.orders.length?`S.orders[${k}].est=+this.value;save();`:''}toast('Cliente notificado por WhatsApp')">${EST.map((e,i)=>`<option value="${i}" ${i===o.est?'selected':''}>${e}</option>`).join('')}</select></td></tr>`).join('')}</table></div>`;
+  if(tab==='bodegas')h=`<div class="box2"><h3>Solicitudes de bodega</h3><table class="t"><tr><th>Negocio</th><th>RUC / DNI</th><th>Zona</th><th>Fecha</th><th>Estado</th><th></th></tr>${S.sols.map((s,i)=>`<tr><td><b>${s.neg}</b><br><small class="muted">${s.dir} · ${s.tel}</small></td><td>${s.ruc}<br><small>${s.dni}</small></td><td>${(S.zonas.find(z=>z.id===s.zona)||{}).n||''}</td><td>${s.f}</td><td><span class="st ${s.est==='aprobada'?'ok':s.est==='rechazada'?'r':'w'}">${s.est}</span></td><td>${s.est==='pendiente'?`<button class="btn sm" onclick="S.sols[${i}].est='aprobada';save();admin('bodegas');toast('Aprobada · aviso enviado por WhatsApp')">Aprobar</button> <button class="btn sm o" onclick="S.sols[${i}].est='rechazada';save();admin('bodegas')">Rechazar</button>`:''}</td></tr>`).join('')}</table><p class="muted">Validación automática de RUC con SUNAT (opcional en la versión final).</p></div>`;
+  if(tab==='productos')h=`<div class="box2"><h3>Catálogo (${PRODUCTS.length} en demo · 3.000+ en producción desde SiempreSoft)</h3><table class="t"><tr><th>Código</th><th>Producto</th><th>Stock</th><th>Público</th><th>Bodega</th><th>Bodega 48+</th><th>Web</th></tr>${PRODUCTS.slice(0,25).map(p=>`<tr><td><small>${p.sku}</small></td><td>${p.n}</td><td>${p.stock||'<span class="st r">0</span>'}</td><td>${money(p.price)}</td><td>${money(unit(p,1,'bodega'))}</td><td>${money(unit(p,48,'bodega'))}</td><td><input type="checkbox" checked aria-label="Visible en web"></td></tr>`).join('')}</table><p class="muted">Precios, escalas y stock se sincronizan desde la caja. Desde aquí solo se gestionan fotos, descripción y visibilidad web.</p></div>`;
+  if(tab==='zonas')h=`<div class="box2"><h3>Zonas de envío</h3><table class="t"><tr><th>Zona</th><th>Costo S/</th><th>Gratis desde S/</th></tr>${S.zonas.map((z,i)=>`<tr><td>${z.n}</td><td><input type="number" step="0.5" value="${z.costo}" style="width:90px" onchange="S.zonas[${i}].costo=+this.value;save();toast('Tarifa actualizada')"></td><td><input type="number" value="${z.gratis||''}" placeholder="—" style="width:90px" onchange="S.zonas[${i}].gratis=+this.value||0;save();toast('Actualizado')"></td></tr>`).join('')}</table><p class="muted">Tarifas estimadas para la demo, se ajustan con el dueño. Opcional: cálculo por distancia con mapa.</p></div>`;
+  if(tab==='sync')h=`<div class="kpis"><div class="kpi"><small>Estado</small><b style="color:var(--ok)">● Conectado</b><small>SiempreSoft ERP (base de datos)</small></div><div class="kpi"><small>Última sincronización</small><b id="ls">hace 3 min</b><small>Automática cada 5 min</small></div><div class="kpi"><small>Productos sincronizados</small><b>3.214</b></div><div class="kpi"><small>Pedidos web enviados a caja</small><b>${23+S.orders.length}</b></div></div>
+    <div class="box2" style="margin-top:14px"><h3>Flujo de datos</h3><p>🏪 <b>SiempreSoft (caja)</b> → stock, precios, escalas por volumen, productos nuevos → 🌐 <b>Web</b><br>🌐 <b>Web</b> → pedidos pagados, clientes, reservas de stock → 🏪 <b>SiempreSoft</b> (para facturar boleta/factura en caja)</p>
+    <button class="btn" onclick="syncNow()">🔄 Sincronizar ahora</button><div class="log" id="log" style="margin-top:12px">[08:00:02] Sync OK · 3.214 productos · 12 precios cambiados · 48 stocks actualizados\n[08:05:01] Sync OK · 0 cambios\n[08:10:03] Pedido JH-10418 enviado a caja ✔</div></div>`;
+  if(tab==='marketing')h=`<div class="box2"><h3>Banners de portada</h3>${slides.map(s=>`<div class="row" style="align-items:center"><span>${s[3]} ${s[1].replace('<br>',' ')}</span><span><button class="btn sm o">Editar</button></span></div>`).join('')}<button class="btn sm" style="margin-top:10px">+ Nuevo banner</button></div><div class="box2"><h3>Promociones</h3><p>🔥 ${PRODUCTS.filter(p=>p.oferta).length} productos en oferta · Cupones · Combos (2x1, lleva 3 paga 2) · Precio especial por fecha</p><button class="btn sm">+ Crear promoción</button></div>`;
+  app.innerHTML=`<div class="bar"><h1>⚙️ Panel del negocio</h1><span class="tag">DEMO</span></div><div class="adm"><nav>${tabs.map(([k,l])=>`<a href="#/admin/${k}" class="${k===tab?'on':''}">${l}${k==='bodegas'&&pend?` <span class="badge" style="position:static">${pend}</span>`:''}</a>`).join('')}</nav><div>${h}</div></div>`}
+function syncNow(){const l=$('#log');l.textContent+='\n['+new Date().toLocaleTimeString('es-PE')+'] Conectando a SiempreSoft…';setTimeout(()=>{l.textContent+='\n['+new Date().toLocaleTimeString('es-PE')+'] Sync OK · 3.214 productos · 3 precios cambiados · 17 stocks actualizados';$('#ls').textContent='ahora';l.scrollTop=1e9},1300)}
+
+function posibilidades(){const I=[['🔄','Sincronización con SiempreSoft','Stock, precios y escalas en tiempo real desde la caja. Los pedidos web llegan a caja para emitir boleta o factura.','Incluido'],
+  ['💳','Mercado Pago, Yape y Plin','Tarjetas con Mercado Pago, QR de Yape/Plin con validación, contra entrega y transferencia.','Incluido'],
+  ['💬','WhatsApp automático','Confirmación de pedido, cambios de estado, aviso de aprobación de bodega y recordatorio de carrito abandonado.','Opcional'],
+  ['🤖','Bot de Telegram para el dueño','Alertas de pedidos nuevos, bodegas por aprobar y stock bajo en el celular del dueño.','Opcional'],
+  ['📱','App instalable (PWA)','La web se instala como app en el celular, con ícono propio y notificaciones.','Opcional'],
+  ['🧾','Facturación electrónica','Boleta/factura desde la web vía SiempreSoft o un proveedor OSE/PSE.','Fase 2'],
+  ['📒','Crédito para bodegas','Línea de crédito por bodega, saldo, vencimientos y bloqueo automático por mora.','Opcional'],
+  ['🛵','App del repartidor','Lista de entregas del día, ruta en mapa, foto de entrega y cobro contra entrega.','Fase 2'],
+  ['🗺️','Envío por distancia con mapa','El cliente marca su casa en el mapa y el costo se calcula por km.','Opcional'],
+  ['🎯','Programa de puntos','Puntos por compra canjeables, niveles para bodegas frecuentes.','Fase 2'],
+  ['📊','Reportes avanzados','Lo más vendido por zona, bodegas top, horarios pico, productos sin rotación.','Incluido'],
+  ['🏬','Multi-sede','Si Jhovin abre otra tienda: stock y precios por sede desde el mismo panel.','Fase 2']];
+  app.innerHTML=`<div class="bar"><h1>🚀 Posibilidades e integraciones</h1></div><p class="muted">Lo que puede crecer la plataforma. Se definirá con el dueño qué entra en la entrega y qué en fases siguientes.</p><div class="ints">${I.map(i=>`<div class="int"><div class="e">${i[0]}</div><h4>${i[1]} <span class="st ${i[3]==='Incluido'?'ok':i[3]==='Opcional'?'w':''}">${i[3]}</span></h4><p>${i[2]}</p></div>`).join('')}</div>`}
+
+// ---- router
+function route(keep){const h=decodeURIComponent(location.hash.slice(2)),[r,a]=h.split('/');if(!keep)scrollTo(0,0);clearInterval(slT);
+  document.querySelectorAll('#catnav a').forEach(x=>x.classList.toggle('on',x.dataset.c===a&&r==='c'));
+  if(!keep&&r==='c')F={marcas:[],max:0,ord:'rel',oferta:false};
+  if(r==='c'&&CAT[a])return listado(CAT[a].e+' '+CAT[a].n,PRODUCTS.filter(p=>p.c===a));
+  if(r==='ofertas')return listado('🔥 Ofertas',PRODUCTS.filter(p=>p.oferta));
+  if(r==='buscar')return listado(`Resultados para “${a}”`,find(a||''));
+  if(r==='p')return pdp(a);if(r==='checkout')return checkout();if(r==='ticket')return ticket(a);if(r==='pedidos')return pedidos();
+  if(r==='bodega')return bodega();if(r==='envios')return envios();if(r==='admin')return admin(a||'resumen');if(r==='posibilidades')return posibilidades();
+  home()}
+addEventListener('hashchange',()=>route());hdr();route();
+if(!localStorage.getItem(KEY))setTimeout(entrega,600);
+</script>
+</body>
+</html>
