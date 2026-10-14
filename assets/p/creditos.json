@@ -1,0 +1,1048 @@
+[
+ {
+  "id": "P1001",
+  "origen": "ia_local",
+  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
+  "seed": 9001,
+  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+ },
+ {
+  "id": "P1002",
+  "origen": "off",
+  "codigo_off": "7755139002809",
+  "url_imagen": "https://images.openfoodfacts.org/images/products/775/513/900/2809/front_en.4.full.jpg",
+  "nombre_off": "Paisana extra",
+  "puntaje": 95.0,
+  "licencia": "CC BY-SA 3.0 · Open Food Facts contributors"
+ },
+ {
+  "id": "P1003",
+  "origen": "ia_local",
+  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
+  "seed": 9003,
+  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+ },
+ {
+  "id": "P1004",
+  "origen": "ia_local",
+  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
+  "seed": 8004,
+  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+ },
+ {
+  "id": "P1005",
+  "origen": "ia_local",
+  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
+  "seed": 8005,
+  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+ },
+ {
+  "id": "P1006",
+  "origen": "ia_local",
+  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
+  "seed": 8006,
+  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+ },
+ {
+  "id": "P1007",
+  "origen": "ia_local",
+  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
+  "seed": 9007,
+  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+ },
+ {
+  "id": "P1008",
+  "origen": "ia_local",
+  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
+  "seed": 9008,
+  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+ },
+ {
+  "id": "P1009",
+  "origen": "ia_local",
+  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
+  "seed": 9009,
+  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+ },
+ {
+  "id": "P1010",
+  "origen": "ia_local",
+  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
+  "seed": 8010,
+  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+ },
+ {
+  "id": "P1011",
+  "origen": "ia_local",
+  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
+  "seed": 9011,
+  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+ },
+ {
+  "id": "P1012",
+  "origen": "off",
+  "codigo_off": "7798316700532",
+  "url_imagen": "https://images.openfoodfacts.org/images/products/779/831/670/0532/front_fr.3.full.jpg",
+  "nombre_off": "Aceite vegetal",
+  "puntaje": 85.0,
+  "licencia": "CC BY-SA 3.0 · Open Food Facts contributors"
+ },
+ {
+  "id": "P1013",
+  "origen": "off",
+  "codigo_off": "7750243068048",
+  "url_imagen": "https://images.openfoodfacts.org/images/products/775/024/306/8048/front_es.3.full.jpg",
+  "nombre_off": "Aceite Vegetal Cocinero",
+  "puntaje": 100.0,
+  "licencia": "CC BY-SA 3.0 · Open Food Facts contributors"
+ },
+ {
+  "id": "P1014",
+  "origen": "ia_local",
+  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
+  "seed": 8014,
+  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+ },
+ {
+  "id": "P1015",
+  "origen": "ia_local",
+  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
+  "seed": 8015,
+  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+ },
+ {
+  "id": "P1016",
+  "origen": "off",
+  "codigo_off": "7750243044202",
+  "url_imagen": "https://images.openfoodfacts.org/images/products/775/024/304/4202/front_es.6.full.jpg",
+  "nombre_off": "Aceite Primor Corazón",
+  "puntaje": 70.0,
+  "licencia": "CC BY-SA 3.0 · Open Food Facts contributors"
+ },
+ {
+  "id": "P1017",
+  "origen": "ia_local",
+  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
+  "seed": 8017,
+  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+ },
+ {
+  "id": "P1018",
+  "origen": "off",
+  "codigo_off": "7772606000175",
+  "url_imagen": "https://images.openfoodfacts.org/images/products/777/260/600/0175/front_es.4.full.jpg",
+  "nombre_off": "Famosa",
+  "puntaje": 60.0,
+  "licencia": "CC BY-SA 3.0 · Open Food Facts contributors"
+ },
+ {
+  "id": "P1019",
+  "origen": "off",
+  "codigo_off": "7460193700218",
+  "url_imagen": "https://images.openfoodfacts.org/images/products/746/019/370/0218/front_en.3.full.jpg",
+  "nombre_off": "Dorina margarina light",
+  "puntaje": 80.0,
+  "licencia": "CC BY-SA 3.0 · Open Food Facts contributors"
+ },
+ {
+  "id": "P1020",
+  "origen": "off",
+  "codigo_off": "7750243286145",
+  "url_imagen": "https://images.openfoodfacts.org/images/products/775/024/328/6145/front_es.33.full.jpg",
+  "nombre_off": "Spaghetti",
+  "puntaje": 65.0,
+  "licencia": "CC BY-SA 3.0 · Open Food Facts contributors"
+ },
+ {
+  "id": "P1021",
+  "origen": "ia_local",
+  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
+  "seed": 8021,
+  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+ },
+ {
+  "id": "P1022",
+  "origen": "ia_local",
+  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
+  "seed": 8022,
+  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+ },
+ {
+  "id": "P1023",
+  "origen": "ia_local",
+  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
+  "seed": 8023,
+  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+ },
+ {
+  "id": "P1024",
+  "origen": "ia_local",
+  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
+  "seed": 8024,
+  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+ },
+ {
+  "id": "P1025",
+  "origen": "off",
+  "codigo_off": "7591123080015",
+  "url_imagen": "https://images.openfoodfacts.org/images/products/759/112/308/0015/front_es.3.full.jpg",
+  "nombre_off": "Harina Todo Uso",
+  "puntaje": 105.0,
+  "licencia": "CC BY-SA 3.0 · Open Food Facts contributors"
+ },
+ {
+  "id": "P1026",
+  "origen": "ia_local",
+  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
+  "seed": 8026,
+  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+ },
+ {
+  "id": "P1027",
+  "origen": "off",
+  "codigo_off": "7751158011969",
+  "url_imagen": "https://images.openfoodfacts.org/images/products/775/115/801/1969/front_es.3.full.jpg",
+  "nombre_off": "Filete De Atún En Aceite Vegetal x 140Gr",
+  "puntaje": 100.0,
+  "licencia": "CC BY-SA 3.0 · Open Food Facts contributors"
+ },
+ {
+  "id": "P1028",
+  "origen": "ia_local",
+  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
+  "seed": 8028,
+  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+ },
+ {
+  "id": "P1029",
+  "origen": "ia_local",
+  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
+  "seed": 8029,
+  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+ },
+ {
+  "id": "P1030",
+  "origen": "ia_local",
+  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
+  "seed": 8030,
+  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+ },
+ {
+  "id": "P1031",
+  "origen": "ia_local",
+  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
+  "seed": 9031,
+  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+ },
+ {
+  "id": "P1032",
+  "origen": "off",
+  "codigo_off": "7801800100012",
+  "url_imagen": "https://images.openfoodfacts.org/images/products/780/180/010/0012/front_es.16.full.jpg",
+  "nombre_off": "Peach halves",
+  "puntaje": 60.0,
+  "licencia": "CC BY-SA 3.0 · Open Food Facts contributors"
+ },
+ {
+  "id": "P1033",
+  "origen": "ia_local",
+  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
+  "seed": 9033,
+  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+ },
+ {
+  "id": "P1034",
+  "origen": "off",
+  "codigo_off": "7751271034135",
+  "url_imagen": "https://images.openfoodfacts.org/images/products/775/127/103/4135/front_en.6.full.jpg",
+  "nombre_off": "Leche  light - Gloria",
+  "puntaje": 120.0,
+  "licencia": "CC BY-SA 3.0 · Open Food Facts contributors"
+ },
+ {
+  "id": "P1035",
+  "origen": "ia_local",
+  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
+  "seed": 9035,
+  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+ },
+ {
+  "id": "P1036",
+  "origen": "off",
+  "codigo_off": "7751271018814",
+  "url_imagen": "https://images.openfoodfacts.org/images/products/775/127/101/8814/front_es.4.full.jpg",
+  "nombre_off": "Pura Vida",
+  "puntaje": "manual",
+  "licencia": "CC BY-SA 3.0 · Open Food Facts contributors"
+ },
+ {
+  "id": "P1037",
+  "origen": "off",
+  "codigo_off": "7750151007092",
+  "url_imagen": "https://images.openfoodfacts.org/images/products/775/015/100/7092/front_fr.3.full.jpg",
+  "nombre_off": "Leche Concentrada Sin Lactosa",
+  "puntaje": 100.0,
+  "licencia": "CC BY-SA 3.0 · Open Food Facts contributors"
+ },
+ {
+  "id": "P1038",
+  "origen": "off",
+  "codigo_off": "8445290227027",
+  "url_imagen": "https://images.openfoodfacts.org/images/products/844/529/022/7027/front_es.3.full.jpg",
+  "nombre_off": "Leche condensada Nestlé",
+  "puntaje": 120.0,
+  "licencia": "CC BY-SA 3.0 · Open Food Facts contributors"
+ },
+ {
+  "id": "P1039",
+  "origen": "off",
+  "codigo_off": "7751271012171",
+  "url_imagen": "https://images.openfoodfacts.org/images/products/775/127/101/2171/front_es.6.full.jpg",
+  "nombre_off": "yogurt bebible fresa",
+  "puntaje": 90.0,
+  "licencia": "CC BY-SA 3.0 · Open Food Facts contributors"
+ },
+ {
+  "id": "P1040",
+  "origen": "off",
+  "codigo_off": "7750151007610",
+  "url_imagen": "https://images.openfoodfacts.org/images/products/775/015/100/7610/front_es.3.full.jpg",
+  "nombre_off": "Mantequilla",
+  "puntaje": 70.0,
+  "licencia": "CC BY-SA 3.0 · Open Food Facts contributors"
+ },
+ {
+  "id": "P1041",
+  "origen": "off",
+  "codigo_off": "7613033907289",
+  "url_imagen": "https://images.openfoodfacts.org/images/products/761/303/390/7289/front_es.4.full.jpg",
+  "nombre_off": "Nescafé • Café Instantáneo Tradicional Tarro 150G",
+  "puntaje": 70.0,
+  "licencia": "CC BY-SA 3.0 · Open Food Facts contributors"
+ },
+ {
+  "id": "P1042",
+  "origen": "off",
+  "codigo_off": "7750463004086",
+  "url_imagen": "https://images.openfoodfacts.org/images/products/775/046/300/4086/front_es.3.full.jpg",
+  "nombre_off": "cafe instantáneo liofilizado",
+  "puntaje": 90.0,
+  "licencia": "CC BY-SA 3.0 · Open Food Facts contributors"
+ },
+ {
+  "id": "P1043",
+  "origen": "ia_local",
+  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
+  "seed": 9043,
+  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+ },
+ {
+  "id": "P1044",
+  "origen": "off",
+  "codigo_off": "7752748004514",
+  "url_imagen": "https://images.openfoodfacts.org/images/products/775/274/800/4514/front_es.11.full.jpg",
+  "nombre_off": "Cocoa Winter's",
+  "puntaje": 120.0,
+  "licencia": "CC BY-SA 3.0 · Open Food Facts contributors"
+ },
+ {
+  "id": "P1045",
+  "origen": "off",
+  "codigo_off": "7758574002373",
+  "url_imagen": "https://images.openfoodfacts.org/images/products/775/857/400/2373/front_fr.3.full.jpg",
+  "nombre_off": "Avena instantanea",
+  "puntaje": 100.0,
+  "licencia": "CC BY-SA 3.0 · Open Food Facts contributors"
+ },
+ {
+  "id": "P1046",
+  "origen": "off",
+  "codigo_off": "7750885020589",
+  "url_imagen": "https://images.openfoodfacts.org/images/products/775/088/502/0589/front_es.3.full.jpg",
+  "nombre_off": "Avena precocida con quinua",
+  "puntaje": 120.0,
+  "licencia": "CC BY-SA 3.0 · Open Food Facts contributors"
+ },
+ {
+  "id": "P1047",
+  "origen": "off",
+  "codigo_off": "7750960000048",
+  "url_imagen": "https://images.openfoodfacts.org/images/products/775/096/000/0048/front_es.20.full.jpg",
+  "nombre_off": "Chocolate",
+  "puntaje": 105.0,
+  "licencia": "CC BY-SA 3.0 · Open Food Facts contributors"
+ },
+ {
+  "id": "P1048",
+  "origen": "off",
+  "codigo_off": "7750885016841",
+  "url_imagen": "https://images.openfoodfacts.org/images/products/775/088/501/6841/front_en.3.full.jpg",
+  "nombre_off": "Deli fresa",
+  "puntaje": 75.0,
+  "licencia": "CC BY-SA 3.0 · Open Food Facts contributors"
+ },
+ {
+  "id": "P1049",
+  "origen": "ia_local",
+  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
+  "seed": 9049,
+  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+ },
+ {
+  "id": "P1050",
+  "origen": "ia_local",
+  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
+  "seed": 8050,
+  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+ },
+ {
+  "id": "P1051",
+  "origen": "ia_local",
+  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
+  "seed": 8051,
+  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+ },
+ {
+  "id": "P1052",
+  "origen": "ia_local",
+  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
+  "seed": 8052,
+  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+ },
+ {
+  "id": "P1053",
+  "origen": "ia_local",
+  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
+  "seed": 8053,
+  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+ },
+ {
+  "id": "P1054",
+  "origen": "ia_local",
+  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
+  "seed": 8054,
+  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+ },
+ {
+  "id": "P1055",
+  "origen": "off",
+  "codigo_off": "7750243046114",
+  "url_imagen": "https://images.openfoodfacts.org/images/products/775/024/304/6114/front_es.24.full.jpg",
+  "nombre_off": "Mayonesa",
+  "puntaje": 120.0,
+  "licencia": "CC BY-SA 3.0 · Open Food Facts contributors"
+ },
+ {
+  "id": "P1056",
+  "origen": "ia_local",
+  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
+  "seed": 8056,
+  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+ },
+ {
+  "id": "P1057",
+  "origen": "off",
+  "codigo_off": "0812125009987",
+  "url_imagen": "https://images.openfoodfacts.org/images/products/081/212/500/9987/front_en.3.full.jpg",
+  "nombre_off": "Sillao kikko soy sauce",
+  "puntaje": 85.0,
+  "licencia": "CC BY-SA 3.0 · Open Food Facts contributors"
+ },
+ {
+  "id": "P1058",
+  "origen": "off",
+  "codigo_off": "7753121003247",
+  "url_imagen": "https://images.openfoodfacts.org/images/products/775/312/100/3247/front_es.3.full.jpg",
+  "nombre_off": "Sazonador Sibarita",
+  "puntaje": 75.0,
+  "licencia": "CC BY-SA 3.0 · Open Food Facts contributors"
+ },
+ {
+  "id": "P1059",
+  "origen": "off",
+  "codigo_off": "7754487121415",
+  "url_imagen": "https://images.openfoodfacts.org/images/products/775/448/712/1415/front_es.28.full.jpg",
+  "nombre_off": "Aji-No-Sillao minka",
+  "puntaje": 115.0,
+  "licencia": "CC BY-SA 3.0 · Open Food Facts contributors"
+ },
+ {
+  "id": "P1060",
+  "origen": "off",
+  "codigo_off": "7754487000345",
+  "url_imagen": "https://images.openfoodfacts.org/images/products/775/448/700/0345/front_es.10.full.jpg",
+  "nombre_off": "Caldo sabor Gallina",
+  "puntaje": 95.0,
+  "licencia": "CC BY-SA 3.0 · Open Food Facts contributors"
+ },
+ {
+  "id": "P1061",
+  "origen": "ia_local",
+  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
+  "seed": 8061,
+  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+ },
+ {
+  "id": "P1062",
+  "origen": "ia_local",
+  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
+  "seed": 8062,
+  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+ },
+ {
+  "id": "P1063",
+  "origen": "off",
+  "codigo_off": "7622201714826",
+  "url_imagen": "https://images.openfoodfacts.org/images/products/762/220/171/4826/front_es.15.full.jpg",
+  "nombre_off": "Galleta de Soda",
+  "puntaje": 100.0,
+  "licencia": "CC BY-SA 3.0 · Open Food Facts contributors"
+ },
+ {
+  "id": "P1064",
+  "origen": "ia_local",
+  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
+  "seed": 10064,
+  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+ },
+ {
+  "id": "P1065",
+  "origen": "ia_local",
+  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
+  "seed": 8065,
+  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+ },
+ {
+  "id": "P1066",
+  "origen": "off",
+  "codigo_off": "7702133009037",
+  "url_imagen": "https://images.openfoodfacts.org/images/products/770/213/300/9037/front_es.6.full.jpg",
+  "nombre_off": "Galleta Oreo",
+  "puntaje": 85.0,
+  "licencia": "CC BY-SA 3.0 · Open Food Facts contributors"
+ },
+ {
+  "id": "P1067",
+  "origen": "off",
+  "codigo_off": "7622300116521",
+  "url_imagen": "https://images.openfoodfacts.org/images/products/762/230/011/6521/front_es.20.full.jpg",
+  "nombre_off": "Galletas RITZ",
+  "puntaje": 75.0,
+  "licencia": "CC BY-SA 3.0 · Open Food Facts contributors"
+ },
+ {
+  "id": "P1068",
+  "origen": "ia_local",
+  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
+  "seed": 8068,
+  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+ },
+ {
+  "id": "P1069",
+  "origen": "off",
+  "codigo_off": "7750885019873",
+  "url_imagen": "https://images.openfoodfacts.org/images/products/775/088/501/9873/front_es.19.full.jpg",
+  "nombre_off": "Nik Fresa",
+  "puntaje": 75.0,
+  "licencia": "CC BY-SA 3.0 · Open Food Facts contributors"
+ },
+ {
+  "id": "P1070",
+  "origen": "ia_local",
+  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
+  "seed": 8070,
+  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+ },
+ {
+  "id": "P1071",
+  "origen": "ia_local",
+  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
+  "seed": 8071,
+  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+ },
+ {
+  "id": "P1072",
+  "origen": "off",
+  "codigo_off": "7752025006880",
+  "url_imagen": "https://images.openfoodfacts.org/images/products/775/202/500/6880/front_es.13.full.jpg",
+  "nombre_off": "Lay's - Clásicas",
+  "puntaje": 75.0,
+  "licencia": "CC BY-SA 3.0 · Open Food Facts contributors"
+ },
+ {
+  "id": "P1073",
+  "origen": "off",
+  "codigo_off": "7752025004763",
+  "url_imagen": "https://images.openfoodfacts.org/images/products/775/202/500/4763/front_es.26.full.jpg",
+  "nombre_off": "Doritos sabor a Queso Atrevido",
+  "puntaje": 85.0,
+  "licencia": "CC BY-SA 3.0 · Open Food Facts contributors"
+ },
+ {
+  "id": "P1074",
+  "origen": "ia_local",
+  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
+  "seed": 8074,
+  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+ },
+ {
+  "id": "P1075",
+  "origen": "off",
+  "codigo_off": "7758574003578",
+  "url_imagen": "https://images.openfoodfacts.org/images/products/775/857/400/3578/front_en.5.full.jpg",
+  "nombre_off": "Piqueo Snax",
+  "puntaje": 100.0,
+  "licencia": "CC BY-SA 3.0 · Open Food Facts contributors"
+ },
+ {
+  "id": "P1076",
+  "origen": "off",
+  "codigo_off": "0819046000444",
+  "url_imagen": "https://images.openfoodfacts.org/images/products/081/904/600/0444/front_en.7.full.jpg",
+  "nombre_off": "Plantain chips with sea salt",
+  "puntaje": 60.0,
+  "licencia": "CC BY-SA 3.0 · Open Food Facts contributors"
+ },
+ {
+  "id": "P1077",
+  "origen": "ia_local",
+  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
+  "seed": 8077,
+  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+ },
+ {
+  "id": "P1078",
+  "origen": "off",
+  "codigo_off": "7752025006484",
+  "url_imagen": "https://images.openfoodfacts.org/images/products/775/202/500/6484/front_es.4.full.jpg",
+  "nombre_off": "Maní crocante salado",
+  "puntaje": 90.0,
+  "licencia": "CC BY-SA 3.0 · Open Food Facts contributors"
+ },
+ {
+  "id": "P1079",
+  "origen": "ia_local",
+  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
+  "seed": 8079,
+  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+ },
+ {
+  "id": "P1080",
+  "origen": "off",
+  "codigo_off": "7750298000727",
+  "url_imagen": "https://images.openfoodfacts.org/images/products/775/029/800/0727/front_es.14.full.jpg",
+  "nombre_off": "San luis 2.5L",
+  "puntaje": 75.0,
+  "licencia": "CC BY-SA 3.0 · Open Food Facts contributors"
+ },
+ {
+  "id": "P1081",
+  "origen": "off",
+  "codigo_off": "77530974",
+  "url_imagen": "https://images.openfoodfacts.org/images/products/77530974/front_es.3.full.jpg",
+  "nombre_off": "agua mineral de manantial",
+  "puntaje": 100.0,
+  "licencia": "CC BY-SA 3.0 · Open Food Facts contributors"
+ },
+ {
+  "id": "P1082",
+  "origen": "off",
+  "codigo_off": "7750182003346",
+  "url_imagen": "https://images.openfoodfacts.org/images/products/775/018/200/3346/front_es.12.full.jpg",
+  "nombre_off": "Bebida Del Valle Frugos Durazno x 1lt",
+  "puntaje": 120.0,
+  "licencia": "CC BY-SA 3.0 · Open Food Facts contributors"
+ },
+ {
+  "id": "P1083",
+  "origen": "ia_local",
+  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
+  "seed": 9083,
+  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+ },
+ {
+  "id": "P1084",
+  "origen": "off",
+  "codigo_off": "7750670010238",
+  "url_imagen": "https://images.openfoodfacts.org/images/products/775/067/001/0238/front_es.8.full.jpg",
+  "nombre_off": "Sporade tropical",
+  "puntaje": 95.0,
+  "licencia": "CC BY-SA 3.0 · Open Food Facts contributors"
+ },
+ {
+  "id": "P1085",
+  "origen": "ia_local",
+  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
+  "seed": 9085,
+  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+ },
+ {
+  "id": "P1086",
+  "origen": "ia_local",
+  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
+  "seed": 8086,
+  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+ },
+ {
+  "id": "P1087",
+  "origen": "ia_local",
+  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
+  "seed": 8087,
+  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+ },
+ {
+  "id": "P1088",
+  "origen": "off",
+  "codigo_off": "7750236173896",
+  "url_imagen": "https://images.openfoodfacts.org/images/products/775/023/617/3896/front_pt.24.full.jpg",
+  "nombre_off": "Inca Kola Gaseosa X 500 ML.",
+  "puntaje": 75,
+  "licencia": "CC BY-SA 3.0 · Open Food Facts contributors"
+ },
+ {
+  "id": "P1089",
+  "origen": "off",
+  "codigo_off": "7750182000697",
+  "url_imagen": "https://images.openfoodfacts.org/images/products/775/018/200/0697/front_es.4.full.jpg",
+  "nombre_off": "Gaseosa Coca Cola sin azúcar",
+  "puntaje": 85.0,
+  "licencia": "CC BY-SA 3.0 · Open Food Facts contributors"
+ },
+ {
+  "id": "P1090",
+  "origen": "ia_local",
+  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
+  "seed": 8090,
+  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+ },
+ {
+  "id": "P1091",
+  "origen": "ia_local",
+  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
+  "seed": 8091,
+  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+ },
+ {
+  "id": "P1092",
+  "origen": "ia_local",
+  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
+  "seed": 8092,
+  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+ },
+ {
+  "id": "P1093",
+  "origen": "ia_local",
+  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
+  "seed": 10093,
+  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+ },
+ {
+  "id": "P1094",
+  "origen": "off",
+  "codigo_off": "7771621060065",
+  "url_imagen": "https://images.openfoodfacts.org/images/products/777/162/106/0065/front_es.4.full.jpg",
+  "nombre_off": "Sabor de Oro",
+  "puntaje": 60.0,
+  "licencia": "CC BY-SA 3.0 · Open Food Facts contributors"
+ },
+ {
+  "id": "P1095",
+  "origen": "ia_local",
+  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
+  "seed": 8095,
+  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+ },
+ {
+  "id": "P1096",
+  "origen": "ia_local",
+  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
+  "seed": 8096,
+  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+ },
+ {
+  "id": "P1097",
+  "origen": "ia_local",
+  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
+  "seed": 8097,
+  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+ },
+ {
+  "id": "P1098",
+  "origen": "ia_local",
+  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
+  "seed": 8098,
+  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+ },
+ {
+  "id": "P1099",
+  "origen": "off",
+  "codigo_off": "7753749275767",
+  "url_imagen": "https://images.openfoodfacts.org/images/products/775/374/927/5767/front_es.8.full.jpg",
+  "nombre_off": "CUSQUEÑA",
+  "puntaje": 60.0,
+  "licencia": "CC BY-SA 3.0 · Open Food Facts contributors"
+ },
+ {
+  "id": "P1100",
+  "origen": "ia_local",
+  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
+  "seed": 10100,
+  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+ },
+ {
+  "id": "P1101",
+  "origen": "ia_local",
+  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
+  "seed": 8101,
+  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+ },
+ {
+  "id": "P1102",
+  "origen": "ia_local",
+  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
+  "seed": 8102,
+  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+ },
+ {
+  "id": "P1103",
+  "origen": "ia_local",
+  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
+  "seed": 8103,
+  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+ },
+ {
+  "id": "P1104",
+  "origen": "ia_local",
+  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
+  "seed": 9104,
+  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+ },
+ {
+  "id": "P1105",
+  "origen": "ia_local",
+  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
+  "seed": 8105,
+  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+ },
+ {
+  "id": "P1106",
+  "origen": "ia_local",
+  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
+  "seed": 8106,
+  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+ },
+ {
+  "id": "P1107",
+  "origen": "ia_local",
+  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
+  "seed": 9107,
+  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+ },
+ {
+  "id": "P1108",
+  "origen": "ia_local",
+  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
+  "seed": 8108,
+  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+ },
+ {
+  "id": "P1109",
+  "origen": "ia_local",
+  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
+  "seed": 9109,
+  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+ },
+ {
+  "id": "P1110",
+  "origen": "ia_local",
+  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
+  "seed": 9110,
+  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+ },
+ {
+  "id": "P1111",
+  "origen": "ia_local",
+  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
+  "seed": 8111,
+  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+ },
+ {
+  "id": "P1112",
+  "origen": "ia_local",
+  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
+  "seed": 8112,
+  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+ },
+ {
+  "id": "P1113",
+  "origen": "ia_local",
+  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
+  "seed": 8113,
+  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+ },
+ {
+  "id": "P1114",
+  "origen": "off",
+  "codigo_off": "7500435019880",
+  "url_imagen": "https://images.openfoodfacts.org/images/products/750/043/501/9880/front_es.3.full.jpg",
+  "nombre_off": "Shampoo Manzana Fresh",
+  "puntaje": 105.0,
+  "licencia": "CC BY-SA 3.0 · Open Food Facts contributors"
+ },
+ {
+  "id": "P1115",
+  "origen": "off",
+  "codigo_off": "7506306237315",
+  "url_imagen": "https://images.openfoodfacts.org/images/products/750/630/623/7315/front_es.5.full.jpg",
+  "nombre_off": "sedal",
+  "puntaje": 75.0,
+  "licencia": "CC BY-SA 3.0 · Open Food Facts contributors"
+ },
+ {
+  "id": "P1116",
+  "origen": "ia_local",
+  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
+  "seed": 10116,
+  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+ },
+ {
+  "id": "P1117",
+  "origen": "ia_local",
+  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
+  "seed": 10117,
+  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+ },
+ {
+  "id": "P1118",
+  "origen": "ia_local",
+  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
+  "seed": 9118,
+  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+ },
+ {
+  "id": "P1119",
+  "origen": "ia_local",
+  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
+  "seed": 8119,
+  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+ },
+ {
+  "id": "P1120",
+  "origen": "ia_local",
+  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
+  "seed": 8120,
+  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+ },
+ {
+  "id": "P1121",
+  "origen": "ia_local",
+  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
+  "seed": 8121,
+  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+ },
+ {
+  "id": "P1122",
+  "origen": "ia_local",
+  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
+  "seed": 10122,
+  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+ },
+ {
+  "id": "P1123",
+  "origen": "ia_local",
+  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
+  "seed": 10123,
+  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+ },
+ {
+  "id": "P1124",
+  "origen": "ia_local",
+  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
+  "seed": 10124,
+  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+ },
+ {
+  "id": "P1125",
+  "origen": "ia_local",
+  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
+  "seed": 8125,
+  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+ },
+ {
+  "id": "P1126",
+  "origen": "ia_local",
+  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
+  "seed": 8126,
+  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+ },
+ {
+  "id": "P1127",
+  "origen": "ia_local",
+  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
+  "seed": 9127,
+  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+ },
+ {
+  "id": "P1128",
+  "origen": "ia_local",
+  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
+  "seed": 8128,
+  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+ },
+ {
+  "id": "P1129",
+  "origen": "ia_local",
+  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
+  "seed": 8129,
+  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+ },
+ {
+  "id": "P1130",
+  "origen": "ia_local",
+  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
+  "seed": 10130,
+  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+ },
+ {
+  "id": "P1131",
+  "origen": "ia_local",
+  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
+  "seed": 8131,
+  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+ },
+ {
+  "id": "P1132",
+  "origen": "ia_local",
+  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
+  "seed": 8132,
+  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+ },
+ {
+  "id": "P1133",
+  "origen": "ia_local",
+  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
+  "seed": 8133,
+  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+ },
+ {
+  "id": "P1134",
+  "origen": "ia_local",
+  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
+  "seed": 8134,
+  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+ },
+ {
+  "id": "P1135",
+  "origen": "ia_local",
+  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
+  "seed": 8135,
+  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+ },
+ {
+  "id": "P1136",
+  "origen": "ia_local",
+  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
+  "seed": 8136,
+  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+ }
+]

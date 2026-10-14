@@ -26,7 +26,7 @@ header{background:var(--pri);color:#fff;position:sticky;top:0;z-index:30;box-sha
 [data-theme=mayorista] .search input{border:2px solid var(--ink)}.search input:focus{outline-color:var(--acc)}
 .search .go{position:absolute;right:6px;top:4px;border:0;background:var(--acc);border-radius:999px;width:34px;height:34px}
 .sug{position:absolute;left:0;right:0;top:46px;background:var(--card);color:var(--ink);border-radius:var(--r);box-shadow:0 8px 24px #0004;overflow:hidden;display:none}
-.sug a{display:flex;gap:10px;align-items:center;padding:8px 12px;border-bottom:1px solid var(--line)}.sug a:hover{background:var(--bg)}.sug svg{width:34px;height:34px}
+.sug a{display:flex;gap:10px;align-items:center;padding:8px 12px;border-bottom:1px solid var(--line)}.sug a:hover{background:var(--bg)}.sug svg{width:34px;height:34px}.sug img{width:34px!important;height:34px!important;flex:none}
 .hbtn{background:none;border:0;color:inherit;display:flex;flex-direction:column;align-items:center;font-size:11px;font-weight:700;position:relative;min-width:52px}
 .hbtn .i{font-size:22px}.badge{position:absolute;top:-4px;right:4px;background:var(--acc);color:#1b1b1b;border-radius:999px;font-size:11px;padding:1px 6px;font-weight:900}
 .deliv{background:#0002;font-size:13px}[data-theme=mayorista] .deliv{background:#f5c40033}
@@ -77,7 +77,7 @@ table.t tr.on{background:#f5c40033;font-weight:900}
 .drawer .pn{position:absolute;right:0;top:0;bottom:0;width:min(420px,100%);background:var(--card);display:flex;flex-direction:column}
 .pn .hd{padding:16px;border-bottom:1px solid var(--line);display:flex;align-items:center;font-weight:900;font-size:18px}.pn .hd button{margin-left:auto;border:0;background:none;font-size:24px;color:var(--ink)}
 .pn .bd{flex:1;overflow:auto;padding:12px 16px}.pn .ft{padding:16px;border-top:1px solid var(--line)}
-.li{display:grid;grid-template-columns:56px 1fr auto;gap:10px;align-items:center;padding:10px 0;border-bottom:1px solid var(--line)}.li svg{width:56px;height:56px}
+.li{display:grid;grid-template-columns:56px 1fr auto;gap:10px;align-items:center;padding:10px 0;border-bottom:1px solid var(--line)}.li svg{width:56px;height:56px}.li img{width:56px!important;height:56px!important}
 .li .qty{flex:none;width:110px}.li small{color:var(--mut)}
 .row{display:flex;justify-content:space-between;padding:4px 0}.row.tot{font-size:20px;font-weight:900}
 .prog{height:8px;background:var(--line);border-radius:999px;overflow:hidden;margin:6px 0}.prog i{display:block;height:100%;background:var(--ok)}
@@ -131,7 +131,7 @@ footer{background:var(--top);color:var(--topt);padding:28px 0;font-size:14px}foo
   <div><h4>Compra</h4><a href="#/ofertas">Ofertas</a><a href="#/bodega">Quiero ser bodega</a><a href="#/pedidos">Seguir mi pedido</a></div>
   <div><h4>Envíos</h4><a href="#/envios">Zonas y tarifas</a><a>Recojo en tienda gratis</a><a>Envío gratis desde S/300 en Nueva Cajamarca</a></div>
   <div><h4>Demo</h4><a href="#/admin">Panel del negocio</a><a href="#/posibilidades">Posibilidades e integraciones</a><a>Libro de reclamaciones</a></div>
-</div></footer>
+</div><div class="wrap" style="display:block;margin-top:16px;font-size:12px;opacity:.7">Fotos de productos: Open Food Facts contributors (CC BY-SA 3.0). Algunas imágenes son referenciales.</div></footer>
 <div class="themes" title="Estilos de diseño"><span>Diseño</span><button data-t="jhovin" style="background:#d7141a" aria-label="Clásico rojo"></button><button data-t="mayorista" style="background:#f5c400" aria-label="Mayorista amarillo"></button><button data-t="noche" style="background:#121212" aria-label="Oscuro"></button></div>
 <button class="wa" onclick="toast('Abriría WhatsApp del negocio')" aria-label="WhatsApp">💬</button>
 <div class="drawer" id="drawer" onclick="if(event.target===this)closeCart()"><div class="pn"><div class="hd">🛒 Tu carrito<button onclick="closeCart()" aria-label="Cerrar">×</button></div><div class="bd" id="cartbd"></div><div class="ft" id="cartft"></div></div></div>
@@ -161,7 +161,7 @@ function volTxt(p){const t=tipo(),tiers=TIERS[t].filter(x=>x[0]>1);if(t==='publi
   const [m]=tiers[tiers.length-1];return`📦 Desde ${m} und: <b>${money(unit(p,m))}</b> c/u`}
 
 // ---- imágenes de producto ilustradas (SVG), sin fotos de terceros
-function img(p){const sh=CAT[p.c].shape,c=p.color,w=p.m.length>10?11:13,lbl=`<text x="50" y="58" text-anchor="middle" font-family="Nunito" font-weight="900" font-size="${w}" fill="#fff">${p.m}</text>`;
+function img(p){if(window.FOTOS&&FOTOS.has(p.id))return`<img src="assets/p/${p.id}.webp" alt="${p.n}" loading="lazy" width="600" height="600" style="width:100%;height:100%;object-fit:contain">`;const sh=CAT[p.c].shape,c=p.color,w=p.m.length>10?11:13,lbl=`<text x="50" y="58" text-anchor="middle" font-family="Nunito" font-weight="900" font-size="${w}" fill="#fff">${p.m}</text>`;
   const shapes={bag:`<path d="M24 22h52l6 66H18z" fill="${c}"/><rect x="24" y="14" width="52" height="10" rx="3" fill="${c}" opacity=".7"/><rect x="28" y="66" width="44" height="12" rx="3" fill="#fff" opacity=".9"/>`,
   bottle:`<rect x="42" y="6" width="16" height="10" rx="2" fill="#333"/><path d="M40 16h20v8c10 4 12 10 12 18v46a6 6 0 0 1-6 6H34a6 6 0 0 1-6-6V42c0-8 2-14 12-18z" fill="${c}"/><rect x="28" y="46" width="44" height="22" fill="#fff" opacity=".25"/>`,
   can:`<rect x="26" y="14" width="48" height="76" rx="8" fill="${c}"/><ellipse cx="50" cy="16" rx="24" ry="5" fill="#ccc"/><rect x="26" y="44" width="48" height="24" fill="#fff" opacity=".25"/>`,

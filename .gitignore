@@ -1,1 +1,4 @@
 .claude/
+tools/_cache/
+tools/hojas/
+__pycache__/
