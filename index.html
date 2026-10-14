@@ -23,7 +23,7 @@
       <label class="sr" for="q">Buscar productos</label>
       <input id="q" type="search" placeholder="Busca arroz, aceite, Inca Kola…" autocomplete="off" enterkeyhint="search">
       <button class="go" aria-label="Buscar"><span data-i="search"></span></button>
-      <div class="sug" id="sug" role="listbox"></div>
+      <div class="sug" id="sug"></div>
     </form>
     <nav class="acts" aria-label="Cuenta y carrito">
       <a class="hb hide-m" href="#/pedidos"><span data-i="package"></span><span class="hb-t"><small>Seguir</small><b>Mis pedidos</b></span></a>
@@ -35,7 +35,7 @@
 <button class="dlv-m" onclick="entrega()"><span data-i="pin"></span><span>Entrega: <b class="dtxt"></b></span><span data-i="down"></span></button>
 <nav class="cats" id="cats" aria-label="Categorías">
   <div class="wrap catrow">
-    <button class="allcat" id="allcat" aria-expanded="false" aria-controls="mega" onclick="mega(matchMedia('(hover:hover)').matches||!megaOn)" onmouseenter="if(matchMedia('(hover:hover)').matches)mega(1)"><span data-i="menu"></span>Categorías</button>
+    <button class="allcat" id="allcat" aria-expanded="false" aria-controls="mega" onclick="mega(matchMedia('(hover:hover)').matches||!megaOn)" onmouseenter="if(matchMedia('(hover:hover)').matches&&Date.now()-rtAt>600)mega(1)"><span data-i="menu"></span>Categorías</button>
     <div class="catlinks" id="catnav"></div>
     <span class="who" id="who"></span>
   </div>

@@ -57,6 +57,7 @@ svg.i{width:20px;height:20px;flex:none;stroke:currentColor;fill:none;stroke-widt
 .topbar p a{text-decoration:underline;text-underline-offset:2px}
 .topbar nav{display:flex;gap:18px}
 .topbar nav a{opacity:.85;padding:8px 0}.topbar nav a:hover{opacity:1;text-decoration:underline}
+[data-theme=mayorista] .topbar nav a{opacity:1}
 
 /* ---------- cabecera ---------- */
 .hdr{background:var(--hdr-bg);color:var(--hdr-ink);position:sticky;top:0;z-index:40;border-bottom:1px solid var(--line)}

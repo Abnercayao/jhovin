@@ -12,6 +12,8 @@ let S = Object.assign({
     { id: 'S-003', neg: 'Bodega San Martín', ruc: '10412398765', dni: '41239876', tel: '965412378', dir: 'Calle Lima 120, Yuracyacu', zona: 'yur', est: 'aprobada', f: '2026-10-02' }],
   zonas: ZONAS
 }, (() => { try { return JSON.parse(localStorage.getItem(KEY) || '{}') } catch { return {} } })());
+if (!['jhovin', 'mayorista', 'noche'].includes(S.theme)) S.theme = 'jhovin';
+S.cart = Object.fromEntries(Object.entries(S.cart || {}).filter(([id, q]) => BYID[id] && Number.isInteger(q) && q > 0).map(([id, q]) => [id, Math.min(q, BYID[id].stock)]).filter(([, q]) => q > 0));
 const save = () => { try { localStorage.setItem(KEY, JSON.stringify(S)) } catch { } };
 const tipo = () => S.user?.tipo === 'bodega' ? 'bodega' : 'publico';
 const zona = () => S.zonas.find(z => z.id === S.ent.zona) || S.zonas[0];
@@ -82,7 +84,8 @@ function toast(t) { const e = $('#toast'); e.innerHTML = ic('checkc') + esc(t); 
 // ---- precios: escalas por volumen según tipo de cliente
 function unit(p, q = 1, t = tipo()) {
   const tiers = TIERS[t]; let f = 1; for (const [m, x] of tiers) if (q >= m) f = x;
-  const base = t === 'publico' && p.oferta ? p.oferta : p.price; return Math.round(base * (t === 'publico' && p.oferta ? 1 : f) * 100) / 100
+  // público: oferta fija; bodega: su escala, sin superar nunca la oferta pública
+  const v = t === 'publico' && p.oferta ? p.oferta : Math.min(p.price * f, t === 'bodega' && p.oferta ? p.oferta : Infinity); return Math.round(v * 100) / 100
 }
 function volTxt(p) {
   const t = tipo(), tiers = TIERS[t].filter(x => x[0] > 1); if (t === 'publico' && p.oferta) return '';
@@ -132,10 +135,10 @@ function refresh(id) {
 // ---- totales y reglas
 function totals() {
   const t = tipo(), items = Object.entries(S.cart).filter(([id]) => BYID[id]).map(([id, q]) => { const p = BYID[id], u = unit(p, q); return { p, q, u, s: u * q, ahorro: (p.price - u) * q } });
-  const sub = items.reduce((a, i) => a + i.s, 0), z = zona(); let env = 0;
+  const sub = Math.round(items.reduce((a, i) => a + i.s, 0) * 100) / 100, z = zona(); let env = 0;
   if (S.ent.modo === 'delivery') { env = z.costo; if (z.gratis && sub >= z.gratis) env = 0; }
   const min = t === 'bodega' ? 500 : 0;
-  return { items, sub, env, tot: sub + env, min, ok: sub > 0 && sub >= min, ahorro: items.reduce((a, i) => a + Math.max(0, i.ahorro), 0), z }
+  return { items, sub, env, tot: Math.round((sub + env) * 100) / 100, min, ok: sub > 0 && sub >= min, ahorro: items.reduce((a, i) => a + Math.max(0, i.ahorro), 0), z }
 }
 
 function hdr() {
@@ -147,15 +150,16 @@ function hdr() {
   $('#uhola').textContent = S.user ? 'Mi cuenta' : 'Hola, invitado';
   $('#who').innerHTML = S.user ? (S.user.tipo === 'bodega' ? `${ic('store')}Precios de bodega · mínimo S/500` : S.user.tipo === 'admin' ? `${ic('chart')}<a href="#/admin">Panel del negocio</a>` : `${ic('user')}Cliente final`) : `${ic('user')}Comprando como invitado`;
   $('#topmsg').innerHTML = tipo() === 'bodega' ? `${ic('store')}<span>Bodegas: precios mayoristas · mínimo S/500<span class="hide-s"> · reparto programado</span></span>` : `${ic('truck')}<span>Envío <b>gratis</b> desde S/300 en Nueva Cajamarca<span class="hide-s"> · Recojo en tienda sin costo</span></span>`;
-  $$('.themes button').forEach(b => { b.classList.toggle('on', b.dataset.t === S.theme); b.setAttribute('aria-pressed', b.dataset.t === S.theme) });
+  $$('.themes button[data-t]').forEach(b => { b.classList.toggle('on', b.dataset.t === S.theme); b.setAttribute('aria-pressed', b.dataset.t === S.theme) });
   document.documentElement.dataset.theme = S.theme
 }
-$$('.themes button').forEach(b => b.onclick = () => { S.theme = b.dataset.t; save(); hdr() });
+$$('.themes button[data-t]').forEach(b => b.onclick = () => { S.theme = b.dataset.t; save(); hdr() });
 
 // ---- categorías + megamenú
 $('#catnav').innerHTML = `<a href="#/ofertas" class="hot" data-c="ofertas">${ic('flame')}Ofertas</a>` + CATS.slice(0, 10).map(c => `<a href="#/c/${c[0]}" data-c="${c[0]}">${c[1]}</a>`).join('');
 $('#megain').innerHTML = CATS.map(c => `<a href="#/c/${c[0]}" onclick="mega(0)">${catImg(c[0])}<span>${c[1]}<small>${nCat(c[0])} productos</small></span></a>`).join('');
-let megaOn = false;
+let megaOn = false, rtAt = 0; // rtAt: el scroll al inicio tras cambiar de ruta mueve el botón bajo el mouse y dispara un mouseenter falso
+
 function mega(on) { megaOn = !!on; $('#mega').classList.toggle('on', megaOn); $('#allcat').setAttribute('aria-expanded', megaOn) }
 $('#cats').addEventListener('mouseleave', () => { if (matchMedia('(hover:hover)').matches) mega(0) });
 document.addEventListener('click', e => { if (megaOn && !e.target.closest('#cats')) mega(0); if (!e.target.closest('.search')) $('#sug').style.display = 'none' });
@@ -249,15 +253,15 @@ function goSl(i) {
 }
 
 // ---- listados (categoría, ofertas, búsqueda)
-let F = { marcas: [], max: 0, ord: 'rel', oferta: false };
+let F = { marcas: [], max: 0, ord: 'rel', oferta: false }, fOpen; // fOpen: panel de filtros abierto (undefined = por defecto según ancho)
 const crumbs = (...a) => `<nav class="crumbs" aria-label="Ruta"><a href="#/">Inicio</a>${a.map(x => ic('right') + x).join('')}</nav>`;
 function listado(titulo, list, crumb) {
   const marcas = [...new Set(list.map(p => p.m))].sort((a, b) => a.localeCompare(b));
   let r = list.filter(p => (!F.marcas.length || F.marcas.includes(p.m)) && (!F.max || unit(p) <= F.max) && (!F.oferta || p.oferta));
   if (F.ord === 'asc') r.sort((a, b) => unit(a) - unit(b)); if (F.ord === 'desc') r.sort((a, b) => unit(b) - unit(a)); if (F.ord === 'az') r.sort((a, b) => a.n.localeCompare(b.n));
-  const open = innerWidth > 960 ? 'open' : '';
+  const open = (fOpen ?? innerWidth > 960) ? 'open' : '';
   app.innerHTML = `${crumbs(crumb || esc(titulo))}<div class="lhead"><h1>${esc(titulo)}</h1><span class="cnt">${r.length} productos</span><label class="sort">Ordenar<select onchange="F.ord=this.value;route(true)"><option value="rel">Relevancia</option><option value="asc" ${F.ord === 'asc' ? 'selected' : ''}>Menor precio</option><option value="desc" ${F.ord === 'desc' ? 'selected' : ''}>Mayor precio</option><option value="az" ${F.ord === 'az' ? 'selected' : ''}>A–Z</option></select></label></div>
-  <div class="layout"><details class="filters" ${open}><summary>${ic('layers')}Filtros${F.marcas.length || F.max || F.oferta ? ' (activos)' : ''}</summary><div class="fbody">
+  <div class="layout"><details class="filters" ${open} ontoggle="fOpen=this.open"><summary>${ic('layers')}Filtros${F.marcas.length || F.max || F.oferta ? ' (activos)' : ''}</summary><div class="fbody">
   <div class="fgroup"><h3>Marca</h3>${marcas.map(m => `<label class="chk"><input type="checkbox" ${F.marcas.includes(m) ? 'checked' : ''} onchange="tg('${esc(m.replace(/'/g, "\\'"))}')">${esc(m)}<small>${list.filter(p => p.m === m).length}</small></label>`).join('')}</div>
   <div class="fgroup"><h3>Precio máximo</h3><input type="range" min="0" max="200" step="5" value="${F.max || 200}" aria-label="Precio máximo" oninput="F.max=+this.value>=200?0:+this.value;this.nextElementSibling.textContent=F.max?'Hasta S/'+F.max:'Todos los precios'" onchange="route(true)"><small class="muted">${F.max ? 'Hasta S/' + F.max : 'Todos los precios'}</small></div>
   <div class="fgroup"><h3>Promociones</h3><label class="chk"><input type="checkbox" ${F.oferta ? 'checked' : ''} onchange="F.oferta=this.checked;route(true)">Solo ofertas</label></div>
@@ -314,15 +318,18 @@ function checkout() {
   <button class="btn lg w" style="margin-top:14px" ${T.ok ? '' : 'disabled'} onclick="pagar()">${ic('lock')}Pagar ${money(T.tot)}</button><p class="secure">${ic('shield')}Pago seguro · se emite ticket de compra</p></aside></div>`
 }
 function pagar() {
-  const T = totals(); if (!S.user && (!$('#cn').value.trim() || !$('#ct').value.trim())) { toast('Completa nombre y celular'); ($('#cn').value.trim() ? $('#ct') : $('#cn')).focus(); return }
+  const T = totals(); if (!T.ok) return;
+  if (!S.user && (!$('#cn').value.trim() || !$('#ct').value.trim())) { toast('Completa nombre y celular'); ($('#cn').value.trim() ? $('#ct') : $('#cn')).focus(); return }
+  if (!S.user && !/^9\d{8}$/.test($('#ct').value.replace(/\s/g, ''))) { toast('El celular debe tener 9 dígitos y empezar con 9'); $('#ct').focus(); return }
   const pay = $('input[name=pay]:checked').value;
   const go = () => {
-    const o = { id: 'JH-' + String(10421 + S.orders.length), f: new Date().toLocaleString('es-PE'), cli: S.user?.nombre || $('#cn').value, tipo: tipo(), items: T.items.map(i => ({ n: i.p.n, q: i.q, u: i.u })), sub: T.sub, env: T.env, tot: T.tot, modo: S.ent.modo, zona: T.z.n, pay, est: pay === 'ce' || pay === 'cr' ? 1 : 2 };
+    const o = { id: 'JH-' + String(10421 + S.orders.length), f: new Date().toLocaleString('es-PE'), cli: S.user?.nombre || $('#cn').value, tipo: tipo(), items: T.items.map(i => ({ n: i.p.n, q: i.q, u: i.u })), sub: T.sub, env: T.env, tot: T.tot, modo: S.ent.modo, zona: T.z.n, pay, est: ['ce', 'cr', 'tr'].includes(pay) ? 1 : 2 };
     S.orders.unshift(o); T.items.forEach(i => i.p.stock -= i.q); S.cart = {}; save(); hdr(); closeM(); location.hash = '#/ticket/' + o.id
   };
   window._go = go;
   if (pay === 'yape' || pay === 'plin') M(`<h2>Paga con ${pay === 'yape' ? 'Yape' : 'Plin'}</h2><p>Escanea el QR desde tu app o yapea al <b>9XX XXX XXX</b>.</p><div class="qr" role="img" aria-label="Código QR de pago (demo)"></div><p class="center" style="margin-bottom:14px">Monto: <b>${money(T.tot)}</b></p><button class="btn lg w" onclick="this.disabled=true;this.textContent='Validando pago…';setTimeout(_go,1200)">Ya pagué</button>`);
   else if (pay === 'mp') M(`<h2>Pago con tarjeta</h2><p>Formulario embebido (en la versión real: Payment Brick de Mercado Pago).</p><div class="f" style="margin-top:14px"><label>Número de tarjeta<input value="5031 7557 3453 0604" readonly></label><div class="two"><label>Vence<input value="11/30" readonly></label><label>CVV<input value="123" readonly></label></div></div><button class="btn lg w" style="margin-top:16px" onclick="this.disabled=true;this.textContent='Procesando…';setTimeout(_go,1400)">${ic('lock')}Pagar ${money(T.tot)}</button><p class="secure">${ic('info')}Datos de tarjeta de PRUEBA</p>`);
+  else if (pay === 'tr') M(`<h2>Paga por transferencia</h2><p>Transfiere <b>${money(T.tot)}</b> y envíanos la constancia por WhatsApp. Tu pedido queda por confirmar hasta validar el pago.</p><div class="note y">${ic('bank')}<span>Cuenta BCP: XXX-XXXXXXXX-X-XX<br>CCI: XXX-XXX-XXXXXXXXXXXX-XX<br><small>Datos de ejemplo de la demo</small></span></div><button class="btn lg w" style="margin-top:16px" onclick="this.disabled=true;_go()">Ya transferí</button>`);
   else go()
 }
 
@@ -344,7 +351,11 @@ function pedidos(miss) {
   ${S.orders.length ? S.orders.map(o => `<article class="ocard"><div class="oh"><b>${o.id}</b><span class="st ${o.est >= 5 ? 'ok' : o.est >= 2 ? 'ok' : 'w'}">${EST[o.est]}</span><span class="muted" style="font-size:13px">${o.f}</span><span class="tot">${money(o.tot)}</span></div>${steps(o)}<div class="of"><span>${o.items.length} productos · ${o.modo === 'recojo' ? 'Recojo en tienda' : 'Delivery ' + esc(o.zona)} · ${payName(o.pay)}</span><a class="btn o sm" href="#/ticket/${o.id}">${ic('receipt')}Ver ticket</a>${S.user?.tipo === 'bodega' ? `<button class="btn sm" onclick="recompra('${o.id}')">${ic('sync')}Volver a pedir</button>` : ''}</div></article>`).join('')
       : `<div class="empty-st"><span class="ico-c">${ic('package')}</span><h2>Aún no tienes pedidos</h2><p class="muted" style="margin-bottom:16px">Cuando compres, verás aquí el estado de cada pedido.</p><a class="btn" href="#/ofertas">Ver ofertas</a></div>`}`
 }
-function recompra(id) { const o = S.orders.find(x => x.id === id); o.items.forEach(i => { const p = PRODUCTS.find(x => x.n === i.n); if (p) S.cart[p.id] = (S.cart[p.id] || 0) + i.q }); save(); hdr(); openCart(); toast('Pedido repetido en el carrito') }
+function recompra(id) {
+  const o = S.orders.find(x => x.id === id); let corto = 0;
+  o.items.forEach(i => { const p = PRODUCTS.find(x => x.n === i.n), want = i.q + (p ? S.cart[p.id] || 0 : 0), q = p ? Math.min(p.stock, want) : 0; if (q < want) corto++; if (q) S.cart[p.id] = q });
+  save(); hdr(); openCart(); toast(corto ? `Repetido con stock limitado en ${corto} producto${corto > 1 ? 's' : ''}` : 'Pedido repetido en el carrito')
+}
 
 // ---- bodega y envíos
 function bodega() {
@@ -383,6 +394,7 @@ function barChart(v, labels) {
 function admin(tab = 'resumen') {
   if (S.user?.tipo !== 'admin') { login('admin'); return }
   const tabs = [['resumen', 'chart', 'Resumen'], ['pedidos', 'package', 'Pedidos'], ['bodegas', 'store', 'Bodegas'], ['productos', 'tag', 'Productos y precios'], ['zonas', 'truck', 'Zonas de envío'], ['sync', 'sync', 'SiempreSoft'], ['marketing', 'mega', 'Banners y ofertas']];
+  if (!tabs.some(t => t[0] === tab)) tab = 'resumen';
   const pend = S.sols.filter(s => s.est === 'pendiente').length;
   const kpi = (i, l, v, s, up) => `<div class="kpi"><div class="kh">${l}<span>${ic(i)}</span></div><b>${v}</b><small class="${up ? 'up' : ''}">${up ? ic('trend') : ''}${s}</small></div>`;
   let h = '';
@@ -399,7 +411,7 @@ function admin(tab = 'resumen') {
   if (tab === 'pedidos') h = `<div class="tblw"><table class="t"><thead><tr><th>Pedido</th><th>Cliente</th><th>Entrega</th><th class="num">Total</th><th>Estado</th></tr></thead><tbody>${[...S.orders, { id: 'JH-10418', cli: 'Bodega Doña Rosa', tipo: 'bodega', modo: 'delivery', zona: 'Nueva Cajamarca', tot: 812.4, est: 3 }, { id: 'JH-10417', cli: 'Carlos Ruiz', tipo: 'publico', modo: 'recojo', zona: '', tot: 96.5, est: 5 }].map((o, k) => `<tr><td><b>${o.id}</b></td><td>${esc(o.cli)}${o.tipo === 'bodega' ? ' <span class="pill k">Bodega</span>' : ''}</td><td>${o.modo === 'recojo' ? 'Recojo' : esc(o.zona)}</td><td class="num"><b>${money(o.tot)}</b></td><td><select aria-label="Estado de ${o.id}" onchange="${k < S.orders.length ? `S.orders[${k}].est=+this.value;save();` : ''}toast('Cliente notificado por WhatsApp')">${EST.map((e, i) => `<option value="${i}" ${i === o.est ? 'selected' : ''}>${e}</option>`).join('')}</select></td></tr>`).join('')}</tbody></table></div>`;
   if (tab === 'bodegas') h = `<div class="tblw"><table class="t"><thead><tr><th>Negocio</th><th>RUC / DNI</th><th>Zona</th><th>Fecha</th><th>Estado</th><th></th></tr></thead><tbody>${S.sols.map((s, i) => `<tr><td><b>${esc(s.neg)}</b><br><small class="muted">${esc(s.dir)} · ${esc(s.tel)}</small></td><td>${esc(s.ruc)}<br><small class="muted">${esc(s.dni)}</small></td><td>${esc((S.zonas.find(z => z.id === s.zona) || {}).n || '')}</td><td>${s.f}</td><td><span class="st ${s.est === 'aprobada' ? 'ok' : s.est === 'rechazada' ? 'r' : 'w'}">${s.est[0].toUpperCase() + s.est.slice(1)}</span></td><td>${s.est === 'pendiente' ? `<div class="tb-act"><button class="btn sm" onclick="S.sols[${i}].est='aprobada';save();admin('bodegas');toast('Aprobada · aviso enviado por WhatsApp')">${ic('check')}Aprobar</button><button class="btn o sm" onclick="S.sols[${i}].est='rechazada';save();admin('bodegas')">Rechazar</button></div>` : ''}</td></tr>`).join('')}</tbody></table></div><p class="muted" style="margin-top:12px;font-size:14px">Validación automática de RUC con SUNAT (opcional en la versión final).</p>`;
   if (tab === 'productos') h = `<p class="muted" style="margin-bottom:12px;font-size:14px">Catálogo: ${PRODUCTS.length} en la demo · 3.000+ en producción desde SiempreSoft.</p><div class="tblw"><table class="t"><thead><tr><th>Producto</th><th class="num">Stock</th><th class="num">Público</th><th class="num">Bodega</th><th class="num">Bodega 48+</th><th>Web</th></tr></thead><tbody>${PRODUCTS.slice(0, 25).map(p => `<tr><td><b>${esc(p.n)}</b><br><small class="muted">${p.sku}</small></td><td class="num">${p.stock || '<span class="st r">0</span>'}</td><td class="num">${money(p.price)}</td><td class="num">${money(unit(p, 1, 'bodega'))}</td><td class="num">${money(unit(p, 48, 'bodega'))}</td><td><input type="checkbox" checked aria-label="Visible en web" style="width:20px;height:20px;accent-color:var(--brand)"></td></tr>`).join('')}</tbody></table></div><p class="muted" style="margin-top:12px;font-size:14px">Precios, escalas y stock se sincronizan desde la caja. Desde aquí solo se gestionan fotos, descripción y visibilidad web.</p>`;
-  if (tab === 'zonas') h = `<div class="tblw"><table class="t"><thead><tr><th>Zona</th><th>Costo S/</th><th>Gratis desde S/</th></tr></thead><tbody>${S.zonas.map((z, i) => `<tr><td><b>${esc(z.n)}</b></td><td><input class="inp inp-s" type="number" step="0.5" min="0" value="${z.costo}" aria-label="Costo ${esc(z.n)}" onchange="S.zonas[${i}].costo=+this.value;save();hdr();toast('Tarifa actualizada')"></td><td><input class="inp inp-s" type="number" min="0" value="${z.gratis || ''}" placeholder="—" aria-label="Gratis desde, ${esc(z.n)}" onchange="S.zonas[${i}].gratis=+this.value||0;save();toast('Actualizado')"></td></tr>`).join('')}</tbody></table></div><p class="muted" style="margin-top:12px;font-size:14px">Tarifas estimadas para la demo, se ajustan con el dueño. Opcional: cálculo por distancia con mapa.</p>`;
+  if (tab === 'zonas') h = `<div class="tblw"><table class="t"><thead><tr><th>Zona</th><th>Costo S/</th><th>Gratis desde S/</th></tr></thead><tbody>${S.zonas.map((z, i) => `<tr><td><b>${esc(z.n)}</b></td><td><input class="inp inp-s" type="number" step="0.5" min="0" value="${z.costo}" aria-label="Costo ${esc(z.n)}" onchange="S.zonas[${i}].costo=Math.max(0,+this.value||0);this.value=S.zonas[${i}].costo;save();hdr();toast('Tarifa actualizada')"></td><td><input class="inp inp-s" type="number" min="0" value="${z.gratis || ''}" placeholder="—" aria-label="Gratis desde, ${esc(z.n)}" onchange="S.zonas[${i}].gratis=Math.max(0,+this.value||0);this.value=S.zonas[${i}].gratis||'';save();toast('Actualizado')"></td></tr>`).join('')}</tbody></table></div><p class="muted" style="margin-top:12px;font-size:14px">Tarifas estimadas para la demo, se ajustan con el dueño. Opcional: cálculo por distancia con mapa.</p>`;
   if (tab === 'sync') h = `<div class="kpis">${kpi('zap', 'Estado', '<span style="color:var(--ok)">Conectado</span>', 'SiempreSoft ERP')}<div class="kpi"><div class="kh">Última sincronización<span>${ic('clock')}</span></div><b id="ls">hace 3 min</b><small>Automática cada 5 min</small></div>${kpi('db', 'Productos sincronizados', '3.214', 'Precios y stock')}${kpi('send', 'Pedidos web a caja', 23 + S.orders.length, 'Para boleta o factura')}</div>
     <section class="box2" style="margin-top:16px"><h2>Flujo de datos</h2><div class="flow"><div class="node"><span class="ico-c">${ic('db')}</span><b>SiempreSoft (caja)</b><small>Stock, precios, escalas por volumen y productos nuevos</small></div><div class="arr">${ic('sync')}cada 5 min</div><div class="node"><span class="ico-c">${ic('globe')}</span><b>Tienda web</b><small>Pedidos pagados, clientes y reservas de stock vuelven a caja</small></div></div>
     <button class="btn" onclick="syncNow()">${ic('sync')}Sincronizar ahora</button><div class="log" id="log">[08:00:02] Sync OK · 3.214 productos · 12 precios cambiados · 48 stocks actualizados\n[08:05:01] Sync OK · 0 cambios\n[08:10:03] Pedido JH-10418 enviado a caja ✔</div></section>`;
@@ -407,7 +419,7 @@ function admin(tab = 'resumen') {
     <section class="box2"><h2>Promociones</h2><p class="muted" style="margin-bottom:14px">${PRODUCTS.filter(p => p.oferta).length} productos en oferta · cupones · combos (2x1, lleva 3 paga 2) · precio especial por fecha.</p><button class="btn sm">${ic('plus')}Crear promoción</button></section>`;
   app.innerHTML = `<div class="ahead"><h1>Panel del negocio</h1><span class="pill k">DEMO</span></div><div class="adm"><nav class="adm-nav" aria-label="Secciones del panel">${tabs.map(([k, i, l]) => `<a href="#/admin/${k}" class="${k === tab ? 'on' : ''}" ${k === tab ? 'aria-current="page"' : ''}>${ic(i)}${l}${k === 'bodegas' && pend ? ` <span class="badge">${pend}</span>` : ''}</a>`).join('')}</nav><div>${h}</div></div>`
 }
-function syncNow() { const l = $('#log'); l.textContent += '\n[' + new Date().toLocaleTimeString('es-PE') + '] Conectando a SiempreSoft…'; setTimeout(() => { l.textContent += '\n[' + new Date().toLocaleTimeString('es-PE') + '] Sync OK · 3.214 productos · 3 precios cambiados · 17 stocks actualizados'; $('#ls').textContent = 'ahora'; l.scrollTop = 1e9 }, 1300) }
+function syncNow() { const l = $('#log'); l.textContent += '\n[' + new Date().toLocaleTimeString('es-PE') + '] Conectando a SiempreSoft…'; setTimeout(() => { if (!l.isConnected) return; l.textContent += '\n[' + new Date().toLocaleTimeString('es-PE') + '] Sync OK · 3.214 productos · 3 precios cambiados · 17 stocks actualizados'; $('#ls').textContent = 'ahora'; l.scrollTop = 1e9 }, 1300) }
 
 function posibilidades() {
   const I = [['sync', 'Sincronización con SiempreSoft', 'Stock, precios y escalas en tiempo real desde la caja. Los pedidos web llegan a caja para emitir boleta o factura.', 'Incluido'],
@@ -428,8 +440,8 @@ function posibilidades() {
 
 // ---- router
 function route(keep) {
-  const h = decodeURIComponent(location.hash.slice(2)), [r, a] = h.split('/');
-  if (!keep) { scrollTo(0, 0); pv = 0; pq = 1; mega(0) } clearInterval(slT);
+  const [r, a0] = location.hash.slice(2).split('/'); let a = a0; try { if (a0) a = decodeURIComponent(a0) } catch { }
+  rtAt = Date.now(); if (!keep) { scrollTo(0, 0); pv = 0; pq = 1; fOpen = undefined; mega(0) } clearInterval(slT);
   $$('#catnav a').forEach(x => x.classList.toggle('on', (r === 'c' && x.dataset.c === a) || (r === 'ofertas' && x.dataset.c === 'ofertas')));
   if (!keep && (r === 'c' || r === 'ofertas' || r === 'buscar')) F = { marcas: [], max: 0, ord: 'rel', oferta: false };
   if (r === 'c' && CAT[a]) listado(CAT[a].n, PRODUCTS.filter(p => p.c === a));
@@ -442,6 +454,6 @@ function route(keep) {
 }
 fillIcons();
 addEventListener('hashchange', () => route()); hdr(); route();
-try { if (!localStorage.getItem(KEY)) setTimeout(entrega, 600) } catch { }
+try { if (!localStorage.getItem(KEY)) setTimeout(() => { save(); entrega() }, 600) } catch { }
 const TEMAS = { jhovin: 'Clásico rojo', mayorista: 'Mayorista amarillo', noche: 'Oscuro' };
 function cycleTheme() { const k = Object.keys(TEMAS); S.theme = k[(k.indexOf(S.theme) + 1) % k.length]; save(); hdr(); toast('Estilo: ' + TEMAS[S.theme]) }
