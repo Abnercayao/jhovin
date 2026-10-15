@@ -44,7 +44,7 @@ Leche Gloria Entera Lata 390g|Gloria|lacteos|4.20|48
 Leche Gloria Light Lata 390g|Gloria|lacteos|4.40|48
 Mezcla Láctea Ideal Amanecer 390g|Ideal|lacteos|3.50|48
 Mezcla Láctea Pura Vida 390g|Pura Vida|lacteos|3.40|48
-Leche Laive Sin Lactosa 400g|Laive|lacteos|4.50|24
+Leche Laive Sin Lactosa 390g|Laive|lacteos|4.50|24
 Leche Condensada Nestlé 393g|Nestlé|lacteos|6.90|24
 Yogurt Gloria Zero Lacto Fresa 1kg|Gloria|lacteos|6.80|12
 Mantequilla Laive con Sal 180g|Laive|lacteos|9.90|20
@@ -115,7 +115,7 @@ Detergente Líquido Ariel Revitacolor 1.2L|Ariel|limpieza|24.90|6
 Detergente Bolívar Cuidado y Suavidad 2.4kg|Bolívar|limpieza|26.50|6
 Detergente Opal Ultra 730g|Opal|limpieza|8.50|12
 Detergente Ace Limón 4kg|Ace|limpieza|39.90|4
-Jabón Bolívar Bebé 190g|Bolívar|limpieza|3.90|50
+Jabón Bolívar Bebé 190g x 2|Bolívar|limpieza|3.90|50
 Lavavajilla Sapolio Limón en pasta 800g|Sapolio|limpieza|6.40|12
 Lejía Clorox 4L|Clorox|limpieza|12.90|4
 Limpiatodo Poett Lavanda 900ml|Poett|limpieza|5.90|12
@@ -125,7 +125,7 @@ Shampoo Head & Shoulders 375ml|Head & Shoulders|cuidado|19.90|12
 Shampoo Sedal Ceramidas 340ml|Sedal|cuidado|12.90|12
 Pasta Dental Colgate Triple Acción 75ml|Colgate|cuidado|4.50|24
 Pasta Dental Dento Máxima Blancura 75ml|Dento|cuidado|4.50|24
-Jabón Protex Avena x 3|Protex|cuidado|9.90|12
+Jabón Protex Avena Tripack 3 x 110g|Protex|cuidado|11.90|12
 Toallas Higiénicas Nosotras Invisible Natural x 30|Nosotras|cuidado|10.60|12
 Desodorante Rexona Clinical 48g|Rexona|cuidado|16.90|12
 Máquina de Afeitar Gillette Prestobarba x 2|Gillette|cuidado|6.90|24
@@ -142,7 +142,7 @@ Vasos Descartables Pamolsa 6.5oz x 50|Pamolsa|descartables|3.50|20
 Platos Biodegradables U-Thil 6 pulg x 25|U-Thil|descartables|9.90|20
 Bolsas de Basura Virutex 75L x 10|Virutex|descartables|8.90|20
 Servilletas Elite x 300|Elite|descartables|4.90|20
-Papel Aluminio Reynolds 7.6m|Reynolds|descartables|5.90|24
+Bolsas para Sandwich Ziploc x 50|Ziploc|descartables|16.90|12
 Bolsas Herméticas con Cierre Bell's x 20|Bell's|descartables|8.50|20`;
 
 const COLORS = ['#d7141a','#1e5aa8','#0b8a3e','#f2a900','#6a2c91','#e35d0e','#0a7f8c','#8b5a2b','#c2185b','#1b1b1b'];

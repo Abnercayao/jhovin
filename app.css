@@ -633,6 +633,7 @@ table.t .num{text-align:right;font-variant-numeric:tabular-nums}
   .sum{position:static}
   .adm-nav{position:static;display:flex;overflow-x:auto;scrollbar-width:none}
   .adm-nav a{white-space:nowrap}
+  .mega-g{grid-template-columns:repeat(3,minmax(0,1fr))}
   .banners{grid-template-columns:1fr}
   .ints{grid-template-columns:repeat(2,minmax(0,1fr))}
   .info3{grid-template-columns:1fr}
@@ -642,6 +643,7 @@ table.t .num{text-align:right;font-variant-numeric:tabular-nums}
   .catrow .who{display:none}
 }
 @media (max-width:640px){
+  .mega-g{grid-template-columns:repeat(2,minmax(0,1fr))}.mega-g span{min-width:0}
   .wrap{padding:0 16px}
   .dlv-m{padding:0 16px}
   .hrow{flex-wrap:wrap;gap:6px 8px;min-height:0;padding:8px 16px 10px}

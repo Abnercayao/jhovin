@@ -32,11 +32,11 @@
  {
   "id": "P1004",
   "origen": "tienda",
-  "fuente": "Metro",
-  "url_producto": "https://www.metro.pe/arroz-superior-valle-norte-primera-cosecha-bolsa-750-g-356979/p",
-  "url_imagen": "https://metroio.vteximg.com.br/arquivos/ids/237900-1000-1000/356979-1.jpg?v=638173814674670000",
-  "nombre_origen": "Arroz Superior Valle Norte Primera Cosecha Bolsa 750 g",
-  "puntaje": 91.0,
+  "fuente": "Plaza Vea",
+  "url_producto": "https://www.plazavea.com.pe/arroz-superior-vallenorte-bolsa-750g/p",
+  "url_imagen": "https://plazavea.vteximg.com.br/arquivos/ids/554151-1000-1000/20069688.jpg?v=637426577202530000",
+  "nombre_origen": "Arroz Superior VALLENORTE Bolsa 750g",
+  "puntaje": null,
   "licencia": "Imagen referencial de fabricante o tienda; uso demostrativo"
  },
  {
@@ -1172,11 +1172,11 @@
  {
   "id": "P1118",
   "origen": "tienda",
-  "fuente": "Oechsle",
-  "url_producto": "https://www.oechsle.pe/jabon-corporal-avena-protex-pack-3-un-1000029738/p",
-  "url_imagen": "https://oechsle.vteximg.com.br/arquivos/ids/2184681-1000-1000/image-5c3f2721796d4126a40bb5f06154f4a3.jpg?v=637492444559430000",
-  "nombre_origen": "Jabon Corporal Avena Protex - Pack 3 UN",
-  "puntaje": 78.0,
+  "fuente": "Wong",
+  "url_producto": "https://www.wong.pe/tripack-jabon-en-barra-protex-avena-110g-390472002/p",
+  "url_imagen": "https://wongfood.vteximg.com.br/arquivos/ids/781499-1000-1000/frontal-256.jpg?v=638901958106700000",
+  "nombre_origen": "Tripack Jabón en Barra Protex Avena 110g",
+  "puntaje": null,
   "licencia": "Imagen referencial de fabricante o tienda; uso demostrativo"
  },
  {
@@ -1342,11 +1342,11 @@
  {
   "id": "P1135",
   "origen": "tienda",
-  "fuente": "Wong",
-  "url_producto": "https://www.wong.pe/papel-aluminio-reynolds-caja-7-6-m-6791-2-2/p",
-  "url_imagen": "https://wongfood.vteximg.com.br/arquivos/ids/371392-1000-1000/PAPEL-ALUMINIO-REYNOLDS-X-25-PAP-ALUMI-REYNOLDS-1-30391.jpg?v=637314662896000000",
-  "nombre_origen": "Papel Aluminio Reynolds Caja 7.6 m",
-  "puntaje": 73.0,
+  "fuente": "Plaza Vea",
+  "url_producto": "https://www.plazavea.com.pe/bolsa-para-sandwich-ziploc-paquete-50un/p",
+  "url_imagen": "https://plazavea.vteximg.com.br/arquivos/ids/29860391-1000-1000/1159.jpg?v=638654927212130000",
+  "nombre_origen": "Bolsa para Sandwich ZIPLOC Paquete 50un",
+  "puntaje": null,
   "licencia": "Imagen referencial de fabricante o tienda; uso demostrativo"
  },
  {

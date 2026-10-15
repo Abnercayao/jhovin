@@ -221,17 +221,24 @@ def normalizar(data, caja_manual=None):
         im = fondo
     im = im.convert("RGB")
     if caja_manual:
-        if isinstance(caja_manual, dict):  # {"blanquear": [[x0,y0,x1,y1], ...], "crop": [...]}
+        if isinstance(caja_manual, dict):  # {"blanquear": [[x0,y0,x1,y1], ...], "crop": [...], "mejorar": true}
             from PIL import ImageDraw
             for r in caja_manual.get("blanquear", []):
                 ImageDraw.Draw(im).rectangle(r, fill=(255, 255, 255))
-            caja_manual = caja_manual["crop"]
+            if caja_manual.get("mejorar"):  # foto de tienda lavada o blanda: contraste y nitidez suaves
+                from PIL import ImageEnhance, ImageFilter
+                im = ImageEnhance.Color(ImageEnhance.Contrast(im).enhance(1.22)).enhance(1.12).filter(ImageFilter.UnsharpMask(radius=2, percent=90, threshold=2))
+            caja_manual = caja_manual.get("crop") or (0, 0, im.width, im.height)
         im = im.crop(tuple(caja_manual))
     else:
         im, _ = quitar_banda(im)
     dif = ImageChops.difference(im, Image.new("RGB", im.size, (255, 255, 255))).convert("L").point(lambda v: 255 if v > 14 else 0)
-    if dif.getbbox():
-        im = im.crop(dif.getbbox())
+    import numpy as np
+    m = np.asarray(dif) > 0
+    umbral = max(4, int(0.02 * max(im.size)))  # filas/columnas con menos pixeles son motas sueltas (restos del pie legal), no producto
+    ys, xs = np.where(m.sum(axis=1) >= umbral)[0], np.where(m.sum(axis=0) >= umbral)[0]
+    if len(xs) and len(ys):
+        im = im.crop((int(xs[0]), int(ys[0]), int(xs[-1]) + 1, int(ys[-1]) + 1))
     caja = int(LADO * (1 - 2 * MARGEN))
     k = min(caja / im.width, caja / im.height, 2.0)
     im = im.resize((max(1, round(im.width * k)), max(1, round(im.height * k))), Image.LANCZOS)
