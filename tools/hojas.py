@@ -8,7 +8,7 @@ from PIL import Image, ImageDraw, ImageFont
 import json
 
 sys.path.insert(0, str(Path(__file__).parent))
-from fotos_off import productos, RAIZ
+from fotos_tiendas import productos, RAIZ
 
 def main():
     parser = argparse.ArgumentParser()
@@ -31,7 +31,7 @@ def main():
     creditos = {}
     cred_path = RAIZ / 'assets' / 'p' / 'creditos.json'
     if cred_path.exists():
-        creditos = {c['id']: c.get('nombre_off') or '' for c in json.loads(cred_path.read_text(encoding='utf-8'))}
+        creditos = {c['id']: ((c.get('fuente') or '')[:9] + ': ' + (c.get('nombre_origen') or c.get('nombre_off') or '')) for c in json.loads(cred_path.read_text(encoding='utf-8'))}
 
     def get_font(size, bold=False):
         try:
@@ -68,7 +68,7 @@ def main():
             draw.text((x + 10, y + 258 + i * 16), line, font=text_font, fill='black')
         off_name = creditos.get(prod['id'], '')
         if off_name:
-            draw.text((x + 10, y + 258 + len(lines) * 16 + 2), f"OFF: {off_name[:38]}", font=small_font, fill=(64, 64, 64))
+            draw.text((x + 10, y + 258 + len(lines) * 16 + 2), off_name[:40], font=small_font, fill=(64, 64, 64))
 
     hoja_num = 1
     for i in range(0, len(prod_list), args.por_hoja):

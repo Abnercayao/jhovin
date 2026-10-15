@@ -1,1048 +1,1362 @@
 [
  {
   "id": "P1001",
-  "origen": "ia_local",
-  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
-  "seed": 9001,
-  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+  "origen": "tienda",
+  "fuente": "Plaza Vea",
+  "url_producto": "https://www.plazavea.com.pe/arroz-extra-costeno-bolsa-5kg/p",
+  "url_imagen": "https://plazavea.vteximg.com.br/arquivos/ids/27552451-1000-1000/641425.jpg?v=638313121271170000",
+  "nombre_origen": "Arroz Extra COSTEÑO Bolsa 5Kg",
+  "puntaje": 73.0,
+  "licencia": "Imagen referencial de fabricante o tienda; uso demostrativo"
  },
  {
   "id": "P1002",
-  "origen": "off",
-  "codigo_off": "7755139002809",
-  "url_imagen": "https://images.openfoodfacts.org/images/products/775/513/900/2809/front_en.4.full.jpg",
-  "nombre_off": "Paisana extra",
+  "origen": "tienda",
+  "fuente": "Plaza Vea",
+  "url_producto": "https://www.plazavea.com.pe/arroz-extra-paisana-bolsa-5kg/p",
+  "url_imagen": "https://plazavea.vteximg.com.br/arquivos/ids/561147-1000-1000/20130998.jpg?v=637427421679930000",
+  "nombre_origen": "Arroz Extra PAISANA Bolsa 5Kg",
   "puntaje": 95.0,
-  "licencia": "CC BY-SA 3.0 · Open Food Facts contributors"
+  "licencia": "Imagen referencial de fabricante o tienda; uso demostrativo"
  },
  {
   "id": "P1003",
-  "origen": "ia_local",
-  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
-  "seed": 9003,
-  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+  "origen": "tienda",
+  "fuente": "Plaza Vea",
+  "url_producto": "https://www.plazavea.com.pe/arroz-extra-faraon-bolsa-5kg/p",
+  "url_imagen": "https://plazavea.vteximg.com.br/arquivos/ids/34333890-1000-1000/20139617.jpg?v=639124920220070000",
+  "nombre_origen": "Arroz Extra Añejo FARAON Naranja Bolsa 5kg",
+  "puntaje": 91.0,
+  "licencia": "Imagen referencial de fabricante o tienda; uso demostrativo"
  },
  {
   "id": "P1004",
-  "origen": "ia_local",
-  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
-  "seed": 8004,
-  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+  "origen": "tienda",
+  "fuente": "Metro",
+  "url_producto": "https://www.metro.pe/arroz-superior-valle-norte-primera-cosecha-bolsa-750-g-356979/p",
+  "url_imagen": "https://metroio.vteximg.com.br/arquivos/ids/237900-1000-1000/356979-1.jpg?v=638173814674670000",
+  "nombre_origen": "Arroz Superior Valle Norte Primera Cosecha Bolsa 750 g",
+  "puntaje": 91.0,
+  "licencia": "Imagen referencial de fabricante o tienda; uso demostrativo"
  },
  {
   "id": "P1005",
-  "origen": "ia_local",
-  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
-  "seed": 8005,
-  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+  "origen": "tienda",
+  "fuente": "Plaza Vea",
+  "url_producto": "https://www.plazavea.com.pe/arroz-anejo-extra-costenito-saco-50kg/p",
+  "url_imagen": "https://plazavea.vteximg.com.br/arquivos/ids/30568975-1000-1000/20385719.jpg?v=638745523386200000",
+  "nombre_origen": "Arroz Añejo Extra COSTEÑITO Saco 50Kg",
+  "puntaje": null,
+  "licencia": "Imagen referencial de fabricante o tienda; uso demostrativo"
  },
  {
   "id": "P1006",
-  "origen": "ia_local",
-  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
-  "seed": 8006,
-  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+  "origen": "tienda",
+  "fuente": "Plaza Vea",
+  "url_producto": "https://www.plazavea.com.pe/arroz-extra-anejo-faraon-saco-50kg/p",
+  "url_imagen": "https://plazavea.vteximg.com.br/arquivos/ids/34359271-1000-1000/20211960.jpg?v=639125039487100000",
+  "nombre_origen": "Arroz Extra Añejo FARAÓN Saco 50Kg",
+  "puntaje": null,
+  "licencia": "Imagen referencial de fabricante o tienda; uso demostrativo"
  },
  {
   "id": "P1007",
-  "origen": "ia_local",
-  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
-  "seed": 9007,
-  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+  "origen": "tienda",
+  "fuente": "Plaza Vea",
+  "url_producto": "https://www.plazavea.com.pe/azucar-rubia-cartavio-bolsa-1kg/p",
+  "url_imagen": "https://plazavea.vteximg.com.br/arquivos/ids/28650077-1000-1000/20184796.jpg?v=638411617015600000",
+  "nombre_origen": "Azúcar Rubia CARTAVIO Bolsa 1Kg",
+  "puntaje": 95.0,
+  "licencia": "Imagen referencial de fabricante o tienda; uso demostrativo"
  },
  {
   "id": "P1008",
-  "origen": "ia_local",
-  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
-  "seed": 9008,
-  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+  "origen": "tienda",
+  "fuente": "Wong",
+  "url_producto": "https://www.wong.pe/azucar-rubia-paramonga-bolsa-5-kg/p",
+  "url_imagen": "https://wongfood.vteximg.com.br/arquivos/ids/472956-1000-1000/566556-01-85446.jpg?v=637677675143170000",
+  "nombre_origen": "Azúcar Rubia Paramonga Bolsa 5 kg",
+  "puntaje": 95.0,
+  "licencia": "Imagen referencial de fabricante o tienda; uso demostrativo"
  },
  {
   "id": "P1009",
-  "origen": "ia_local",
-  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
-  "seed": 9009,
-  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+  "origen": "tienda",
+  "fuente": "Plaza Vea",
+  "url_producto": "https://www.plazavea.com.pe/azucar-blanca-dulfina-bolsa-1kg/p",
+  "url_imagen": "https://plazavea.vteximg.com.br/arquivos/ids/26947512-1000-1000/20084093.jpg?v=638236224304730000",
+  "nombre_origen": "Azúcar Blanca DULFINA Bolsa 1Kg",
+  "puntaje": 95.0,
+  "licencia": "Imagen referencial de fabricante o tienda; uso demostrativo"
  },
  {
   "id": "P1010",
-  "origen": "ia_local",
-  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
-  "seed": 8010,
-  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+  "origen": "tienda",
+  "fuente": "Plaza Vea",
+  "url_producto": "https://www.plazavea.com.pe/azucar-blanca-refinada-cartavio-saco-50kg/p",
+  "url_imagen": "https://plazavea.vteximg.com.br/arquivos/ids/33954412-1000-1000/20395743.jpg?v=639148219754770000",
+  "nombre_origen": "Azúcar Blanca Refinada CARTAVIO Saco 50Kg",
+  "puntaje": null,
+  "licencia": "Imagen referencial de fabricante o tienda; uso demostrativo"
  },
  {
   "id": "P1011",
-  "origen": "ia_local",
-  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
-  "seed": 9011,
-  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+  "origen": "tienda",
+  "fuente": "Plaza Vea",
+  "url_producto": "https://www.plazavea.com.pe/sal-marina-emsal-mesa-bolsa-1kg/p",
+  "url_imagen": "https://plazavea.vteximg.com.br/arquivos/ids/34330762-1000-1000/20130448.jpg?v=639124900616800000",
+  "nombre_origen": "Sal Marina EMSAL Mesa Bolsa 1Kg",
+  "puntaje": 93.0,
+  "licencia": "Imagen referencial de fabricante o tienda; uso demostrativo"
  },
  {
   "id": "P1012",
-  "origen": "off",
-  "codigo_off": "7798316700532",
-  "url_imagen": "https://images.openfoodfacts.org/images/products/779/831/670/0532/front_fr.3.full.jpg",
-  "nombre_off": "Aceite vegetal",
-  "puntaje": 85.0,
-  "licencia": "CC BY-SA 3.0 · Open Food Facts contributors"
+  "origen": "tienda",
+  "fuente": "Plaza Vea",
+  "url_producto": "https://www.plazavea.com.pe/aceite-vegetal-primor-clasico-botella-900ml-20281566/p",
+  "url_imagen": "https://plazavea.vteximg.com.br/arquivos/ids/36303074-1000-1000/20281566.jpg?v=639264188955000000",
+  "nombre_origen": "Aceite Vegetal PRIMOR Clásico Botella 900ml",
+  "puntaje": 93.0,
+  "licencia": "Imagen referencial de fabricante o tienda; uso demostrativo"
  },
  {
   "id": "P1013",
-  "origen": "off",
-  "codigo_off": "7750243068048",
-  "url_imagen": "https://images.openfoodfacts.org/images/products/775/024/306/8048/front_es.3.full.jpg",
-  "nombre_off": "Aceite Vegetal Cocinero",
-  "puntaje": 100.0,
-  "licencia": "CC BY-SA 3.0 · Open Food Facts contributors"
+  "origen": "tienda",
+  "fuente": "Plaza Vea",
+  "url_producto": "https://www.plazavea.com.pe/aceite-vegetal-cocinero-botella-900ml-20281567/p",
+  "url_imagen": "https://plazavea.vteximg.com.br/arquivos/ids/36303078-1000-1000/20281567.jpg?v=639264188967730000",
+  "nombre_origen": "Aceite Vegetal COCINERO Botella 900ml",
+  "puntaje": 93.0,
+  "licencia": "Imagen referencial de fabricante o tienda; uso demostrativo"
  },
  {
   "id": "P1014",
-  "origen": "ia_local",
-  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
-  "seed": 8014,
-  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+  "origen": "tienda",
+  "fuente": "Plaza Vea",
+  "url_producto": "https://www.plazavea.com.pe/aceite-de-girasol-basso-botella-1l-20088048/p",
+  "url_imagen": "https://plazavea.vteximg.com.br/arquivos/ids/36302766-1000-1000/20088048.jpg?v=639264187721170000",
+  "nombre_origen": "Aceite de Girasol BASSO Botella 1L",
+  "puntaje": null,
+  "licencia": "Imagen referencial de fabricante o tienda; uso demostrativo"
  },
  {
   "id": "P1015",
-  "origen": "ia_local",
-  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
-  "seed": 8015,
-  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+  "origen": "tienda",
+  "fuente": "Plaza Vea",
+  "url_producto": "https://www.plazavea.com.pe/aceite-de-canola-bells-botella-1l-20425275/p",
+  "url_imagen": "https://plazavea.vteximg.com.br/arquivos/ids/36303257-1000-1000/20425275.jpg?v=639264189751000000",
+  "nombre_origen": "Aceite de Canola BELL'S Botella 1L",
+  "puntaje": null,
+  "licencia": "Imagen referencial de fabricante o tienda; uso demostrativo"
  },
  {
   "id": "P1016",
-  "origen": "off",
-  "codigo_off": "7750243044202",
-  "url_imagen": "https://images.openfoodfacts.org/images/products/775/024/304/4202/front_es.6.full.jpg",
-  "nombre_off": "Aceite Primor Corazón",
-  "puntaje": 70.0,
-  "licencia": "CC BY-SA 3.0 · Open Food Facts contributors"
+  "origen": "tienda",
+  "fuente": "Plaza Vea",
+  "url_producto": "https://www.plazavea.com.pe/aceite-vegetal-primor-premium-botella-18l-20714395/p",
+  "url_imagen": "https://plazavea.vteximg.com.br/arquivos/ids/36424759-1000-1000/20714395.jpg?v=639276091187870000",
+  "nombre_origen": "Aceite Vegetal PRIMOR Premium Botella 1.8L",
+  "puntaje": 93.0,
+  "licencia": "Imagen referencial de fabricante o tienda; uso demostrativo"
  },
  {
   "id": "P1017",
-  "origen": "ia_local",
-  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
-  "seed": 8017,
-  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+  "origen": "tienda",
+  "fuente": "Metro",
+  "url_producto": "https://www.metro.pe/aceite-primor-botella-5-litros-3203-2/p",
+  "url_imagen": "https://metroio.vteximg.com.br/arquivos/ids/281595-1000-1000/Aceite-Primor-Botella-5-Litros-1-38270.jpg?v=638179308370800000",
+  "nombre_origen": "Aceite Primor Botella 5 Litros",
+  "puntaje": null,
+  "licencia": "Imagen referencial de fabricante o tienda; uso demostrativo"
  },
  {
   "id": "P1018",
-  "origen": "off",
-  "codigo_off": "7772606000175",
-  "url_imagen": "https://images.openfoodfacts.org/images/products/777/260/600/0175/front_es.4.full.jpg",
-  "nombre_off": "Famosa",
-  "puntaje": 60.0,
-  "licencia": "CC BY-SA 3.0 · Open Food Facts contributors"
+  "origen": "tienda",
+  "fuente": "Plaza Vea",
+  "url_producto": "https://www.plazavea.com.pe/margarina-la-danesa-barra-500g/p",
+  "url_imagen": "https://plazavea.vteximg.com.br/arquivos/ids/808063-1000-1000/20209324.jpg?v=638887164853130000",
+  "nombre_origen": "Margarina LA DANESA Barra 500g",
+  "puntaje": null,
+  "licencia": "Imagen referencial de fabricante o tienda; uso demostrativo"
  },
  {
   "id": "P1019",
-  "origen": "off",
-  "codigo_off": "7460193700218",
-  "url_imagen": "https://images.openfoodfacts.org/images/products/746/019/370/0218/front_en.3.full.jpg",
-  "nombre_off": "Dorina margarina light",
-  "puntaje": 80.0,
-  "licencia": "CC BY-SA 3.0 · Open Food Facts contributors"
+  "origen": "tienda",
+  "fuente": "Plaza Vea",
+  "url_producto": "https://www.plazavea.com.pe/margarina-orasi-pote-250g-20571654/p",
+  "url_imagen": "https://plazavea.vteximg.com.br/arquivos/ids/34187116-1000-1000/20571654.jpg?v=639101362904970000",
+  "nombre_origen": "Margarina ORASI Pote 250g",
+  "puntaje": null,
+  "licencia": "Imagen referencial de fabricante o tienda; uso demostrativo"
  },
  {
   "id": "P1020",
-  "origen": "off",
-  "codigo_off": "7750243286145",
-  "url_imagen": "https://images.openfoodfacts.org/images/products/775/024/328/6145/front_es.33.full.jpg",
-  "nombre_off": "Spaghetti",
-  "puntaje": 65.0,
-  "licencia": "CC BY-SA 3.0 · Open Food Facts contributors"
+  "origen": "tienda",
+  "fuente": "Plaza Vea",
+  "url_producto": "https://www.plazavea.com.pe/fideos-don-vittorio-spaghetti-bolsa-500g-20501452/p",
+  "url_imagen": "https://plazavea.vteximg.com.br/arquivos/ids/35462839-1000-1000/20501452.jpg?v=639207698083300000",
+  "nombre_origen": "Fideos DON VITTORIO Spaghetti Bolsa 500g",
+  "puntaje": null,
+  "licencia": "Imagen referencial de fabricante o tienda; uso demostrativo"
  },
  {
   "id": "P1021",
-  "origen": "ia_local",
-  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
-  "seed": 8021,
-  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+  "origen": "tienda",
+  "fuente": "Plaza Vea",
+  "url_producto": "https://www.plazavea.com.pe/fideos-tallarin-molitalia-bolsa-450g/p",
+  "url_imagen": "https://plazavea.vteximg.com.br/arquivos/ids/28723329-1000-1000/20331946.jpg?v=638425016925200000",
+  "nombre_origen": "Fideos Tallarín MOLITALIA Bolsa 450g",
+  "puntaje": null,
+  "licencia": "Imagen referencial de fabricante o tienda; uso demostrativo"
  },
  {
   "id": "P1022",
-  "origen": "ia_local",
-  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
-  "seed": 8022,
-  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+  "origen": "tienda",
+  "fuente": "Plaza Vea",
+  "url_producto": "https://www.plazavea.com.pe/fideo-canuto-rayado-lavaggi-bolsa-235g/p",
+  "url_imagen": "https://plazavea.vteximg.com.br/arquivos/ids/26368713-1000-1000/20326826.jpg?v=638200803577400000",
+  "nombre_origen": "Fideo Canuto Rayado LAVAGGI Bolsa 235g",
+  "puntaje": null,
+  "licencia": "Imagen referencial de fabricante o tienda; uso demostrativo"
  },
  {
   "id": "P1023",
-  "origen": "ia_local",
-  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
-  "seed": 8023,
-  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+  "origen": "tienda",
+  "fuente": "Plaza Vea",
+  "url_producto": "https://www.plazavea.com.pe/cabello-de-angel-nicolini-bolsa-250g/p",
+  "url_imagen": "https://plazavea.vteximg.com.br/arquivos/ids/31462745-1000-1000/992933.jpg?v=638852256941700000",
+  "nombre_origen": "Fideos Cabello de Ángel NICOLINI Bolsa 250g",
+  "puntaje": 95.0,
+  "licencia": "Imagen referencial de fabricante o tienda; uso demostrativo"
  },
  {
   "id": "P1024",
-  "origen": "ia_local",
-  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
-  "seed": 8024,
-  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+  "origen": "tienda",
+  "fuente": "Plaza Vea",
+  "url_producto": "https://www.plazavea.com.pe/fideos-corbata-grande-don-vittorio-bolsa-250g-20501938/p",
+  "url_imagen": "https://plazavea.vteximg.com.br/arquivos/ids/35462857-1000-1000/20501938.jpg?v=639207698149130000",
+  "nombre_origen": "Fideos Corbata Grande DON VITTORIO Bolsa 250g",
+  "puntaje": 93.0,
+  "licencia": "Imagen referencial de fabricante o tienda; uso demostrativo"
  },
  {
   "id": "P1025",
-  "origen": "off",
-  "codigo_off": "7591123080015",
-  "url_imagen": "https://images.openfoodfacts.org/images/products/759/112/308/0015/front_es.3.full.jpg",
-  "nombre_off": "Harina Todo Uso",
-  "puntaje": 105.0,
-  "licencia": "CC BY-SA 3.0 · Open Food Facts contributors"
+  "origen": "tienda",
+  "fuente": "Plaza Vea",
+  "url_producto": "https://www.plazavea.com.pe/harina-sin-preparar-blanca-flor-bolsa-1kg/p",
+  "url_imagen": "https://plazavea.vteximg.com.br/arquivos/ids/15681712-1000-1000/20146331.jpg?v=637959756492270000",
+  "nombre_origen": "Harina sin Preparar BLANCA FLOR Bolsa 1kg",
+  "puntaje": 93.0,
+  "licencia": "Imagen referencial de fabricante o tienda; uso demostrativo"
  },
  {
   "id": "P1026",
-  "origen": "ia_local",
-  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
-  "seed": 8026,
-  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+  "origen": "tienda",
+  "fuente": "Plaza Vea",
+  "url_producto": "https://www.plazavea.com.pe/harina-de-trigo-nicolini-preparada-bolsa-1kg/p",
+  "url_imagen": "https://plazavea.vteximg.com.br/arquivos/ids/31462810-1000-1000/1472.jpg?v=638852258981200000",
+  "nombre_origen": "Harina de Trigo NICOLINI Preparada Bolsa 1Kg",
+  "puntaje": 93.0,
+  "licencia": "Imagen referencial de fabricante o tienda; uso demostrativo"
  },
  {
   "id": "P1027",
-  "origen": "off",
-  "codigo_off": "7751158011969",
-  "url_imagen": "https://images.openfoodfacts.org/images/products/775/115/801/1969/front_es.3.full.jpg",
-  "nombre_off": "Filete De Atún En Aceite Vegetal x 140Gr",
-  "puntaje": 100.0,
-  "licencia": "CC BY-SA 3.0 · Open Food Facts contributors"
+  "origen": "tienda",
+  "fuente": "Plaza Vea",
+  "url_producto": "https://www.plazavea.com.pe/filete-atun-florida-en-agua-110k-lata-140g/p",
+  "url_imagen": "https://plazavea.vteximg.com.br/arquivos/ids/34358277-1000-1000/20191578.jpg?v=639125031411500000",
+  "nombre_origen": "Filete de Atún FLORIDA en Agua 110kcal Lata 140g",
+  "puntaje": 93.0,
+  "licencia": "Imagen referencial de fabricante o tienda; uso demostrativo"
  },
  {
   "id": "P1028",
-  "origen": "ia_local",
-  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
-  "seed": 8028,
-  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+  "origen": "tienda",
+  "fuente": "Plaza Vea",
+  "url_producto": "https://www.plazavea.com.pe/trozos-de-atun-en-aceite-vegetal-campomar-lata-150g/p",
+  "url_imagen": "https://plazavea.vteximg.com.br/arquivos/ids/31257508-1000-1000/20283911.jpg?v=638809920951400000",
+  "nombre_origen": "Trozos de Atún en Aceite Vegetal CAMPOMAR Lata 150g",
+  "puntaje": null,
+  "licencia": "Imagen referencial de fabricante o tienda; uso demostrativo"
  },
  {
   "id": "P1029",
-  "origen": "ia_local",
-  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
-  "seed": 8029,
-  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+  "origen": "tienda",
+  "fuente": "Plaza Vea",
+  "url_producto": "https://www.plazavea.com.pe/grated-de-atun-a1-en-aceite-vegetal-lata-140g/p",
+  "url_imagen": "https://plazavea.vteximg.com.br/arquivos/ids/29561441-1000-1000/20463210.jpg?v=638629138207170000",
+  "nombre_origen": "Grated de Atún A1 en Aceite Vegetal Lata 140g",
+  "puntaje": null,
+  "licencia": "Imagen referencial de fabricante o tienda; uso demostrativo"
  },
  {
   "id": "P1030",
-  "origen": "ia_local",
-  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
-  "seed": 8030,
-  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+  "origen": "tienda",
+  "fuente": "Plaza Vea",
+  "url_producto": "https://www.plazavea.com.pe/entero-de-jurel-en-salsa-de-tomate-portola-lata-425g/p",
+  "url_imagen": "https://plazavea.vteximg.com.br/arquivos/ids/33838686-1000-1000/20281333.jpg?v=639066022250600000",
+  "nombre_origen": "Entero de Jurel en Salsa de Tomate PORTOLA Lata 425g",
+  "puntaje": null,
+  "licencia": "Imagen referencial de fabricante o tienda; uso demostrativo"
  },
  {
   "id": "P1031",
-  "origen": "ia_local",
-  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
-  "seed": 9031,
-  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+  "origen": "tienda",
+  "fuente": "Wong",
+  "url_producto": "https://www.wong.pe/filete-de-caballa-marinero-140g-991156-2/p",
+  "url_imagen": "https://wongfood.vteximg.com.br/arquivos/ids/695393-1000-1000/Filete-de-Caballa-Marinero-140g-1-351649521.jpg?v=638465529803100000",
+  "nombre_origen": "Filete de Caballa Marinero 140g",
+  "puntaje": null,
+  "licencia": "Imagen referencial de fabricante o tienda; uso demostrativo"
  },
  {
   "id": "P1032",
-  "origen": "off",
-  "codigo_off": "7801800100012",
-  "url_imagen": "https://images.openfoodfacts.org/images/products/780/180/010/0012/front_es.16.full.jpg",
-  "nombre_off": "Peach halves",
-  "puntaje": 60.0,
-  "licencia": "CC BY-SA 3.0 · Open Food Facts contributors"
+  "origen": "tienda",
+  "fuente": "Wong",
+  "url_producto": "https://www.wong.pe/duraznos-en-almibar-aconcagua-820g-4427/p",
+  "url_imagen": "https://wongfood.vteximg.com.br/arquivos/ids/627696-1000-1000/4427-1.jpg?v=638170937552670000",
+  "nombre_origen": "Duraznos en Almíbar Aconcagua 820g",
+  "puntaje": 95.0,
+  "licencia": "Imagen referencial de fabricante o tienda; uso demostrativo"
  },
  {
   "id": "P1033",
-  "origen": "ia_local",
-  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
-  "seed": 9033,
-  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+  "origen": "tienda",
+  "fuente": "Metro",
+  "url_producto": "https://www.metro.pe/leche-evaporada-entera-gloria-lata-390g-975695-2/p",
+  "url_imagen": "https://metroio.vteximg.com.br/arquivos/ids/627582-1000-1000/975695-01-138465.jpg?v=639040953775600000",
+  "nombre_origen": "Leche Evaporada Entera Gloria Lata 390g",
+  "puntaje": null,
+  "licencia": "Imagen referencial de fabricante o tienda; uso demostrativo"
  },
  {
   "id": "P1034",
-  "origen": "off",
-  "codigo_off": "7751271034135",
-  "url_imagen": "https://images.openfoodfacts.org/images/products/775/127/103/4135/front_en.6.full.jpg",
-  "nombre_off": "Leche  light - Gloria",
-  "puntaje": 120.0,
-  "licencia": "CC BY-SA 3.0 · Open Food Facts contributors"
+  "origen": "tienda",
+  "fuente": "Plaza Vea",
+  "url_producto": "https://www.plazavea.com.pe/leche-light-gloria-lata-390g-20402653/p",
+  "url_imagen": "https://plazavea.vteximg.com.br/arquivos/ids/35081596-1000-1000/20402653.jpg?v=639177613190500000",
+  "nombre_origen": "Leche Light GLORIA Lata 390g",
+  "puntaje": null,
+  "licencia": "Imagen referencial de fabricante o tienda; uso demostrativo"
  },
  {
   "id": "P1035",
-  "origen": "ia_local",
-  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
-  "seed": 9035,
-  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+  "origen": "tienda",
+  "fuente": "Plaza Vea",
+  "url_producto": "https://www.plazavea.com.pe/mezcla-lactea-ideal-amanecer-lata-390g-20289778/p",
+  "url_imagen": "https://plazavea.vteximg.com.br/arquivos/ids/35081500-1000-1000/20289778.jpg?v=639177602721930000",
+  "nombre_origen": "Mezcla Láctea IDEAL Amanecer Lata 390g",
+  "puntaje": null,
+  "licencia": "Imagen referencial de fabricante o tienda; uso demostrativo"
  },
  {
   "id": "P1036",
-  "origen": "off",
-  "codigo_off": "7751271018814",
-  "url_imagen": "https://images.openfoodfacts.org/images/products/775/127/101/8814/front_es.4.full.jpg",
-  "nombre_off": "Pura Vida",
-  "puntaje": "manual",
-  "licencia": "CC BY-SA 3.0 · Open Food Facts contributors"
+  "origen": "tienda",
+  "fuente": "Plaza Vea",
+  "url_producto": "https://www.plazavea.com.pe/mezcla-lactea-pura-vida-lata-390g-20402681/p",
+  "url_imagen": "https://plazavea.vteximg.com.br/arquivos/ids/35081603-1000-1000/20402681.jpg?v=639177613273470000",
+  "nombre_origen": "Mezcla Láctea PURA VIDA Lata 390g",
+  "puntaje": null,
+  "licencia": "Imagen referencial de fabricante o tienda; uso demostrativo"
  },
  {
   "id": "P1037",
-  "origen": "off",
-  "codigo_off": "7750151007092",
-  "url_imagen": "https://images.openfoodfacts.org/images/products/775/015/100/7092/front_fr.3.full.jpg",
-  "nombre_off": "Leche Concentrada Sin Lactosa",
-  "puntaje": 100.0,
-  "licencia": "CC BY-SA 3.0 · Open Food Facts contributors"
+  "origen": "tienda",
+  "fuente": "Wong",
+  "url_producto": "https://www.wong.pe/leche-concentrada-sin-lactosa-laive-botella-390g-923851/p",
+  "url_imagen": "https://wongfood.vteximg.com.br/arquivos/ids/834698-1000-1000/Leche-Concentrada-Sin-Lactosa-Laive-Botella-400g-1-200983066.jpg?v=639162777964030000",
+  "nombre_origen": "Leche Concentrada Sin Lactosa Laive Botella 400g",
+  "puntaje": 93.0,
+  "licencia": "Imagen referencial de fabricante o tienda; uso demostrativo"
  },
  {
   "id": "P1038",
-  "origen": "off",
-  "codigo_off": "8445290227027",
-  "url_imagen": "https://images.openfoodfacts.org/images/products/844/529/022/7027/front_es.3.full.jpg",
-  "nombre_off": "Leche condensada Nestlé",
-  "puntaje": 120.0,
-  "licencia": "CC BY-SA 3.0 · Open Food Facts contributors"
+  "origen": "tienda",
+  "fuente": "Plaza Vea",
+  "url_producto": "https://www.plazavea.com.pe/leche-condensada-nestle-lata-393g/p",
+  "url_imagen": "https://plazavea.vteximg.com.br/arquivos/ids/27427603-1000-1000/20281666.jpg?v=639113659142500000",
+  "nombre_origen": "Leche Condensada NESTLÉ Lata 393g",
+  "puntaje": 95.0,
+  "licencia": "Imagen referencial de fabricante o tienda; uso demostrativo"
  },
  {
   "id": "P1039",
-  "origen": "off",
-  "codigo_off": "7751271012171",
-  "url_imagen": "https://images.openfoodfacts.org/images/products/775/127/101/2171/front_es.6.full.jpg",
-  "nombre_off": "yogurt bebible fresa",
-  "puntaje": 90.0,
-  "licencia": "CC BY-SA 3.0 · Open Food Facts contributors"
+  "origen": "tienda",
+  "fuente": "Plaza Vea",
+  "url_producto": "https://www.plazavea.com.pe/yogurt-bebible-gloria-sin-lactosa-fresa-botella-1kg/p",
+  "url_imagen": "https://plazavea.vteximg.com.br/arquivos/ids/29385862-1000-1000/920127---GLORIA-YOGURT-ZERO-LACTO-FRESA-BT-1KG.jpg?v=638604737968670000",
+  "nombre_origen": "Yogurt Bebible GLORIA sin Lactosa Fresa Botella 1Kg",
+  "puntaje": 91.0,
+  "licencia": "Imagen referencial de fabricante o tienda; uso demostrativo"
  },
  {
   "id": "P1040",
-  "origen": "off",
-  "codigo_off": "7750151007610",
-  "url_imagen": "https://images.openfoodfacts.org/images/products/775/015/100/7610/front_es.3.full.jpg",
-  "nombre_off": "Mantequilla",
-  "puntaje": 70.0,
-  "licencia": "CC BY-SA 3.0 · Open Food Facts contributors"
+  "origen": "tienda",
+  "fuente": "Metro",
+  "url_producto": "https://www.metro.pe/mantequilla-con-sal-laive-180g-2-2/p",
+  "url_imagen": "https://metroio.vteximg.com.br/arquivos/ids/241549-1000-1000/Mantequilla-con-Sal-Laive-180g-1-351639699.jpg?v=638173833920200000",
+  "nombre_origen": "Mantequilla con Sal Laive 180g",
+  "puntaje": null,
+  "licencia": "Imagen referencial de fabricante o tienda; uso demostrativo"
  },
  {
   "id": "P1041",
-  "origen": "off",
-  "codigo_off": "7613033907289",
-  "url_imagen": "https://images.openfoodfacts.org/images/products/761/303/390/7289/front_es.4.full.jpg",
-  "nombre_off": "Nescafé • Café Instantáneo Tradicional Tarro 150G",
-  "puntaje": 70.0,
-  "licencia": "CC BY-SA 3.0 · Open Food Facts contributors"
+  "origen": "tienda",
+  "fuente": "Plaza Vea",
+  "url_producto": "https://www.plazavea.com.pe/cafe-instantaneo-nescafe-tradicion-frasco-170g/p",
+  "url_imagen": "https://plazavea.vteximg.com.br/arquivos/ids/31481005-1000-1000/20281505.jpg?v=638853121107500000",
+  "nombre_origen": "Café Instantáneo NESCAFÉ Tradición Frasco 170g",
+  "puntaje": null,
+  "licencia": "Imagen referencial de fabricante o tienda; uso demostrativo"
  },
  {
   "id": "P1042",
-  "origen": "off",
-  "codigo_off": "7750463004086",
-  "url_imagen": "https://images.openfoodfacts.org/images/products/775/046/300/4086/front_es.3.full.jpg",
-  "nombre_off": "cafe instantáneo liofilizado",
-  "puntaje": 90.0,
-  "licencia": "CC BY-SA 3.0 · Open Food Facts contributors"
+  "origen": "tienda",
+  "fuente": "Wong",
+  "url_producto": "https://www.wong.pe/cafe-instantaneo-altomayo-gourmet-190g/p",
+  "url_imagen": "https://wongfood.vteximg.com.br/arquivos/ids/694895-1000-1000/Caf-Instant-neo-Altomayo-Gourmet-190g-1-214355699.jpg?v=638461209959470000",
+  "nombre_origen": "Café Instantáneo Altomayo Gourmet 190g",
+  "puntaje": 93.0,
+  "licencia": "Imagen referencial de fabricante o tienda; uso demostrativo"
  },
  {
   "id": "P1043",
-  "origen": "ia_local",
-  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
-  "seed": 9043,
-  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+  "origen": "tienda",
+  "fuente": "Plaza Vea",
+  "url_producto": "https://www.plazavea.com.pe/cafe-instantaneo-nescafe-kirma-lata-180g/p",
+  "url_imagen": "https://plazavea.vteximg.com.br/arquivos/ids/34370726-1000-1000/20565470-1.jpg?v=639125110909770000",
+  "nombre_origen": "Café Instantáneo NESCAFÉ Kirma Lata 180g",
+  "puntaje": null,
+  "licencia": "Imagen referencial de fabricante o tienda; uso demostrativo"
  },
  {
   "id": "P1044",
-  "origen": "off",
-  "codigo_off": "7752748004514",
-  "url_imagen": "https://images.openfoodfacts.org/images/products/775/274/800/4514/front_es.11.full.jpg",
-  "nombre_off": "Cocoa Winter's",
-  "puntaje": 120.0,
-  "licencia": "CC BY-SA 3.0 · Open Food Facts contributors"
+  "origen": "tienda",
+  "fuente": "Plaza Vea",
+  "url_producto": "https://www.plazavea.com.pe/cocoa-winters-doypack-150g/p",
+  "url_imagen": "https://plazavea.vteximg.com.br/arquivos/ids/25898075-1000-1000/20331109.jpg?v=638146153330530000",
+  "nombre_origen": "Cocoa WINTERS Doypack 150g",
+  "puntaje": null,
+  "licencia": "Imagen referencial de fabricante o tienda; uso demostrativo"
  },
  {
   "id": "P1045",
-  "origen": "off",
-  "codigo_off": "7758574002373",
-  "url_imagen": "https://images.openfoodfacts.org/images/products/775/857/400/2373/front_fr.3.full.jpg",
-  "nombre_off": "Avena instantanea",
-  "puntaje": 100.0,
-  "licencia": "CC BY-SA 3.0 · Open Food Facts contributors"
+  "origen": "tienda",
+  "fuente": "Plaza Vea",
+  "url_producto": "https://www.plazavea.com.pe/avena-quaker-tradicional-bolsa-900g/p",
+  "url_imagen": "https://plazavea.vteximg.com.br/arquivos/ids/34359769-1000-1000/20251263.jpg?v=639125043115100000",
+  "nombre_origen": "Avena QUAKER Tradicional Bolsa 900g",
+  "puntaje": 93.0,
+  "licencia": "Imagen referencial de fabricante o tienda; uso demostrativo"
  },
  {
   "id": "P1046",
-  "origen": "off",
-  "codigo_off": "7750885020589",
-  "url_imagen": "https://images.openfoodfacts.org/images/products/775/088/502/0589/front_es.3.full.jpg",
-  "nombre_off": "Avena precocida con quinua",
-  "puntaje": 120.0,
-  "licencia": "CC BY-SA 3.0 · Open Food Facts contributors"
+  "origen": "tienda",
+  "fuente": "Wong",
+  "url_producto": "https://www.wong.pe/avena-precocida-3-ositos-900g-518456/p",
+  "url_imagen": "https://wongfood.vteximg.com.br/arquivos/ids/698511-1000-1000/frontal-3557.jpg?v=638479569966370000",
+  "nombre_origen": "Avena Precocida 3 Ositos 900g",
+  "puntaje": 95.0,
+  "licencia": "Imagen referencial de fabricante o tienda; uso demostrativo"
  },
  {
   "id": "P1047",
-  "origen": "off",
-  "codigo_off": "7750960000048",
-  "url_imagen": "https://images.openfoodfacts.org/images/products/775/096/000/0048/front_es.20.full.jpg",
-  "nombre_off": "Chocolate",
-  "puntaje": 105.0,
-  "licencia": "CC BY-SA 3.0 · Open Food Facts contributors"
+  "origen": "tienda",
+  "fuente": "Plaza Vea",
+  "url_producto": "https://www.plazavea.com.pe/chocolate-para-taza-sol-del-cusco-barra-90gr/p",
+  "url_imagen": "https://plazavea.vteximg.com.br/arquivos/ids/29192039-1000-1000/20100883.jpg?v=638553078647870000",
+  "nombre_origen": "Chocolate para Taza SOL DEL CUSCO Tableta 90g",
+  "puntaje": 91.0,
+  "licencia": "Imagen referencial de fabricante o tienda; uso demostrativo"
  },
  {
   "id": "P1048",
-  "origen": "off",
-  "codigo_off": "7750885016841",
-  "url_imagen": "https://images.openfoodfacts.org/images/products/775/088/501/6841/front_en.3.full.jpg",
-  "nombre_off": "Deli fresa",
-  "puntaje": 75.0,
-  "licencia": "CC BY-SA 3.0 · Open Food Facts contributors"
+  "origen": "tienda",
+  "fuente": "Plaza Vea",
+  "url_producto": "https://www.plazavea.com.pe/mermelada-compass-fresa-frasco-1kg/p",
+  "url_imagen": "https://plazavea.vteximg.com.br/arquivos/ids/3459485-1000-1000/20168251.jpg?v=637735403090530000",
+  "nombre_origen": "Mermelada COMPASS Fresa Frasco 1Kg",
+  "puntaje": null,
+  "licencia": "Imagen referencial de fabricante o tienda; uso demostrativo"
  },
  {
   "id": "P1049",
-  "origen": "ia_local",
-  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
-  "seed": 9049,
-  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+  "origen": "tienda",
+  "fuente": "Plaza Vea",
+  "url_producto": "https://www.plazavea.com.pe/infusion-de-manzanilla-lipton-caja-20un-20570570/p",
+  "url_imagen": "https://plazavea.vteximg.com.br/arquivos/ids/34476265-1000-1000/20570570.jpg?v=639130838599630000",
+  "nombre_origen": "Infusión de Manzanilla LIPTON Caja 20un",
+  "puntaje": null,
+  "licencia": "Imagen referencial de fabricante o tienda; uso demostrativo"
  },
  {
   "id": "P1050",
-  "origen": "ia_local",
-  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
-  "seed": 8050,
-  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+  "origen": "tienda",
+  "fuente": "Plaza Vea",
+  "url_producto": "https://www.plazavea.com.pe/lenteja-costeno-bolsa-500g/p",
+  "url_imagen": "https://plazavea.vteximg.com.br/arquivos/ids/27552452-1000-1000/995413.jpg?v=638313121359870000",
+  "nombre_origen": "Lenteja COSTEÑO Bolsa 500g",
+  "puntaje": 95.0,
+  "licencia": "Imagen referencial de fabricante o tienda; uso demostrativo"
  },
  {
   "id": "P1051",
-  "origen": "ia_local",
-  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
-  "seed": 8051,
-  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+  "origen": "tienda",
+  "fuente": "Plaza Vea",
+  "url_producto": "https://www.plazavea.com.pe/frijol-canario-costeno-bolsa-500g/p",
+  "url_imagen": "https://plazavea.vteximg.com.br/arquivos/ids/27552455-1000-1000/995418.jpg?v=638313121530870000",
+  "nombre_origen": "Frijol Canario COSTEÑO Bolsa 500g",
+  "puntaje": 73.0,
+  "licencia": "Imagen referencial de fabricante o tienda; uso demostrativo"
  },
  {
   "id": "P1052",
-  "origen": "ia_local",
-  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
-  "seed": 8052,
-  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+  "origen": "tienda",
+  "fuente": "Wong",
+  "url_producto": "https://www.wong.pe/arveja-verde-valle-norte-bolsa-500-g-2/p",
+  "url_imagen": "https://wongfood.vteximg.com.br/arquivos/ids/265455-1000-1000/724132-1.jpg?v=636814365120670000",
+  "nombre_origen": "Arveja Verde Valle Norte Bolsa 500 g",
+  "puntaje": 73.0,
+  "licencia": "Imagen referencial de fabricante o tienda; uso demostrativo"
  },
  {
   "id": "P1053",
-  "origen": "ia_local",
-  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
-  "seed": 8053,
-  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+  "origen": "tienda",
+  "fuente": "Plaza Vea",
+  "url_producto": "https://www.plazavea.com.pe/pallar-costeno-bolsa-500g/p",
+  "url_imagen": "https://plazavea.vteximg.com.br/arquivos/ids/34331984-1000-1000/995416.jpg?v=639124909529830000",
+  "nombre_origen": "Pallar COSTEÑO Bolsa 500g",
+  "puntaje": 75.0,
+  "licencia": "Imagen referencial de fabricante o tienda; uso demostrativo"
  },
  {
   "id": "P1054",
-  "origen": "ia_local",
-  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
-  "seed": 8054,
-  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+  "origen": "tienda",
+  "fuente": "Plaza Vea",
+  "url_producto": "https://www.plazavea.com.pe/garbanzo-costeno-bolsa-500g/p",
+  "url_imagen": "https://plazavea.vteximg.com.br/arquivos/ids/27552447-1000-1000/998183.jpg?v=638313121075500000",
+  "nombre_origen": "Garbanzo COSTEÑO Bolsa 500g",
+  "puntaje": 95.0,
+  "licencia": "Imagen referencial de fabricante o tienda; uso demostrativo"
  },
  {
   "id": "P1055",
-  "origen": "off",
-  "codigo_off": "7750243046114",
-  "url_imagen": "https://images.openfoodfacts.org/images/products/775/024/304/6114/front_es.24.full.jpg",
-  "nombre_off": "Mayonesa",
-  "puntaje": 120.0,
-  "licencia": "CC BY-SA 3.0 · Open Food Facts contributors"
+  "origen": "tienda",
+  "fuente": "Wong",
+  "url_producto": "https://www.wong.pe/inka-chips-sal-de-mar-135g-6un-cusque-a-trigo-355ml-mayonesa-alacena-475g-29153/p",
+  "url_imagen": "https://wongfood.vteximg.com.br/arquivos/ids/818220-1000-1000/frontal-531.jpg?v=639181203093370000",
+  "nombre_origen": "Mayonesa AlaCena 475g",
+  "puntaje": 95.0,
+  "licencia": "Imagen referencial de fabricante o tienda; uso demostrativo"
  },
  {
   "id": "P1056",
-  "origen": "ia_local",
-  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
-  "seed": 8056,
-  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+  "origen": "tienda",
+  "fuente": "Wong",
+  "url_producto": "https://www.wong.pe/ketchup-alacena-380g-124379/p",
+  "url_imagen": "https://wongfood.vteximg.com.br/arquivos/ids/818223-1000-1000/frontal-548.jpg?v=639062553926500000",
+  "nombre_origen": "Ketchup AlaCena 380g",
+  "puntaje": null,
+  "licencia": "Imagen referencial de fabricante o tienda; uso demostrativo"
  },
  {
   "id": "P1057",
-  "origen": "off",
-  "codigo_off": "0812125009987",
-  "url_imagen": "https://images.openfoodfacts.org/images/products/081/212/500/9987/front_en.3.full.jpg",
-  "nombre_off": "Sillao kikko soy sauce",
-  "puntaje": 85.0,
-  "licencia": "CC BY-SA 3.0 · Open Food Facts contributors"
+  "origen": "tienda",
+  "fuente": "Plaza Vea",
+  "url_producto": "https://www.plazavea.com.pe/salsa-de-soya-kikko-shoyu-botella-350ml/p",
+  "url_imagen": "https://plazavea.vteximg.com.br/arquivos/ids/561625-1000-1000/20184163.jpg?v=637427438177400000",
+  "nombre_origen": "Salsa de Soya KIKKO Shoyu Botella 350ml",
+  "puntaje": null,
+  "licencia": "Imagen referencial de fabricante o tienda; uso demostrativo"
  },
  {
   "id": "P1058",
-  "origen": "off",
-  "codigo_off": "7753121003247",
-  "url_imagen": "https://images.openfoodfacts.org/images/products/775/312/100/3247/front_es.3.full.jpg",
-  "nombre_off": "Sazonador Sibarita",
-  "puntaje": 75.0,
-  "licencia": "CC BY-SA 3.0 · Open Food Facts contributors"
+  "origen": "tienda",
+  "fuente": "Plaza Vea",
+  "url_producto": "https://www.plazavea.com.pe/salsa-sibarita-sazonador-sobre-80-gr/p",
+  "url_imagen": "https://plazavea.vteximg.com.br/arquivos/ids/553891-1000-1000/174824.jpg?v=637426567895630000",
+  "nombre_origen": "Salsa SIBARITA Sazonador Frasco 80g",
+  "puntaje": null,
+  "licencia": "Imagen referencial de fabricante o tienda; uso demostrativo"
  },
  {
   "id": "P1059",
-  "origen": "off",
-  "codigo_off": "7754487121415",
-  "url_imagen": "https://images.openfoodfacts.org/images/products/775/448/712/1415/front_es.28.full.jpg",
-  "nombre_off": "Aji-No-Sillao minka",
-  "puntaje": 115.0,
-  "licencia": "CC BY-SA 3.0 · Open Food Facts contributors"
+  "origen": "tienda",
+  "fuente": "Plaza Vea",
+  "url_producto": "https://www.plazavea.com.pe/sillao-aji-no-sillao-botella-500ml/p",
+  "url_imagen": "https://plazavea.vteximg.com.br/arquivos/ids/553763-1000-1000/113298.jpg?v=637426563165300000",
+  "nombre_origen": "Sillao AJI-NO-SILLAO Botella 500ml",
+  "puntaje": null,
+  "licencia": "Imagen referencial de fabricante o tienda; uso demostrativo"
  },
  {
   "id": "P1060",
-  "origen": "off",
-  "codigo_off": "7754487000345",
-  "url_imagen": "https://images.openfoodfacts.org/images/products/775/448/700/0345/front_es.10.full.jpg",
-  "nombre_off": "Caldo sabor Gallina",
-  "puntaje": 95.0,
-  "licencia": "CC BY-SA 3.0 · Open Food Facts contributors"
+  "origen": "tienda",
+  "fuente": "Plaza Vea",
+  "url_producto": "https://www.plazavea.com.pe/caldo-de-gallina-dona-gusta-concentrado-en-polvo-caja-42g/p",
+  "url_imagen": "https://plazavea.vteximg.com.br/arquivos/ids/2900907-1000-1000/138325.jpg?v=637719816463970000",
+  "nombre_origen": "Caldo de Gallina DOÑA GUSTA Concentrado en Polvo Caja 42g",
+  "puntaje": 71.0,
+  "licencia": "Imagen referencial de fabricante o tienda; uso demostrativo"
  },
  {
   "id": "P1061",
-  "origen": "ia_local",
-  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
-  "seed": 8061,
-  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+  "origen": "tienda",
+  "fuente": "Plaza Vea",
+  "url_producto": "https://www.plazavea.com.pe/derby-vinagre-vino-tinto-bt-1lt/p",
+  "url_imagen": "https://plazavea.vteximg.com.br/arquivos/ids/553842-1000-1000/20084977.jpg?v=637426566142430000",
+  "nombre_origen": "Vinagre DERBY Tinto Botella 1L",
+  "puntaje": null,
+  "licencia": "Imagen referencial de fabricante o tienda; uso demostrativo"
  },
  {
   "id": "P1062",
-  "origen": "ia_local",
-  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
-  "seed": 8062,
-  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+  "origen": "tienda",
+  "fuente": "Wong",
+  "url_producto": "https://www.wong.pe/crema-de-aj-alacena-tar-85g-421433/p",
+  "url_imagen": "https://wongfood.vteximg.com.br/arquivos/ids/818224-1000-1000/frontal-562.jpg?v=639062553930470000",
+  "nombre_origen": "Crema de Ají AlaCena Tarí 85g",
+  "puntaje": 79.7,
+  "licencia": "Imagen referencial de fabricante o tienda; uso demostrativo"
  },
  {
   "id": "P1063",
-  "origen": "off",
-  "codigo_off": "7622201714826",
-  "url_imagen": "https://images.openfoodfacts.org/images/products/762/220/171/4826/front_es.15.full.jpg",
-  "nombre_off": "Galleta de Soda",
-  "puntaje": 100.0,
-  "licencia": "CC BY-SA 3.0 · Open Food Facts contributors"
+  "origen": "tienda",
+  "fuente": "Plaza Vea",
+  "url_producto": "https://www.plazavea.com.pe/galletas-soda-field-bolsa-6un/p",
+  "url_imagen": "https://plazavea.vteximg.com.br/arquivos/ids/31462867-1000-1000/20282832.jpg?v=639235240045730000",
+  "nombre_origen": "Galletas Saladas FIELD Soda Paquete 6un",
+  "puntaje": 76.0,
+  "licencia": "Imagen referencial de fabricante o tienda; uso demostrativo"
  },
  {
   "id": "P1064",
-  "origen": "ia_local",
-  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
-  "seed": 10064,
-  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+  "origen": "tienda",
+  "fuente": "Wong",
+  "url_producto": "https://www.wong.pe/sixpack-galleta-casino-sabor-menta-43g-348641006/p",
+  "url_imagen": "https://wongfood.vteximg.com.br/arquivos/ids/769120-1000-1000/frontal-2844.jpg?v=638826897882800000",
+  "nombre_origen": "Sixpack Galleta Casino Sabor Menta 43g",
+  "puntaje": null,
+  "licencia": "Imagen referencial de fabricante o tienda; uso demostrativo"
  },
  {
   "id": "P1065",
-  "origen": "ia_local",
-  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
-  "seed": 8065,
-  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+  "origen": "tienda",
+  "fuente": "Plaza Vea",
+  "url_producto": "https://www.plazavea.com.pe/galletas-morochas-paquete-180g/p",
+  "url_imagen": "https://plazavea.vteximg.com.br/arquivos/ids/342248-1000-1000/198967.jpg?v=639098745716370000",
+  "nombre_origen": "Galletas MOROCHAS Bolsa 6un",
+  "puntaje": null,
+  "licencia": "Imagen referencial de fabricante o tienda; uso demostrativo"
  },
  {
   "id": "P1066",
-  "origen": "off",
-  "codigo_off": "7702133009037",
-  "url_imagen": "https://images.openfoodfacts.org/images/products/770/213/300/9037/front_es.6.full.jpg",
-  "nombre_off": "Galleta Oreo",
-  "puntaje": 85.0,
-  "licencia": "CC BY-SA 3.0 · Open Food Facts contributors"
+  "origen": "tienda",
+  "fuente": "Plaza Vea",
+  "url_producto": "https://www.plazavea.com.pe/pack-galleta-nabisco-oreo-regular-paquete-6un-x-2un/p",
+  "url_imagen": "https://plazavea.vteximg.com.br/arquivos/ids/28685543-1000-1000/K0000009884.jpg?v=638418009352530000",
+  "nombre_origen": "Pack Galletas OREO Original Paquete 6un x 2",
+  "puntaje": null,
+  "licencia": "Imagen referencial de fabricante o tienda; uso demostrativo"
  },
  {
   "id": "P1067",
-  "origen": "off",
-  "codigo_off": "7622300116521",
-  "url_imagen": "https://images.openfoodfacts.org/images/products/762/230/011/6521/front_es.20.full.jpg",
-  "nombre_off": "Galletas RITZ",
-  "puntaje": 75.0,
-  "licencia": "CC BY-SA 3.0 · Open Food Facts contributors"
+  "origen": "tienda",
+  "fuente": "Plaza Vea",
+  "url_producto": "https://www.plazavea.com.pe/galletas-saladas-ritz-bolsa-20g-paquete-6un/p",
+  "url_imagen": "https://plazavea.vteximg.com.br/arquivos/ids/30364828-1000-1000/20355481.jpg?v=639150597091900000",
+  "nombre_origen": "Galletas Saladas RITZ sabor Original Paquete 6un",
+  "puntaje": null,
+  "licencia": "Imagen referencial de fabricante o tienda; uso demostrativo"
  },
  {
   "id": "P1068",
-  "origen": "ia_local",
-  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
-  "seed": 8068,
-  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+  "origen": "tienda",
+  "fuente": "Plaza Vea",
+  "url_producto": "https://www.plazavea.com.pe/galleta-chomp-sabor-chocolate-empaque-38g-paquete-6un/p",
+  "url_imagen": "https://plazavea.vteximg.com.br/arquivos/ids/34464604-1000-1000/1165327001.jpg?v=639130788545570000",
+  "nombre_origen": "Galleta CHOMP Sabor Chocolate Empaque 38g Paquete 6un",
+  "puntaje": 72.0,
+  "licencia": "Imagen referencial de fabricante o tienda; uso demostrativo"
  },
  {
   "id": "P1069",
-  "origen": "off",
-  "codigo_off": "7750885019873",
-  "url_imagen": "https://images.openfoodfacts.org/images/products/775/088/501/9873/front_es.19.full.jpg",
-  "nombre_off": "Nik Fresa",
-  "puntaje": 75.0,
-  "licencia": "CC BY-SA 3.0 · Open Food Facts contributors"
+  "origen": "tienda",
+  "fuente": "Wong",
+  "url_producto": "https://www.wong.pe/wafers-nik-costa-fresa-pack-6un-402457002/p",
+  "url_imagen": "https://wongfood.vteximg.com.br/arquivos/ids/500717-1000-1000/frontal-2816.jpg?v=637739138055570000",
+  "nombre_origen": "Wafers Nik Costa Fresa Pack 6un",
+  "puntaje": 78.0,
+  "licencia": "Imagen referencial de fabricante o tienda; uso demostrativo"
  },
  {
   "id": "P1070",
-  "origen": "ia_local",
-  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
-  "seed": 8070,
-  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+  "origen": "tienda",
+  "fuente": "Plaza Vea",
+  "url_producto": "https://www.plazavea.com.pe/chocolate-nestle-sublime-clasico-paquete-26g/p",
+  "url_imagen": "https://plazavea.vteximg.com.br/arquivos/ids/29152411-1000-1000/20281332.jpg?v=638537760385070000",
+  "nombre_origen": "Chocolate NESTLÉ Sublime Clásico Paquete 26g",
+  "puntaje": null,
+  "licencia": "Imagen referencial de fabricante o tienda; uso demostrativo"
  },
  {
   "id": "P1071",
-  "origen": "ia_local",
-  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
-  "seed": 8071,
-  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+  "origen": "tienda",
+  "fuente": "Wong",
+  "url_producto": "https://www.wong.pe/caramelos-duros-halls-menta-9un-48471001/p",
+  "url_imagen": "https://wongfood.vteximg.com.br/arquivos/ids/697099-1000-1000/Caramelos-Duros-Halls-Menta-9un-1-32589.jpg?v=638476115494970000",
+  "nombre_origen": "Caramelos Duros Halls Menta 9un",
+  "puntaje": null,
+  "licencia": "Imagen referencial de fabricante o tienda; uso demostrativo"
  },
  {
   "id": "P1072",
-  "origen": "off",
-  "codigo_off": "7752025006880",
-  "url_imagen": "https://images.openfoodfacts.org/images/products/775/202/500/6880/front_es.13.full.jpg",
-  "nombre_off": "Lay's - Clásicas",
-  "puntaje": 75.0,
-  "licencia": "CC BY-SA 3.0 · Open Food Facts contributors"
+  "origen": "tienda",
+  "fuente": "Metro",
+  "url_producto": "https://www.metro.pe/papas-fritas-lay-s-cl-sicas-140g-757201/p",
+  "url_imagen": "https://metroio.vteximg.com.br/arquivos/ids/664942-1000-1000/757201-1-29315.jpg?v=639262354505970000",
+  "nombre_origen": "Papas Fritas Lay's Clásicas 140g",
+  "puntaje": null,
+  "licencia": "Imagen referencial de fabricante o tienda; uso demostrativo"
  },
  {
   "id": "P1073",
-  "origen": "off",
-  "codigo_off": "7752025004763",
-  "url_imagen": "https://images.openfoodfacts.org/images/products/775/202/500/4763/front_es.26.full.jpg",
-  "nombre_off": "Doritos sabor a Queso Atrevido",
-  "puntaje": 85.0,
-  "licencia": "CC BY-SA 3.0 · Open Food Facts contributors"
+  "origen": "tienda",
+  "fuente": "Wong",
+  "url_producto": "https://www.wong.pe/doritos-queso-fuego-90g-990057-2/p",
+  "url_imagen": "https://wongfood.vteximg.com.br/arquivos/ids/717529-1000-1000/Doritos-Queso-Fuego-90g-1-351648357.jpg?v=638576122785830000",
+  "nombre_origen": "Doritos Queso Fuego 90g",
+  "puntaje": null,
+  "licencia": "Imagen referencial de fabricante o tienda; uso demostrativo"
  },
  {
   "id": "P1074",
-  "origen": "ia_local",
-  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
-  "seed": 8074,
-  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+  "origen": "tienda",
+  "fuente": "Plaza Vea",
+  "url_producto": "https://www.plazavea.com.pe/snack-de-maiz-cheese-tris-queso-bolsa-120g-20365759/p",
+  "url_imagen": "https://plazavea.vteximg.com.br/arquivos/ids/36263897-1000-1000/20365759.jpg?v=639259881496200000",
+  "nombre_origen": "Snack de Maíz CHEESE TRIS Queso Bolsa 120g",
+  "puntaje": null,
+  "licencia": "Imagen referencial de fabricante o tienda; uso demostrativo"
  },
  {
   "id": "P1075",
-  "origen": "off",
-  "codigo_off": "7758574003578",
-  "url_imagen": "https://images.openfoodfacts.org/images/products/775/857/400/3578/front_en.5.full.jpg",
-  "nombre_off": "Piqueo Snax",
-  "puntaje": 100.0,
-  "licencia": "CC BY-SA 3.0 · Open Food Facts contributors"
+  "origen": "tienda",
+  "fuente": "Wong",
+  "url_producto": "https://www.wong.pe/piqueo-snax-original-190g-757207/p",
+  "url_imagen": "https://wongfood.vteximg.com.br/arquivos/ids/851103-1000-1000/Piqueo-Snax-Original-190g-1-50084171.jpg?v=639262354511270000",
+  "nombre_origen": "Piqueo Snax Original 190g",
+  "puntaje": null,
+  "licencia": "Imagen referencial de fabricante o tienda; uso demostrativo"
  },
  {
   "id": "P1076",
-  "origen": "off",
-  "codigo_off": "0819046000444",
-  "url_imagen": "https://images.openfoodfacts.org/images/products/081/904/600/0444/front_en.7.full.jpg",
-  "nombre_off": "Plantain chips with sea salt",
-  "puntaje": 60.0,
-  "licencia": "CC BY-SA 3.0 · Open Food Facts contributors"
+  "origen": "tienda",
+  "fuente": "Plaza Vea",
+  "url_producto": "https://www.plazavea.com.pe/chifle-salados-inka-chips-bolsa-135g-20501287/p",
+  "url_imagen": "https://plazavea.vteximg.com.br/arquivos/ids/36164029-1000-1000/20501287.jpg?v=639252500960570000",
+  "nombre_origen": "Chifle Salados INKA CHIPS Bolsa 135g",
+  "puntaje": null,
+  "licencia": "Imagen referencial de fabricante o tienda; uso demostrativo"
  },
  {
   "id": "P1077",
-  "origen": "ia_local",
-  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
-  "seed": 8077,
-  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+  "origen": "tienda",
+  "fuente": "Plaza Vea",
+  "url_producto": "https://www.plazavea.com.pe/tostones-inka-chips-bolsa-100g/p",
+  "url_imagen": "https://plazavea.vteximg.com.br/arquivos/ids/27427529-1000-1000/20202065.jpg?v=638282885266730000",
+  "nombre_origen": "Tostones INKA CHIPS Bolsa 100g",
+  "puntaje": null,
+  "licencia": "Imagen referencial de fabricante o tienda; uso demostrativo"
  },
  {
   "id": "P1078",
-  "origen": "off",
-  "codigo_off": "7752025006484",
-  "url_imagen": "https://images.openfoodfacts.org/images/products/775/202/500/6484/front_es.4.full.jpg",
-  "nombre_off": "Maní crocante salado",
-  "puntaje": 90.0,
-  "licencia": "CC BY-SA 3.0 · Open Food Facts contributors"
+  "origen": "tienda",
+  "fuente": "Wong",
+  "url_producto": "https://www.wong.pe/man-karinto-cl-sico-salado-100g-401997/p",
+  "url_imagen": "https://wongfood.vteximg.com.br/arquivos/ids/851087-1000-1000/frontal-874.jpg?v=639262354435930000",
+  "nombre_origen": "Maní Karinto Clásico Salado 100g",
+  "puntaje": null,
+  "licencia": "Imagen referencial de fabricante o tienda; uso demostrativo"
  },
  {
   "id": "P1079",
-  "origen": "ia_local",
-  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
-  "seed": 8079,
-  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+  "origen": "tienda",
+  "fuente": "Wong",
+  "url_producto": "https://www.wong.pe/agua-sin-gas-cielo-botella-625ml-113736002/p",
+  "url_imagen": "https://wongfood.vteximg.com.br/arquivos/ids/724665-1000-1000/113736002-01-4590.jpg?v=638621159557400000",
+  "nombre_origen": "Agua Sin Gas Cielo Botella 625ml",
+  "puntaje": 95.0,
+  "licencia": "Imagen referencial de fabricante o tienda; uso demostrativo"
  },
  {
   "id": "P1080",
-  "origen": "off",
-  "codigo_off": "7750298000727",
-  "url_imagen": "https://images.openfoodfacts.org/images/products/775/029/800/0727/front_es.14.full.jpg",
-  "nombre_off": "San luis 2.5L",
-  "puntaje": 75.0,
-  "licencia": "CC BY-SA 3.0 · Open Food Facts contributors"
+  "origen": "tienda",
+  "fuente": "Plaza Vea",
+  "url_producto": "https://www.plazavea.com.pe/agua-mineral-san-mateo-sin-gas-botella-25l-968063/p",
+  "url_imagen": "https://plazavea.vteximg.com.br/arquivos/ids/36302699-1000-1000/968063.jpg?v=639264187441070000",
+  "nombre_origen": "Agua Mineral SAN MATEO Sin Gas Botella 2.5L",
+  "puntaje": null,
+  "licencia": "Imagen referencial de fabricante o tienda; uso demostrativo"
  },
  {
   "id": "P1081",
-  "origen": "off",
-  "codigo_off": "77530974",
-  "url_imagen": "https://images.openfoodfacts.org/images/products/77530974/front_es.3.full.jpg",
-  "nombre_off": "agua mineral de manantial",
-  "puntaje": 100.0,
-  "licencia": "CC BY-SA 3.0 · Open Food Facts contributors"
+  "origen": "tienda",
+  "fuente": "Plaza Vea",
+  "url_producto": "https://www.plazavea.com.pe/agua-mineral-san-mateo-con-gas-botella-600ml-737791/p",
+  "url_imagen": "https://plazavea.vteximg.com.br/arquivos/ids/36302686-1000-1000/737791.jpg?v=639264187389770000",
+  "nombre_origen": "Agua Mineral SAN MATEO Con Gas Botella 600ml",
+  "puntaje": 93.0,
+  "licencia": "Imagen referencial de fabricante o tienda; uso demostrativo"
  },
  {
   "id": "P1082",
-  "origen": "off",
-  "codigo_off": "7750182003346",
-  "url_imagen": "https://images.openfoodfacts.org/images/products/775/018/200/3346/front_es.12.full.jpg",
-  "nombre_off": "Bebida Del Valle Frugos Durazno x 1lt",
-  "puntaje": 120.0,
-  "licencia": "CC BY-SA 3.0 · Open Food Facts contributors"
+  "origen": "tienda",
+  "fuente": "Wong",
+  "url_producto": "https://www.wong.pe/bebida-de-durazno-frugos-del-valle-botella-1l-718595001-2/p",
+  "url_imagen": "https://wongfood.vteximg.com.br/arquivos/ids/727411-1000-1000/Bebida-de-Durazno-Frugos-del-Valle-Botella-1L-1-239261.jpg?v=638633469993930000",
+  "nombre_origen": "Bebida de Durazno Frugos del Valle Botella 1L",
+  "puntaje": 93.0,
+  "licencia": "Imagen referencial de fabricante o tienda; uso demostrativo"
  },
  {
   "id": "P1083",
-  "origen": "ia_local",
-  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
-  "seed": 9083,
-  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+  "origen": "tienda",
+  "fuente": "Wong",
+  "url_producto": "https://www.wong.pe/bebida-de-durazno-pulp-caja-315-ml-533563002/p",
+  "url_imagen": "https://wongfood.vteximg.com.br/arquivos/ids/504352-1000-1000/533563002-01-94029.jpg?v=637745070854500000",
+  "nombre_origen": "Bebida de Durazno Pulp Caja 315 ml",
+  "puntaje": 73.0,
+  "licencia": "Imagen referencial de fabricante o tienda; uso demostrativo"
  },
  {
   "id": "P1084",
-  "origen": "off",
-  "codigo_off": "7750670010238",
-  "url_imagen": "https://images.openfoodfacts.org/images/products/775/067/001/0238/front_es.8.full.jpg",
-  "nombre_off": "Sporade tropical",
-  "puntaje": 95.0,
-  "licencia": "CC BY-SA 3.0 · Open Food Facts contributors"
+  "origen": "tienda",
+  "fuente": "Plaza Vea",
+  "url_producto": "https://www.plazavea.com.pe/bebida-rehidratante-sporade-tropical-botella-500ml/p",
+  "url_imagen": "https://plazavea.vteximg.com.br/arquivos/ids/27582290-1000-1000/20082644.jpg?v=638316576445230000",
+  "nombre_origen": "Bebida Rehidratante SPORADE Tropical Botella 500ml",
+  "puntaje": 91.0,
+  "licencia": "Imagen referencial de fabricante o tienda; uso demostrativo"
  },
  {
   "id": "P1085",
-  "origen": "ia_local",
-  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
-  "seed": 9085,
-  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+  "origen": "tienda",
+  "fuente": "Plaza Vea",
+  "url_producto": "https://www.plazavea.com.pe/energizante-volt-original-botella-300ml-20634478/p",
+  "url_imagen": "https://plazavea.vteximg.com.br/arquivos/ids/36278001-1000-1000/20634478.jpg?v=639262981748230000",
+  "nombre_origen": "Energizante VOLT Original Botella 300ml",
+  "puntaje": 73.0,
+  "licencia": "Imagen referencial de fabricante o tienda; uso demostrativo"
  },
  {
   "id": "P1086",
-  "origen": "ia_local",
-  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
-  "seed": 8086,
-  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+  "origen": "tienda",
+  "fuente": "Plaza Vea",
+  "url_producto": "https://www.plazavea.com.pe/te-de-limon-lipton-botella-500ml/p",
+  "url_imagen": "https://plazavea.vteximg.com.br/arquivos/ids/30594627-1000-1000/20468611.jpg?v=638750937268530000",
+  "nombre_origen": "Té de Limón LIPTON Botella 500ml",
+  "puntaje": 73.0,
+  "licencia": "Imagen referencial de fabricante o tienda; uso demostrativo"
  },
  {
   "id": "P1087",
-  "origen": "ia_local",
-  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
-  "seed": 8087,
-  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+  "origen": "tienda",
+  "fuente": "Plaza Vea",
+  "url_producto": "https://www.plazavea.com.pe/gaseosa-inca-kola-sabor-original-botella-3l-21186/p",
+  "url_imagen": "https://plazavea.vteximg.com.br/arquivos/ids/36303684-1000-1000/21186.jpg?v=639264191626770000",
+  "nombre_origen": "Gaseosa INCA KOLA Sabor Original Botella 3L",
+  "puntaje": 89,
+  "licencia": "Imagen referencial de fabricante o tienda; uso demostrativo"
  },
  {
   "id": "P1088",
-  "origen": "off",
-  "codigo_off": "7750236173896",
-  "url_imagen": "https://images.openfoodfacts.org/images/products/775/023/617/3896/front_pt.24.full.jpg",
-  "nombre_off": "Inca Kola Gaseosa X 500 ML.",
-  "puntaje": 75,
-  "licencia": "CC BY-SA 3.0 · Open Food Facts contributors"
+  "origen": "tienda",
+  "fuente": "Plaza Vea",
+  "url_producto": "https://www.plazavea.com.pe/gaseosa-inca-kola-sabor-original-botella-600ml-20200389/p",
+  "url_imagen": "https://plazavea.vteximg.com.br/arquivos/ids/36302939-1000-1000/20200389.jpg?v=639264188402170000",
+  "nombre_origen": "Gaseosa INCA KOLA Sabor Original Botella 600ml",
+  "puntaje": null,
+  "licencia": "Imagen referencial de fabricante o tienda; uso demostrativo"
  },
  {
   "id": "P1089",
-  "origen": "off",
-  "codigo_off": "7750182000697",
-  "url_imagen": "https://images.openfoodfacts.org/images/products/775/018/200/0697/front_es.4.full.jpg",
-  "nombre_off": "Gaseosa Coca Cola sin azúcar",
-  "puntaje": 85.0,
-  "licencia": "CC BY-SA 3.0 · Open Food Facts contributors"
+  "origen": "tienda",
+  "fuente": "Plaza Vea",
+  "url_producto": "https://www.plazavea.com.pe/gaseosa-coca-cola-sin-azucar-botella-225l-20116220/p",
+  "url_imagen": "https://plazavea.vteximg.com.br/arquivos/ids/36302832-1000-1000/20116220.jpg?v=639264187977130000",
+  "nombre_origen": "Gaseosa COCA COLA sin Azúcar Botella 2.25L",
+  "puntaje": null,
+  "licencia": "Imagen referencial de fabricante o tienda; uso demostrativo"
  },
  {
   "id": "P1090",
-  "origen": "ia_local",
-  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
-  "seed": 8090,
-  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+  "origen": "tienda",
+  "fuente": "Wong",
+  "url_producto": "https://www.wong.pe/gaseosa-coca-cola-botella-1-5l-59536002/p",
+  "url_imagen": "https://wongfood.vteximg.com.br/arquivos/ids/727399-1000-1000/59536002-01-4599.jpg?v=638633469945030000",
+  "nombre_origen": "Gaseosa Coca Cola Botella 1.5L",
+  "puntaje": null,
+  "licencia": "Imagen referencial de fabricante o tienda; uso demostrativo"
  },
  {
   "id": "P1091",
-  "origen": "ia_local",
-  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
-  "seed": 8091,
-  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+  "origen": "tienda",
+  "fuente": "Wong",
+  "url_producto": "https://www.wong.pe/gaseosa-guarana-botella-3-l-65761/p",
+  "url_imagen": "https://wongfood.vteximg.com.br/arquivos/ids/353194-1000-1000/65761-1.jpg?v=637219022481400000",
+  "nombre_origen": "Gaseosa Guarana Botella 3 L",
+  "puntaje": null,
+  "licencia": "Imagen referencial de fabricante o tienda; uso demostrativo"
  },
  {
   "id": "P1092",
-  "origen": "ia_local",
-  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
-  "seed": 8092,
-  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+  "origen": "tienda",
+  "fuente": "Plaza Vea",
+  "url_producto": "https://www.plazavea.com.pe/gaseosa-kr-pina-botella-303l-20251477/p",
+  "url_imagen": "https://plazavea.vteximg.com.br/arquivos/ids/36303036-1000-1000/20251477.jpg?v=639264188828800000",
+  "nombre_origen": "Gaseosa KR Piña Botella 3.03L",
+  "puntaje": null,
+  "licencia": "Imagen referencial de fabricante o tienda; uso demostrativo"
  },
  {
   "id": "P1093",
-  "origen": "ia_local",
-  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
-  "seed": 10093,
-  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+  "origen": "tienda",
+  "fuente": "Metro",
+  "url_producto": "https://www.metro.pe/gaseosa-big-cola-botella-3-03-l-754132/p",
+  "url_imagen": "https://metroio.vteximg.com.br/arquivos/ids/613726-1000-1000/754132-01-76704.jpg?v=638979718632530000",
+  "nombre_origen": "Gaseosa Big Cola Botella 3.03 L",
+  "puntaje": 93,
+  "licencia": "Imagen referencial de fabricante o tienda; uso demostrativo"
  },
  {
   "id": "P1094",
-  "origen": "off",
-  "codigo_off": "7771621060065",
-  "url_imagen": "https://images.openfoodfacts.org/images/products/777/162/106/0065/front_es.4.full.jpg",
-  "nombre_off": "Sabor de Oro",
-  "puntaje": 60.0,
-  "licencia": "CC BY-SA 3.0 · Open Food Facts contributors"
+  "origen": "tienda",
+  "fuente": "Metro",
+  "url_producto": "https://www.metro.pe/gaseosa-oro-botella-3-03-l-113741/p",
+  "url_imagen": "https://metroio.vteximg.com.br/arquivos/ids/282261-1000-1000/Gaseosa-Oro-Botella-3-3000-Litros-1-88676.jpg?v=638179308986970000",
+  "nombre_origen": "Gaseosa Oro Botella 3.03 L",
+  "puntaje": null,
+  "licencia": "Imagen referencial de fabricante o tienda; uso demostrativo"
  },
  {
   "id": "P1095",
-  "origen": "ia_local",
-  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
-  "seed": 8095,
-  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+  "origen": "tienda",
+  "fuente": "Plaza Vea",
+  "url_producto": "https://www.plazavea.com.pe/gaseosa-sprite-botella-225l-35671/p",
+  "url_imagen": "https://plazavea.vteximg.com.br/arquivos/ids/36303686-1000-1000/35671.jpg?v=639264191637000000",
+  "nombre_origen": "Gaseosa SPRITE Botella 2.25L",
+  "puntaje": null,
+  "licencia": "Imagen referencial de fabricante o tienda; uso demostrativo"
  },
  {
   "id": "P1096",
-  "origen": "ia_local",
-  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
-  "seed": 8096,
-  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+  "origen": "tienda",
+  "fuente": "Plaza Vea",
+  "url_producto": "https://www.plazavea.com.pe/cerveza-san-juan-lata-355ml-6-pack/p",
+  "url_imagen": "https://plazavea.vteximg.com.br/arquivos/ids/34331135-1000-1000/20063814.jpg?v=639124903419900000",
+  "nombre_origen": "Cerveza SAN JUAN Lata 355ml Pack 6un",
+  "puntaje": 75.0,
+  "licencia": "Imagen referencial de fabricante o tienda; uso demostrativo"
  },
  {
   "id": "P1097",
-  "origen": "ia_local",
-  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
-  "seed": 8097,
-  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+  "origen": "tienda",
+  "fuente": "Wong",
+  "url_producto": "https://www.wong.pe/cerveza-pilsen-callao-lata-269ml-2/p",
+  "url_imagen": "https://wongfood.vteximg.com.br/arquivos/ids/768985-1000-1000/Cerveza-Pilsen-Callao-Lata-269ml-1-323309065.jpg?v=638826682218800000",
+  "nombre_origen": "Cerveza Pilsen Callao Lata 269ml",
+  "puntaje": null,
+  "licencia": "Imagen referencial de fabricante o tienda; uso demostrativo"
  },
  {
   "id": "P1098",
-  "origen": "ia_local",
-  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
-  "seed": 8098,
-  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+  "origen": "tienda",
+  "fuente": "Plaza Vea",
+  "url_producto": "https://www.plazavea.com.pe/cerveza-cristal-12-pack-lata-355ml/p",
+  "url_imagen": "https://plazavea.vteximg.com.br/arquivos/ids/34708796-1000-1000/979367.jpg?v=639149958253400000",
+  "nombre_origen": "Cerveza CRISTAL Lata 355ml Paquete 12un",
+  "puntaje": null,
+  "licencia": "Imagen referencial de fabricante o tienda; uso demostrativo"
  },
  {
   "id": "P1099",
-  "origen": "off",
-  "codigo_off": "7753749275767",
-  "url_imagen": "https://images.openfoodfacts.org/images/products/775/374/927/5767/front_es.8.full.jpg",
-  "nombre_off": "CUSQUEÑA",
-  "puntaje": 60.0,
-  "licencia": "CC BY-SA 3.0 · Open Food Facts contributors"
+  "origen": "tienda",
+  "fuente": "Plaza Vea",
+  "url_producto": "https://www.plazavea.com.pe/cerveza-cusquena-dorada-botella-310ml-paquete-6un/p",
+  "url_imagen": "https://plazavea.vteximg.com.br/arquivos/ids/34711272-1000-1000/20210049.jpg?v=639149966697370000",
+  "nombre_origen": "Cerveza CUSQUEÑA Dorada Botella 310ml Paquete 6un",
+  "puntaje": null,
+  "licencia": "Imagen referencial de fabricante o tienda; uso demostrativo"
  },
  {
   "id": "P1100",
-  "origen": "ia_local",
-  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
-  "seed": 10100,
-  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+  "origen": "tienda",
+  "fuente": "Metro",
+  "url_producto": "https://www.metro.pe/cerveza-corona-extra-lata-473ml-1063064/p",
+  "url_imagen": "https://metroio.vteximg.com.br/arquivos/ids/634961-1000-1000/Cerveza-Corona-Extra-Lata-473ml-1-363513.jpg?v=639076377894970000",
+  "nombre_origen": "Cerveza Corona Extra Lata 473ml",
+  "puntaje": null,
+  "licencia": "Imagen referencial de fabricante o tienda; uso demostrativo"
  },
  {
   "id": "P1101",
-  "origen": "ia_local",
-  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
-  "seed": 8101,
-  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+  "origen": "tienda",
+  "fuente": "Plaza Vea",
+  "url_producto": "https://www.plazavea.com.pe/ron-cartavio-black-botella-750ml/p",
+  "url_imagen": "https://plazavea.vteximg.com.br/arquivos/ids/34708999-1000-1000/20009818.jpg?v=639149958812100000",
+  "nombre_origen": "Ron CARTAVIO Black Botella 750ml",
+  "puntaje": 95.0,
+  "licencia": "Imagen referencial de fabricante o tienda; uso demostrativo"
  },
  {
   "id": "P1102",
-  "origen": "ia_local",
-  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
-  "seed": 8102,
-  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+  "origen": "tienda",
+  "fuente": "Plaza Vea",
+  "url_producto": "https://www.plazavea.com.pe/pisco-santiago-queirolo-quebranta-botella-750ml/p",
+  "url_imagen": "https://plazavea.vteximg.com.br/arquivos/ids/34709124-1000-1000/146845.jpg?v=639197274160200000",
+  "nombre_origen": "Pisco SANTIAGO QUEIROLO Quebranta Botella 750ml",
+  "puntaje": null,
+  "licencia": "Imagen referencial de fabricante o tienda; uso demostrativo"
  },
  {
   "id": "P1103",
-  "origen": "ia_local",
-  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
-  "seed": 8103,
-  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+  "origen": "tienda",
+  "fuente": "Plaza Vea",
+  "url_producto": "https://www.plazavea.com.pe/vino-tabernero-borgona-botella-750ml/p",
+  "url_imagen": "https://plazavea.vteximg.com.br/arquivos/ids/34710386-1000-1000/1133012001.jpg?v=639149962247370000",
+  "nombre_origen": "Vino Tinto TABERNERO Borgoña Botella 750ml",
+  "puntaje": 93.0,
+  "licencia": "Imagen referencial de fabricante o tienda; uso demostrativo"
  },
  {
   "id": "P1104",
-  "origen": "ia_local",
-  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
-  "seed": 9104,
-  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+  "origen": "tienda",
+  "fuente": "Wong",
+  "url_producto": "https://www.wong.pe/detergente-l-quido-ariel-revitacolor-1-2l-1037930/p",
+  "url_imagen": "https://wongfood.vteximg.com.br/arquivos/ids/843761-1000-1000/Detergente-L-quido-Ariel-Color-1-2L-1-351694376.jpg?v=639213755389370000",
+  "nombre_origen": "Detergente Líquido Ariel Revitacolor 1.2L",
+  "puntaje": null,
+  "licencia": "Imagen referencial de fabricante o tienda; uso demostrativo"
  },
  {
   "id": "P1105",
-  "origen": "ia_local",
-  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
-  "seed": 8105,
-  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+  "origen": "tienda",
+  "fuente": "Plaza Vea",
+  "url_producto": "https://www.plazavea.com.pe/detergente-en-polvo-bolivar-cuidado-y-suavidad-bolsa-24kg-20423858/p",
+  "url_imagen": "https://plazavea.vteximg.com.br/arquivos/ids/36303187-1000-1000/20423858.jpg?v=639264189444800000",
+  "nombre_origen": "Detergente en Polvo BOLIVAR Cuidado y Suavidad Bolsa 2.4Kg",
+  "puntaje": null,
+  "licencia": "Imagen referencial de fabricante o tienda; uso demostrativo"
  },
  {
   "id": "P1106",
-  "origen": "ia_local",
-  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
-  "seed": 8106,
-  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+  "origen": "tienda",
+  "fuente": "Plaza Vea",
+  "url_producto": "https://www.plazavea.com.pe/detergente-en-polvo-opal-ultra-bolsa-730g-20432252/p",
+  "url_imagen": "https://plazavea.vteximg.com.br/arquivos/ids/36303335-1000-1000/20432252.jpg?v=639264190190730000",
+  "nombre_origen": "Detergente en Polvo OPAL Ultra Bolsa 730g",
+  "puntaje": null,
+  "licencia": "Imagen referencial de fabricante o tienda; uso demostrativo"
  },
  {
   "id": "P1107",
-  "origen": "ia_local",
-  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
-  "seed": 9107,
-  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+  "origen": "tienda",
+  "fuente": "Oechsle",
+  "url_producto": "https://www.oechsle.pe/detergente-en-polvo-ace-limon-4-kilos-1000726244/p",
+  "url_imagen": "https://oechsle.vteximg.com.br/arquivos/ids/16938823-1000-1000/image-ed5c2234e52449569a50342781321d4c.jpg?v=638369308035470000",
+  "nombre_origen": "Detergente en Polvo Ace Limón 4 Kilos",
+  "puntaje": 71.0,
+  "licencia": "Imagen referencial de fabricante o tienda; uso demostrativo"
  },
  {
   "id": "P1108",
-  "origen": "ia_local",
-  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
-  "seed": 8108,
-  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+  "origen": "tienda",
+  "fuente": "Plaza Vea",
+  "url_producto": "https://www.plazavea.com.pe/jabon-de-ropa-bolivar-bebe-190gr-x-2-unidades-102110591/p",
+  "url_imagen": "https://plazavea.vteximg.com.br/arquivos/ids/34937259-1000-1000/image-aa233eab6e0a4213a8c6b67f284618ba.jpg?v=639168809973730000",
+  "nombre_origen": "Jabón de Ropa Bolivar Bebé 190gr x 2 unidades",
+  "puntaje": 93.0,
+  "licencia": "Imagen referencial de fabricante o tienda; uso demostrativo"
  },
  {
   "id": "P1109",
-  "origen": "ia_local",
-  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
-  "seed": 9109,
-  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+  "origen": "tienda",
+  "fuente": "Plaza Vea",
+  "url_producto": "https://www.plazavea.com.pe/lavavajillas-sapolio-limon-pote-800g/p",
+  "url_imagen": "https://plazavea.vteximg.com.br/arquivos/ids/34359383-1000-1000/20235704.jpg?v=639125040353830000",
+  "nombre_origen": "Lavavajillas SAPOLIO Limón Pote 800g",
+  "puntaje": null,
+  "licencia": "Imagen referencial de fabricante o tienda; uso demostrativo"
  },
  {
   "id": "P1110",
-  "origen": "ia_local",
-  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
-  "seed": 9110,
-  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+  "origen": "tienda",
+  "fuente": "Plaza Vea",
+  "url_producto": "https://www.plazavea.com.pe/lejia-clorox-tradicional-botella-4kg/p",
+  "url_imagen": "https://plazavea.vteximg.com.br/arquivos/ids/29681112-1000-1000/20462965.jpg?v=638642073068900000",
+  "nombre_origen": "Lejía CLOROX Tradicional Botella 4kg",
+  "puntaje": 93.0,
+  "licencia": "Imagen referencial de fabricante o tienda; uso demostrativo"
  },
  {
   "id": "P1111",
-  "origen": "ia_local",
-  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
-  "seed": 8111,
-  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+  "origen": "tienda",
+  "fuente": "Plaza Vea",
+  "url_producto": "https://www.plazavea.com.pe/limpiador-poett-frescura-de-lavanda-botella-900ml/p",
+  "url_imagen": "https://plazavea.vteximg.com.br/arquivos/ids/32092614-1000-1000/20236178.jpg?v=638930556888600000",
+  "nombre_origen": "Limpiador POETT Frescura de Lavanda Botella 900ml",
+  "puntaje": 71.0,
+  "licencia": "Imagen referencial de fabricante o tienda; uso demostrativo"
  },
  {
   "id": "P1112",
-  "origen": "ia_local",
-  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
-  "seed": 8112,
-  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+  "origen": "tienda",
+  "fuente": "Plaza Vea",
+  "url_producto": "https://www.plazavea.com.pe/papel-higienico-elite-clasico-doble-hoja-paquete-40un-20182465/p",
+  "url_imagen": "https://plazavea.vteximg.com.br/arquivos/ids/35924113-1000-1000/20182465-1.jpg?v=639233010601830000",
+  "nombre_origen": "Papel Higiénico ELITE Clásico Doble Hoja Paquete 40un",
+  "puntaje": null,
+  "licencia": "Imagen referencial de fabricante o tienda; uso demostrativo"
  },
  {
   "id": "P1113",
-  "origen": "ia_local",
-  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
-  "seed": 8113,
-  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+  "origen": "tienda",
+  "fuente": "Metro",
+  "url_producto": "https://www.metro.pe/papel-higi-nico-doble-hoja-suave-rindemax-4un-961543/p",
+  "url_imagen": "https://metroio.vteximg.com.br/arquivos/ids/598011-1000-1000/Papel-Higi-nico-Doble-Hoja-Suave-Rindemax-4un-1-90396.jpg?v=638890185978200000",
+  "nombre_origen": "Papel Higiénico Doble Hoja Suave Rindemax 4un",
+  "puntaje": 74.0,
+  "licencia": "Imagen referencial de fabricante o tienda; uso demostrativo"
  },
  {
   "id": "P1114",
-  "origen": "off",
-  "codigo_off": "7500435019880",
-  "url_imagen": "https://images.openfoodfacts.org/images/products/750/043/501/9880/front_es.3.full.jpg",
-  "nombre_off": "Shampoo Manzana Fresh",
-  "puntaje": 105.0,
-  "licencia": "CC BY-SA 3.0 · Open Food Facts contributors"
+  "origen": "tienda",
+  "fuente": "Plaza Vea",
+  "url_producto": "https://www.plazavea.com.pe/shampoo-headshoulders-antiresequedad-frasco-375ml/p",
+  "url_imagen": "https://plazavea.vteximg.com.br/arquivos/ids/31167863-1000-1000/20481012.jpg?v=638797591827400000",
+  "nombre_origen": "Shampoo HEAD & SHOULDERS Antiresequedad Frasco 375ml",
+  "puntaje": 93.0,
+  "licencia": "Imagen referencial de fabricante o tienda; uso demostrativo"
  },
  {
   "id": "P1115",
-  "origen": "off",
-  "codigo_off": "7506306237315",
-  "url_imagen": "https://images.openfoodfacts.org/images/products/750/630/623/7315/front_es.5.full.jpg",
-  "nombre_off": "sedal",
-  "puntaje": 75.0,
-  "licencia": "CC BY-SA 3.0 · Open Food Facts contributors"
+  "origen": "tienda",
+  "fuente": "Plaza Vea",
+  "url_producto": "https://www.plazavea.com.pe/shampoo-sedal-ceramidas-frasco-340ml/p",
+  "url_imagen": "https://plazavea.vteximg.com.br/arquivos/ids/26358338-1000-1000/20112781.jpg?v=638193899397430000",
+  "nombre_origen": "Shampoo SEDAL Ceramidas Frasco 340ml",
+  "puntaje": 95.0,
+  "licencia": "Imagen referencial de fabricante o tienda; uso demostrativo"
  },
  {
   "id": "P1116",
-  "origen": "ia_local",
-  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
-  "seed": 10116,
-  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+  "origen": "tienda",
+  "fuente": "Metro",
+  "url_producto": "https://www.metro.pe/pasta-dental-colgate-triple-accion-tubo-75-ml/p",
+  "url_imagen": "https://metroio.vteximg.com.br/arquivos/ids/282201-1000-1000/Crema-Dental-Colgate-Triple-Acci-n-Tubo-75-ml-1-87593.jpg?v=638179308932330000",
+  "nombre_origen": "Pasta Dental Colgate Triple Acción Tubo 75 ml",
+  "puntaje": null,
+  "licencia": "Imagen referencial de fabricante o tienda; uso demostrativo"
  },
  {
   "id": "P1117",
-  "origen": "ia_local",
-  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
-  "seed": 10117,
-  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+  "origen": "tienda",
+  "fuente": "Oechsle",
+  "url_producto": "https://www.oechsle.pe/pasta-dental-dento-whitening-tubo-75ml-1000261626/p",
+  "url_imagen": "https://oechsle.vteximg.com.br/arquivos/ids/25823876-1000-1000/20238304.jpg?v=639177952904870000",
+  "nombre_origen": "Pasta Dental DENTO Whitening Tubo 75ml",
+  "puntaje": null,
+  "licencia": "Imagen referencial de fabricante o tienda; uso demostrativo"
  },
  {
   "id": "P1118",
-  "origen": "ia_local",
-  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
-  "seed": 9118,
-  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+  "origen": "tienda",
+  "fuente": "Oechsle",
+  "url_producto": "https://www.oechsle.pe/jabon-corporal-avena-protex-pack-3-un-1000029738/p",
+  "url_imagen": "https://oechsle.vteximg.com.br/arquivos/ids/2184681-1000-1000/image-5c3f2721796d4126a40bb5f06154f4a3.jpg?v=637492444559430000",
+  "nombre_origen": "Jabon Corporal Avena Protex - Pack 3 UN",
+  "puntaje": 78.0,
+  "licencia": "Imagen referencial de fabricante o tienda; uso demostrativo"
  },
  {
   "id": "P1119",
-  "origen": "ia_local",
-  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
-  "seed": 8119,
-  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+  "origen": "tienda",
+  "fuente": "Wong",
+  "url_producto": "https://www.wong.pe/toallas-higienicas-nosotras-invisible-natural-30un-502171/p",
+  "url_imagen": "https://wongfood.vteximg.com.br/arquivos/ids/813781-1000-1000/Toallas-Higi-nicas-Nosotras-Invisible-Natural-30un-1-1047.jpg?v=639052186321200000",
+  "nombre_origen": "Toallas Higiénicas Nosotras Invisible Natural 30un",
+  "puntaje": null,
+  "licencia": "Imagen referencial de fabricante o tienda; uso demostrativo"
  },
  {
   "id": "P1120",
-  "origen": "ia_local",
-  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
-  "seed": 8120,
-  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+  "origen": "tienda",
+  "fuente": "Plaza Vea",
+  "url_producto": "https://www.plazavea.com.pe/desodorante-en-crema-para-mujer-rexona-clinical-caja-48g/p",
+  "url_imagen": "https://plazavea.vteximg.com.br/arquivos/ids/34332669-1000-1000/20075775.jpg?v=639124913679000000",
+  "nombre_origen": "Desodorante para Mujer en Barra REXONA Clinical Frasco 48g",
+  "puntaje": 91.0,
+  "licencia": "Imagen referencial de fabricante o tienda; uso demostrativo"
  },
  {
   "id": "P1121",
-  "origen": "ia_local",
-  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
-  "seed": 8121,
-  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+  "origen": "tienda",
+  "fuente": "Oechsle",
+  "url_producto": "https://www.oechsle.pe/maquina-de-afeitar-gillette-prestobarba3-sport-2-unidades-1001772371/p",
+  "url_imagen": "https://oechsle.vteximg.com.br/arquivos/ids/25332391-1000-1000/imageUrl_1.jpg?v=639149402631030000",
+  "nombre_origen": "Maquina de Afeitar Gillette Prestobarba3 Sport 2 Unidades",
+  "puntaje": 78.0,
+  "licencia": "Imagen referencial de fabricante o tienda; uso demostrativo"
  },
  {
   "id": "P1122",
-  "origen": "ia_local",
-  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
-  "seed": 10122,
-  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+  "origen": "tienda",
+  "fuente": "Wong",
+  "url_producto": "https://www.wong.pe/panales-huggies-natural-care-talla-g-52un-752967001/p",
+  "url_imagen": "https://wongfood.vteximg.com.br/arquivos/ids/800318-1000-1000/Pa-ales-Huggies-Natural-Care-Talla-G-52un-1-36587134.jpg?v=638986846114800000",
+  "nombre_origen": "Pañales Huggies Natural Care Talla G 52un",
+  "puntaje": 78.0,
+  "licencia": "Imagen referencial de fabricante o tienda; uso demostrativo"
  },
  {
   "id": "P1123",
-  "origen": "ia_local",
-  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
-  "seed": 10123,
-  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+  "origen": "tienda",
+  "fuente": "Plaza Vea",
+  "url_producto": "https://www.plazavea.com.pe/panales-para-bebe-babysec-premium-m-paquete-68un/p",
+  "url_imagen": "https://plazavea.vteximg.com.br/arquivos/ids/29092874-1000-1000/20237686.jpg?v=638525665046300000",
+  "nombre_origen": "Pañales para Bebé BABYSEC Premium M Paquete 68un",
+  "puntaje": null,
+  "licencia": "Imagen referencial de fabricante o tienda; uso demostrativo"
  },
  {
   "id": "P1124",
-  "origen": "ia_local",
-  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
-  "seed": 10124,
-  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+  "origen": "tienda",
+  "fuente": "Wong",
+  "url_producto": "https://www.wong.pe/panales-pampers-recien-nacido-talla-rn-20un-260609/p",
+  "url_imagen": "https://wongfood.vteximg.com.br/arquivos/ids/818120-1000-1000/260609-01-11425.jpg?v=639059962248900000",
+  "nombre_origen": "Pañales Pampers Recién Nacido Talla RN 20un",
+  "puntaje": null,
+  "licencia": "Imagen referencial de fabricante o tienda; uso demostrativo"
  },
  {
   "id": "P1125",
-  "origen": "ia_local",
-  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
-  "seed": 8125,
-  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+  "origen": "tienda",
+  "fuente": "Wong",
+  "url_producto": "https://www.wong.pe/toallitas-h-medas-huggies-cuidado-4-en-1-80un-531728/p",
+  "url_imagen": "https://wongfood.vteximg.com.br/arquivos/ids/781032-1000-1000/531728-01-27687.jpg?v=638895909769170000",
+  "nombre_origen": "Toallitas Húmedas Huggies Cuidado 4 en 1 80un",
+  "puntaje": 78.0,
+  "licencia": "Imagen referencial de fabricante o tienda; uso demostrativo"
  },
  {
   "id": "P1126",
-  "origen": "ia_local",
-  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
-  "seed": 8126,
-  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+  "origen": "tienda",
+  "fuente": "Oechsle",
+  "url_producto": "https://www.oechsle.pe/nan-1-optipro-hmo-400g-1000818726/p",
+  "url_imagen": "https://oechsle.vteximg.com.br/arquivos/ids/17978183-1000-1000/image-f8ee2b87d05d4615b2a35925549b74d1.jpg?v=638509299945170000",
+  "nombre_origen": "Nan 1 Optipro HMO 400g",
+  "puntaje": null,
+  "licencia": "Imagen referencial de fabricante o tienda; uso demostrativo"
  },
  {
   "id": "P1127",
-  "origen": "ia_local",
-  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
-  "seed": 9127,
-  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+  "origen": "tienda",
+  "fuente": "Oechsle",
+  "url_producto": "https://www.oechsle.pe/comida-para-perros-ricocan-adultos-cordero-razas-pequenas-15-kg-1000557828/p",
+  "url_imagen": "https://oechsle.vteximg.com.br/arquivos/ids/14977141-1000-1000/image-d505e1de8d5646f4970e9afd4d416eea.jpg?v=638283231796630000",
+  "nombre_origen": "Comida para Perros Ricocan Adultos Cordero Razas Pequeñas 15 Kg",
+  "puntaje": 89.0,
+  "licencia": "Imagen referencial de fabricante o tienda; uso demostrativo"
  },
  {
   "id": "P1128",
-  "origen": "ia_local",
-  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
-  "seed": 8128,
-  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+  "origen": "tienda",
+  "fuente": "Plaza Vea",
+  "url_producto": "https://www.plazavea.com.pe/alimento-para-perro-mimaskot-cachorro-pequeno-sabor-carne-bolsa-1kg-20567085/p",
+  "url_imagen": "https://plazavea.vteximg.com.br/arquivos/ids/34468819-1000-1000/20567085.jpg?v=639130809027270000",
+  "nombre_origen": "Alimento para Perro MIMASKOT Cachorro Pequeño Sabor Carne Bolsa 1Kg",
+  "puntaje": 73.7,
+  "licencia": "Imagen referencial de fabricante o tienda; uso demostrativo"
  },
  {
   "id": "P1129",
-  "origen": "ia_local",
-  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
-  "seed": 8129,
-  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+  "origen": "tienda",
+  "fuente": "Plaza Vea",
+  "url_producto": "https://www.plazavea.com.pe/comida-para-gatos-ricocat-gatitos-carne-pescado-y-leche-bolsa-1kg/p",
+  "url_imagen": "https://plazavea.vteximg.com.br/arquivos/ids/31823077-1000-1000/20019999.jpg?v=638896086013170000",
+  "nombre_origen": "Alimento para Gato RICOCAT Gatito Sabor Carne Pescado y Leche Bolsa 1Kg",
+  "puntaje": 71.7,
+  "licencia": "Imagen referencial de fabricante o tienda; uso demostrativo"
  },
  {
   "id": "P1130",
-  "origen": "ia_local",
-  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
-  "seed": 10130,
-  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+  "origen": "tienda",
+  "fuente": "Plaza Vea",
+  "url_producto": "https://www.plazavea.com.pe/comida-de-perro-adulto-thor-clasico-25kg-101127331/p",
+  "url_imagen": "https://plazavea.vteximg.com.br/arquivos/ids/29548598-1000-1000/imageUrl_1.jpg?v=638628164040700000",
+  "nombre_origen": "Comida De Perro Adulto Thor Clasico 25Kg",
+  "puntaje": 91.0,
+  "licencia": "Imagen referencial de fabricante o tienda; uso demostrativo"
  },
  {
   "id": "P1131",
-  "origen": "ia_local",
-  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
-  "seed": 8131,
-  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+  "origen": "tienda",
+  "fuente": "Plaza Vea",
+  "url_producto": "https://www.plazavea.com.pe/vaso-descartable-pamolsa-6-5oz-bolsa-50un/p",
+  "url_imagen": "https://plazavea.vteximg.com.br/arquivos/ids/3134842-1000-1000/20179424.jpg?v=637726858003870000",
+  "nombre_origen": "Vaso Descartable PAMOLSA 6.5oz 50un 99x99x99mm",
+  "puntaje": null,
+  "licencia": "Imagen referencial de fabricante o tienda; uso demostrativo"
  },
  {
   "id": "P1132",
-  "origen": "ia_local",
-  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
-  "seed": 8132,
-  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+  "origen": "tienda",
+  "fuente": "Wong",
+  "url_producto": "https://www.wong.pe/platos-tendidos-biodegradables-u-thil-6-25un-754798/p",
+  "url_imagen": "https://wongfood.vteximg.com.br/arquivos/ids/764684-1000-1000/Platos-Tendidos-Biodegradables-U-Thil-6-25un-1-41802901.jpg?v=638798501742270000",
+  "nombre_origen": "Platos Tendidos Biodegradables U-Thil 6\" 25un",
+  "puntaje": null,
+  "licencia": "Imagen referencial de fabricante o tienda; uso demostrativo"
  },
  {
   "id": "P1133",
-  "origen": "ia_local",
-  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
-  "seed": 8133,
-  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+  "origen": "tienda",
+  "fuente": "Metro",
+  "url_producto": "https://www.metro.pe/bolsa-de-basura-75l-virutex-10un-1062244/p",
+  "url_imagen": "https://metroio.vteximg.com.br/arquivos/ids/648191-1000-1000/BB-X10UN-VIRUTEX-75L-PLANAS-1-367722.jpg?v=639159537831970000",
+  "nombre_origen": "Bolsa de Basura 75L Virutex 10un",
+  "puntaje": null,
+  "licencia": "Imagen referencial de fabricante o tienda; uso demostrativo"
  },
  {
   "id": "P1134",
-  "origen": "ia_local",
-  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
-  "seed": 8134,
-  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+  "origen": "tienda",
+  "fuente": "Wong",
+  "url_producto": "https://www.wong.pe/servilletas-dobladas-en-4-elite-paquete-300-unidades-756704-2/p",
+  "url_imagen": "https://wongfood.vteximg.com.br/arquivos/ids/779021-1000-1000/Servilletas-Dobladas-en-4-Elite-Paquete-300-Unidades-2-47591905.jpg?v=638882301721170000",
+  "nombre_origen": "Servilletas Dobladas en 4 Elite Paquete 300 Unidades",
+  "puntaje": null,
+  "licencia": "Imagen referencial de fabricante o tienda; uso demostrativo"
  },
  {
   "id": "P1135",
-  "origen": "ia_local",
-  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
-  "seed": 8135,
-  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+  "origen": "tienda",
+  "fuente": "Wong",
+  "url_producto": "https://www.wong.pe/papel-aluminio-reynolds-caja-7-6-m-6791-2-2/p",
+  "url_imagen": "https://wongfood.vteximg.com.br/arquivos/ids/371392-1000-1000/PAPEL-ALUMINIO-REYNOLDS-X-25-PAP-ALUMI-REYNOLDS-1-30391.jpg?v=637314662896000000",
+  "nombre_origen": "Papel Aluminio Reynolds Caja 7.6 m",
+  "puntaje": 73.0,
+  "licencia": "Imagen referencial de fabricante o tienda; uso demostrativo"
  },
  {
   "id": "P1136",
-  "origen": "ia_local",
-  "modelo": "Z-Image Turbo (stable-diffusion.cpp, local)",
-  "seed": 8136,
-  "licencia": "Imagen referencial generada con IA local; sin marca ni texto real"
+  "origen": "tienda",
+  "fuente": "Plaza Vea",
+  "url_producto": "https://www.plazavea.com.pe/bolsas-hermetica-con-cierre-bells-g-paquete-20un/p",
+  "url_imagen": "https://plazavea.vteximg.com.br/arquivos/ids/28647021-1000-1000/20202976.jpg?v=638406433073430000",
+  "nombre_origen": "Bolsas Hermética con Cierre BELL'S G Paquete 20un",
+  "puntaje": null,
+  "licencia": "Imagen referencial de fabricante o tienda; uso demostrativo"
  }
 ]
